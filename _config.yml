@@ -27,7 +27,7 @@ navbar-links:
     - EON 2024: "https://earth-observation-network.github.io/EON2024/"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  CV: "cv"
+  CV: "https://esa99.github.io/resume"
   Orchid: "https://orcid.org/0009-0004-0348-5434"
 
 ################
@@ -114,7 +114,7 @@ title-on-all-pages: true
 excerpt_length: 50
 
 # Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
+feed_show_excerpt: false
 
 # Whether or not to show a list of tags below each post preview in the feed page
 feed_show_tags: true
