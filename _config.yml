@@ -21,9 +21,13 @@ author: Emilio Sánchez
 
 navbar-links:
   About Me: "aboutme"
+  Projects: "projects"
   Resources:
+    - Geocomputation R: "https://r.geocompx.org/"
+    - EON 2024: "https://earth-observation-network.github.io/EON2024/"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
+  CV: "cv"
   Orchid: "https://orcid.org/0009-0004-0348-5434"
 
 ################
@@ -32,7 +36,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/Tree_square_dark.png"
+avatar: "/assets/img/Tree_circle_grey_border.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -51,7 +55,7 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "emilio_sanchez@web.de"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+#  rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: esa99
   ORCID: 0009-0004-0348-5434
 #  telephone: +14159998888
@@ -86,7 +90,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: This website was build to showcase my skills
 
 ###########################
 # --- General options --- #

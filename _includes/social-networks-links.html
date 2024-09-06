@@ -77,7 +77,7 @@
 
   {%- if network[0] == "github" -%}
   <li class="list-inline-item">
-    <a href="https://github.com/{{ network[1] }}" title="GitHub">
+    <a href="https://github.com/{{ network[1] }}" title="GitHub" target="_blank">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -89,7 +89,7 @@
 
   {%- if network[0] == "gitlab" -%}
   <li class="list-inline-item">
-    <a href="https://gitlab.com/{{ network[1] }}" title="GitLab">
+    <a href="https://gitlab.com/{{ network[1] }}" title="GitLab" target="_blank">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
@@ -281,7 +281,7 @@
 
   {%- if network[0] == "ORCID" -%}
  <li class="list-inline-item">
-   <a href="https://orcid.org/{{ network[1] }}" title="ORCID">
+   <a href="https://orcid.org/{{ network[1] }}" title="ORCID" target="_blank">
      <span class="fa-stack fa-lg" aria-hidden="true">
        <i class="fas fa-circle fa-stack-2x"></i>
        <i class="fab fa-orcid fa-stack-1x fa-inverse"></i>
@@ -293,7 +293,7 @@
 
   {%- if network[0] == "google-scholar" -%}
   <li class="list-inline-item">
-    <a href="https://scholar.google.com/citations?user={{ network[1] }}" title="Google Scholar">
+    <a href="https://scholar.google.com/citations?user={{ network[1] }}" title="Google Scholar" target="_blank">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
@@ -305,7 +305,7 @@
 
   {%- if network[0] == "patreon" -%}
   <li class="list-inline-item">
-    <a href="https://patreon.com/{{ network[1] }}" title="Patreon">
+    <a href="https://patreon.com/{{ network[1] }}" title="Patreon" target="_blank">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-patreon fa-stack-1x fa-inverse"></i>
@@ -345,7 +345,7 @@
     {% assign discord_url_prefix = 'invite/' -%}
   {% endunless -%}
   <li class="list-inline-item">
-    <a href="https://discord.com/{{discord_url_prefix}}{{network[1]}}" title="Discord">
+    <a href="https://discord.com/{{discord_url_prefix}}{{network[1]}}" title="Discord" target="_blank"> 
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
@@ -369,7 +369,7 @@
 
   {%- if network[0] == "hackerrank" -%}
   <li class="list-inline-item">
-    <a href="https://www.hackerrank.com/{{ network[1] }}" title="Hackerrank">
+    <a href="https://www.hackerrank.com/{{ network[1] }}" title="Hackerrank" target="_blank">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-hackerrank fa-stack-1x fa-inverse"></i>
