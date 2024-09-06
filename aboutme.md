@@ -1,16 +1,16 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Academic scope
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I'm currently pursuing a Master’s degree in Landscape Ecology, with a specialized focus on Remote Sensing and Vegetation Science. My academic journey is driven by a deep passion for understanding and preserving the intricate relationships between ecosystems, landscapes, and the dynamic processes that shape them.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+My research is centered on leveraging machine learning and advanced spatial data analysis to unlock new insights in ecological patterns and processes. I am particularly interested in applying these technologies to better understand ecosystem functions and address complex challenges in restoration ecology, helping to restore and maintain healthy, resilient ecosystems.
+My work involves a combination of field research, data analysis, and ecological modeling, all with the aim of advancing conservation efforts and sustainable land management practices.
 
-What else do you need?
+Through my studies and research, I am committed to contributing to solutions that foster a harmonious balance between human activities and natural systems. Whether it's analyzing satellite imagery, interpreting ecological data, or working on restoration projects, I am passionate about making a positive impact on the environment.
 
-### My story
+Feel free to explore my work, and don't hesitate to reach out if you're interested in collaboration or learning more about my research.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
