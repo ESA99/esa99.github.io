@@ -1,0 +1,20 @@
+# _index.yml
+# Defines the structure and metadata for the GitHub page
+site:
+  title: "My GitHub Page"
+  description: "A personal portfolio"
+  baseurl: "" # Base URL if deployed at the root of a domain
+
+sections:
+  auto-detect: true  # Automatically detects markdown files in the 'content' folder and generates sections
+
+# Sidebar elements
+sidebar:
+  color: "#32CD32" # Grass green
+  items:
+    auto-generate: true  # Sidebar items will be generated based on the detected sections
+  picture: "/assets/profile.jpg" # Path to your picture
+
+# Footer (optional)
+footer:
+  text: "© 2024 Your Name"
