@@ -1,0 +1,72 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 10%;
+    min-width: 150px;
+    height: 100%;
+    background-color: #32CD32; /* Grass green */
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.sidebar img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu li {
+    margin: 15px 0;
+}
+
+.sidebar .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    transition: font-weight 0.3s;
+}
+
+.sidebar .menu a.active, .sidebar .menu a:hover {
+    font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 10%;
+    padding: 20px;
+    width: 90%;
+    overflow-y: auto;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #32CD32;
+    margin-bottom: 10px;
+}
