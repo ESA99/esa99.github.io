@@ -3,11 +3,12 @@ project:
   output-dir: docs
 
 website:
-  title: "Website | Emilio Sanchez"
+  title: "Emilio Sánchez"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - projects.qmd
       - about.qmd
 
 format:

@@ -1,0 +1,15 @@
+---
+title: "Projects"
+---
+
+# 2025
+
+-   **Master Thesis:** Analysis of the global canopy height model
+
+# 2024
+
+-   Detecting meadow orchards using a CNN.
+
+# 2022
+
+-   **Bachelor Thesis:** Spatio-Temporal analisis of a central european bog.

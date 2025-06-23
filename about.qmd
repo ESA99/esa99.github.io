@@ -1,8 +1,35 @@
 ---
-title: "About"
+title: "About Me"
+image: resources/portrait_outdoor.jpg
+about:
+  template: jolla
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/ESA99
+    - icon: orcid
+      text: Orcid
+      href: https://orcid.org/0009-0004-0348-5434
 ---
 
-Emilio Sánchez
 
-M.Sc. Landscape ecology at the [University of Münster](<https://www.uni-muenster.de/Landschaftsoekologie/>)
+## Education
+
+[University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) | Münster, GER
+M.Sc. in Landscape Ecology | Oct 2023 - present
+
+University Münster | Münster, GER
+B.Sc. in Landscape Ecology | Oct 2019 - Sept 2022
+
+## Experience
+
+EFTAS | Intern | Oct 2021 - Nov 2021
+
+## Skills
+
+
+
+## Personal Interests
+
 

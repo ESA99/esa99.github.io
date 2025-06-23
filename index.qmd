@@ -1,5 +1,5 @@
 ---
-title: "Website | Emilio Sanchez"
+title: "Website | Emilio Sánchez"
 ---
 
 My personal and academic website via quarto.
