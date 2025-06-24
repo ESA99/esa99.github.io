@@ -1,14 +1,14 @@
 ---
-title: "About Me"
+title: "CV"
 image: resources/portrait_outdoor.jpg
 about:
-  template: jolla
-  image-shape: round
+  template: solana
+  # image-shape: round
   links:
     - icon: github
       text: Github
       href: https://github.com/ESA99
-    - icon: orcid
+    - icon: mortarboard-fill
       text: Orcid
       href: https://orcid.org/0009-0004-0348-5434
 ---
@@ -16,20 +16,44 @@ about:
 
 ## Education
 
-[University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) | Münster, GER
-M.Sc. in Landscape Ecology | Oct 2023 - present
 
-University Münster | Münster, GER
-B.Sc. in Landscape Ecology | Oct 2019 - Sept 2022
+**Master of Science in Landscape Ecology**  
+[University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) GER, Oct 2023 - present  
+Final Grade: TBD (German grading scale)  
+Focus: Restoration Ecology, Remote Sensing, Soil Ecology  
+
+**Bachelor of Science in Landscape Ecology**  
+[University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) GER, Oct 2019 - Sept 2022  
+Final Grade: 1.4 (German grading scale)  
+
 
 ## Experience
 
-EFTAS | Intern | Oct 2021 - Nov 2021
+Freelance | Agricultural Field Control | Summer 2022/23/24/25
+
+LAKI | Ecological mapping | Intern & Job | May 2022 - July 2022
+
+EFTAS | Remote Sensing | Intern | Oct 2021 - Nov 2021  
 
 ## Skills
 
+- Organisational talent
+
+- Project Management (University training)
 
 
 ## Personal Interests
+
+- Sports  
+    - Biking and trail running  
+    - Team sports at University  
+
+- Woodworking
+
+- Gardening
+
+- DIY-Projects
+
+
 
 

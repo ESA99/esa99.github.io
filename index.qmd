@@ -1,7 +1,25 @@
 ---
-title: "Website | Emilio Sánchez"
+page-title: false
 ---
 
-My personal and academic website via quarto.
+<div class="hero">
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<img src="resources/portrait_outdoor.jpg" alt="Profile photo" class="hero-photo">
+
+## Landscape Ecologist in Training
+
+Hi, my name is Emilio Sánchez and I'm completing my Master's in Landscape Ecology with a focus on restoration ecology, remote sensing, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.
+
+<div class="hero-links">
+  [Explore My Work](projects.qmd){.btn .btn-primary}
+
+  <a href="https://github.com/ESA99" class="icon-link" target="_blank">
+    <i class="bi bi-github"></i>
+  </a>
+
+  <a href="https://orcid.org/0009-0004-0348-5434" class="icon-link" target="_blank">
+    <i class="bi bi-mortarboard-fill"></i>
+  </a>
+</div>
+
+</div>

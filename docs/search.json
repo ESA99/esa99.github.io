@@ -9,43 +9,50 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About Me",
+    "title": "CV",
     "section": "",
-    "text": "University Münster | Münster, GER M.Sc. in Landscape Ecology | Oct 2023 - present\nUniversity Münster | Münster, GER B.Sc. in Landscape Ecology | Oct 2019 - Sept 2022"
+    "text": "Master of Science in Landscape Ecology\nUniversity Münster GER, Oct 2023 - present\nFinal Grade: TBD (German grading scale)\nFocus: Restoration Ecology, Remote Sensing, Soil Ecology\nBachelor of Science in Landscape Ecology\nUniversity Münster GER, Oct 2019 - Sept 2022\nFinal Grade: 1.4 (German grading scale)"
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
-    "title": "About Me",
+    "title": "CV",
     "section": "",
-    "text": "University Münster | Münster, GER M.Sc. in Landscape Ecology | Oct 2023 - present\nUniversity Münster | Münster, GER B.Sc. in Landscape Ecology | Oct 2019 - Sept 2022"
+    "text": "Master of Science in Landscape Ecology\nUniversity Münster GER, Oct 2023 - present\nFinal Grade: TBD (German grading scale)\nFocus: Restoration Ecology, Remote Sensing, Soil Ecology\nBachelor of Science in Landscape Ecology\nUniversity Münster GER, Oct 2019 - Sept 2022\nFinal Grade: 1.4 (German grading scale)"
   },
   {
     "objectID": "about.html#experience",
     "href": "about.html#experience",
-    "title": "About Me",
+    "title": "CV",
     "section": "Experience",
-    "text": "Experience\nEFTAS | Intern | Oct 2021 - Nov 2021"
+    "text": "Experience\nFreelance | Agricultural Field Control | Summer 2022/23/24/25\nLAKI | Ecological mapping | Intern & Job | May 2022 - July 2022\nEFTAS | Remote Sensing | Intern | Oct 2021 - Nov 2021"
   },
   {
     "objectID": "about.html#skills",
     "href": "about.html#skills",
-    "title": "About Me",
+    "title": "CV",
     "section": "Skills",
-    "text": "Skills"
+    "text": "Skills\n\nOrganisational talent\nProject Management (University training)"
   },
   {
     "objectID": "about.html#personal-interests",
     "href": "about.html#personal-interests",
-    "title": "About Me",
+    "title": "CV",
     "section": "Personal Interests",
-    "text": "Personal Interests"
+    "text": "Personal Interests\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Website | Emilio Sánchez",
+    "title": "Emilio Sánchez",
     "section": "",
-    "text": "My personal and academic website via quarto.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Hi, my name is Emilio Sánchez and I’m completing my Master’s in Landscape Ecology with a focus on restoration ecology, remote sensing, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.\n\nExplore My Work"
+  },
+  {
+    "objectID": "index.html#landscape-ecologist-in-training",
+    "href": "index.html#landscape-ecologist-in-training",
+    "title": "Emilio Sánchez",
+    "section": "",
+    "text": "Hi, my name is Emilio Sánchez and I’m completing my Master’s in Landscape Ecology with a focus on restoration ecology, remote sensing, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.\n\nExplore My Work"
   }
 ]
