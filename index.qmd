@@ -1,6 +1,13 @@
 ---
 page-title: false
-navbar: false
+page-layout: full
+format:
+  html:
+    theme: default
+    css: styles.css
+    toc: false
+    navbar: false
+    sidebar: false
 ---
 
 <div class="hero">
