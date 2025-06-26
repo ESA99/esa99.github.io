@@ -62,14 +62,8 @@
    HOMEPAGE LAYOUT — NO NAVBAR/SIDEBAR
    ======================================= */
 
-/* Hide navbar and sidebar on homepage */
-body.page-index .navbar,
-body.page-index .sidebar {
-  display: none !important;
-}
-
 /* Remove layout padding/margins on homepage */
-body.page-index main.container,
+/*body.page-index main.container,
 body.page-index main {
   max-width: 100% !important;
   padding: 0 !important;
@@ -81,7 +75,7 @@ body.page-index main {
 }
 
 /* Center hero within page body */
-body.page-index .hero {
+/*body.page-index .hero {
   width: 100%;
   max-width: 700px;
   text-align: center;
