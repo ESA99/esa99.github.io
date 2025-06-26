@@ -1,5 +1,6 @@
 ---
 page-title: false
+navbar: false
 ---
 
 <div class="hero">
