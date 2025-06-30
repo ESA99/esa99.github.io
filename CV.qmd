@@ -21,19 +21,7 @@ Thesis: *Learning with Less Data*
 
 **B.Sc. Landscape Ecology** – [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) _(Oct 2019 - Sept 2022)_  
 Thesis: *Spatio-temporal analysis of a central european bog*  
-
   
----
-
-### Skills
-
-- R | Ecological- and Geodata
-- Data analysis and visualization
-- Scientific writing
-
-- Organisational talent
-- Project Management (University training)
-
 ---
 
 ### Experience
@@ -49,6 +37,17 @@ Ecological mappings of vegetation.
 **Intern**  
 _EFTAS Remote Sensing, Oct - Nov 2021_  
 Machine learning and reproducible workflows.
+
+---
+
+### Skills
+
+- R | Ecological- and Geodata
+- Data analysis and visualization
+- Scientific writing
+
+- Organisational talent
+- Project Management (University training)
 
 ---
 

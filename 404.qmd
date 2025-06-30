@@ -1,0 +1,29 @@
+---
+pagetitle: Page Not Found
+title-block: false
+page-layout: full
+format: html
+freeze: true
+sidebar: false
+toc: false
+---
+
+<div class="centered-content">
+
+![](resources/red-cat.jpg){width=450 align="center"}
+
+## 404 – Habitat Lost
+
+This confused feline couldn’t locate the ecological niche of the page you requested.
+
+It might have:  
+- Migrated  
+- Gone locally extinct  
+- Or just curled up in a different directory  
+
+Try heading [home](index.qmd) or [tracking through the projects](projects.qmd).  
+Found a bug? Report ot on [GitHub](https://github.com/ESA99/esa99.github.io).
+Still lost? [Reach out](mailto:l79fcnwe9@mozmail.com)—we'll create new habitat.
+
+</div>
+

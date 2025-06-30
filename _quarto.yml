@@ -5,13 +5,21 @@ project:
 website:
   title: "Emilio Sánchez"
   navbar:
+    # logo: resources/logo.png
+    logo-alt: ESA99 Logo
     left:
       # - href: index.qmd
       #   text: Home
       - projects.qmd
-      - href: CV.qmd
-        text: CV
+      # - href: CV.qmd
+      #   text: CV
       # - about.qmd
+    right: 
+      - CV.qmd
+    tools:
+      - href: https://github.com
+        icon: github
+    search: false
 
 format:
   html:

@@ -13,4 +13,4 @@ title: "Projects"
 # 2022
 
 -   **Bachelor Thesis:** Spatio-Temporal analysis of a central european bog.
-    - [Recent trends in moisture conditions across European peatlands](https://doi.org/10.1016/j.rsase.2024.101385)
+    - [Recent trends in moisture conditions across European peatlands](https://doi.org/10.1016/j.rsase.2024.101385){.external target="_blank"}
