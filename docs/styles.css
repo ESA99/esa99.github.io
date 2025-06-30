@@ -1,32 +1,30 @@
 /* css styles */
-
 /* =======================================
-   HERO SECTION (CLEAN VERSION)
+   HERO SECTION
    ======================================= */
 
-/* Main hero container */
-/* Center the entire hero section */
+/* Container for the hero section — centers and limits width */
 .hero {
-  max-width: 700px;           /* limit width for readability */
-  margin: 5rem auto;          /* top/bottom margin + center horizontally */
-  text-align: center;         /* center text and inline elements */
-  padding: 0 1rem;            /* small side padding for small screens */
+  max-width: 700px;
+  margin: 2.5rem auto;
+  text-align: center;
+  padding: 0 1rem;
   box-sizing: border-box;
 }
 
-/* Profile image */
+/* Profile image styling */
 .hero-photo {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1.5rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Hero headline */
+/* Hero heading (e.g. your name or title) */
 .hero h2 {
-  font-size: 2.2rem;
+  font-size: 2.0rem;
   margin-bottom: 1rem;
   color: #2a2a2a;
 }
@@ -39,25 +37,22 @@
   margin: 0 auto 1.5rem;
 }
 
-/* Links and icons */
+/* Container for buttons or social links */
 .hero-links {
   margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* allows wrapping on small screens */
-  gap: 1rem; /* space between items */
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.3rem;
 }
 
-.hero-links .btn {
-  /* margin-right: 1rem; */ /* not needed with flex + gap */
-}
-
-/* Icon links */
+/* Icon link styling */
 .icon-link {
   font-size: 1.5rem;
-  margin: 0 0.4rem;
   color: #333;
+  text-decoration: none;
 }
 
 .icon-link:hover {
@@ -65,100 +60,143 @@
 }
 
 
-/* Hide navbar and sidebar only on homepage */
-body.page-index .navbar,
-body.page-index .sidebar {
-  display: none !important;
-}
+/* =======================================
+   HOMEPAGE LAYOUT — NO NAVBAR/SIDEBAR
+   ======================================= */
 
-/* Remove page padding/margin that remains because of navbar/sidebar */
+/* Remove layout padding/margins on homepage */
 body.page-index main.container,
 body.page-index main {
   max-width: 100% !important;
   padding: 0 !important;
   margin: 0 auto !important;
-}
-
-/* Ensure the hero fills and is centered in full viewport */
-body.page-index {
-  padding: 0 !important;
-  margin: 0 auto !important;
-}
-
-/* Only for index page center the content*/
-body.page-index main {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 0 1rem;
 }
 
+/* Center hero within page body */
 body.page-index .hero {
-  max-width: 700px;
   width: 100%;
+  max-width: 700px;
   text-align: center;
 }
 
 
 /* =======================================
-   GLOBAL ELEMENTS (BODY, TEXT, LINKS)
+   GLOBAL STYLES
    ======================================= */
 
-/* Page background and default text color */
+/* Background and text color for entire site */
 body {
   background-color: #fdfdfd;
   color: #333333;
 }
 
-/* Hyperlinks */
+/* Link colors */
 a {
   color: #007acc;
 }
-
 a:hover {
   color: #005f99;
 }
 
+/* Button styling (primary) */
 .btn-primary {
-  background-color: #99C644 !important; /* your new bg color, e.g., green */
+  background-color: #99C644 !important;
   border-color: #99C644 !important;
   color: white !important;
 }
-
 .btn-primary:hover {
-  background-color: #7A9C33 !important; /* slightly darker green on hover */
+  background-color: #7A9C33 !important;
   border-color: #7A9C33 !important;
 }
 
 
 /* =======================================
-   NAVBAR STYLING
+   NAVBAR STYLING (MINIMAL)
    ======================================= */
 
-/* Navbar site title */
+/* Site title/logo in navbar */
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: 600;
   color: #333 !important;
 }
 
-/* (Optional) navbar background and links — uncomment to customize
+/* Uncomment below to customize navbar background and links
 .navbar {
   background-color: #ffffff;
 }
-
 .navbar a {
   color: #333;
 }
 */
 
-
 /* =======================================
-   CODE BLOCKS (OPTIONAL)
+   CV Styling section
    ======================================= */
 
-pre, code {
+.cv-container {
+  display: flex;
+  max-width: 1150px;
+  margin: auto;
+  padding: 0rem 1rem;
+  gap: 2rem;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.cv-main {
+  flex: 1;
+}
+
+/* CV Sidbar settings */
+.cv-sidebar {
+  width: 300px;
+  padding-left: 1.5rem;
+  border-left: 1px solid #ccc;
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* CV Photo styling */
+.cv-photo {
+  width: 200px;
+  height: 270px;
+  border-radius: 5%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.cv-basic-info {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.cv-icons a {
+  font-size: 1.2rem;
+  margin: 0 0.3rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.cv-icons a:hover {
+  color: #99C644;
+}
+
+
+
+/* =======================================
+   CODE BLOCKS (Optional)
+   ======================================= */
+
+pre,
+code {
   background-color: #f4f4f4;
   font-family: 'Courier New', monospace;
   padding: 0.2rem 0.4rem;

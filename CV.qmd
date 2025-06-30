@@ -1,0 +1,87 @@
+---
+title: "CV"
+format:
+  html:
+    theme: default
+    css: styles.css
+    toc: false
+    page-layout: full
+---
+
+<div class="cv-container">
+
+<!-- MAIN COLUMN -->
+<div class="cv-main">
+
+### Education
+
+**M.Sc. Landscape Ecology** – [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) _(Oct 2023 - present)_  
+Focus: *Remote Sensing, Restoration Ecology, Soil Ecology*  
+Thesis: *Learning with Less Data*  
+
+**B.Sc. Landscape Ecology** – [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) _(Oct 2019 - Sept 2022)_  
+Thesis: *Spatio-temporal analysis of a central european bog*  
+
+  
+---
+
+### Skills
+
+- R | Ecological- and Geodata
+- Data analysis and visualization
+- Scientific writing
+
+- Organisational talent
+- Project Management (University training)
+
+---
+
+### Experience
+
+**Field Inspector**  
+_Freelance, annualy summer 2022 - 2025_  
+Control of agricultural fields.  
+
+**Ecological Mapping**  
+_LAKI GBR, May 2022 - July 2022_  
+Ecological mappings of vegetation.
+
+**Intern**  
+_EFTAS Remote Sensing, Oct - Nov 2021_  
+Machine learning and reproducible workflows.
+
+---
+
+### Activities
+
+- Sports  
+    - Biking and trail running  
+    - Team sports at University  
+
+- Woodworking
+
+- Gardening
+
+- DIY-Projects
+
+</div>
+
+<!-- SIDEBAR -->
+<aside class="cv-sidebar" markdown="1">
+
+![](resources/portrait_outdoor.jpg){.cv-photo}
+
+**Emilio Sánchez**  
+_M.Sc. Landscape Ecology_  
+esanchez@uni-muenster.de  
+<!-- +123 456 7890 -->
+
+<div class="cv-icons">
+  <a href="https://github.com/ESA99"><i class="bi bi-github"></i></a>
+  <a href="https://orcid.org/0009-0004-0348-5434"><i class="ai ai-orcid"></i></a>
+  <a href="mailto:esanchez@uni-muenster.de"><i class="bi bi-envelope-fill"></i></a>
+</div>
+
+</aside>
+
+</div>
