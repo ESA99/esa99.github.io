@@ -10,12 +10,13 @@ website:
     left:
       # - href: index.qmd
       #   text: Home
-      - projects.qmd
+      - pages/projects.qmd
+      - pages/resources.qmd
       # - href: CV.qmd
       #   text: CV
       # - about.qmd
     right: 
-      - CV.qmd
+      - pages/CV.qmd
     tools:
       - href: https://github.com/ESA99
         icon: github

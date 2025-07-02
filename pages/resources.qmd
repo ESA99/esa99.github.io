@@ -1,0 +1,17 @@
+---
+title: "Resources"
+page-layout: full
+format: html
+freeze: true
+sidebar: false
+toc: false
+---
+
+<div class="centered-content">
+
+
+## This page is currently under construction.
+
+![](../resources/penguins.jpg){width=450 align="center"}
+
+</div>
