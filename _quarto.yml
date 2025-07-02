@@ -17,7 +17,7 @@ website:
     right: 
       - CV.qmd
     tools:
-      - href: https://github.com
+      - href: https://github.com/ESA99
         icon: github
     search: false
 
