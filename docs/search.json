@@ -1,24 +1,38 @@
 [
   {
-    "objectID": "pages/CV.html",
-    "href": "pages/CV.html",
-    "title": "CV",
+    "objectID": "pages/gchm.html",
+    "href": "pages/gchm.html",
+    "title": "Deep learning in the woods",
     "section": "",
-    "text": "Education\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Learning with Less Data\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central european bog\n\n\n\nExperience\nField Inspector\nFreelance, annualy summer 2022 - 2025\nControl of agricultural fields.\nEcological Mapping\nLAKI GBR, May 2022 - July 2022\nEcological mappings of vegetation.\nIntern\nEFTAS Remote Sensing, Oct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nR | Ecological- and Geodata\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects\n\n\n\n\n\n\nEmilio Sánchez\nM.Sc. Landscape Ecology\nesanchez@uni-muenster.de"
+    "text": "Deep Learning in the Woods: what can we learn about canopy height from optical remote sensing?\n\n\n\nThe model has not learned a connection of spectral values to canopy height.\n\nOther variables like location and biome play a more important role."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Emilio Sánchez",
+    "objectID": "pages/gchm.html#research-question",
+    "href": "pages/gchm.html#research-question",
+    "title": "Deep learning in the woods",
     "section": "",
-    "text": "Hi, my name is Emilio Sánchez and I’m completing my Master’s in Landscape Ecology with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+    "text": "Deep Learning in the Woods: what can we learn about canopy height from optical remote sensing?\n\n\n\nThe model has not learned a connection of spectral values to canopy height.\n\nOther variables like location and biome play a more important role."
   },
   {
-    "objectID": "index.html#emilio-sánchez",
-    "href": "index.html#emilio-sánchez",
-    "title": "Emilio Sánchez",
-    "section": "",
-    "text": "Hi, my name is Emilio Sánchez and I’m completing my Master’s in Landscape Ecology with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+    "objectID": "pages/gchm.html#results",
+    "href": "pages/gchm.html#results",
+    "title": "Deep learning in the woods",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "pages/gchm.html#slides",
+    "href": "pages/gchm.html#slides",
+    "title": "Deep learning in the woods",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "pages/gchm.html#sources",
+    "href": "pages/gchm.html#sources",
+    "title": "Deep learning in the woods",
+    "section": "Sources",
+    "text": "Sources"
   },
   {
     "objectID": "pages/about.html",
@@ -56,10 +70,31 @@
     "text": "Personal Interests\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Emilio Sánchez",
+    "section": "",
+    "text": "Hi, my name is Emilio Sánchez and I’m completing my Master’s in Landscape Ecology with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+  },
+  {
+    "objectID": "index.html#emilio-sánchez",
+    "href": "index.html#emilio-sánchez",
+    "title": "Emilio Sánchez",
+    "section": "",
+    "text": "Hi, my name is Emilio Sánchez and I’m completing my Master’s in Landscape Ecology with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+  },
+  {
+    "objectID": "pages/CV.html",
+    "href": "pages/CV.html",
+    "title": "CV",
+    "section": "",
+    "text": "Education\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Learning with Less Data\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central european bog\n\n\n\nExperience\nField Inspector\nFreelance, annualy summer 2022 - 2025\nControl of agricultural fields.\nEcological Mapping\nLAKI GBR, May 2022 - July 2022\nEcological mappings of vegetation.\nIntern\nEFTAS Remote Sensing, Oct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nR | Ecological- and Geodata\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects\n\n\n\n\n\n\nEmilio Sánchez\nM.Sc. Landscape Ecology\nesanchez@uni-muenster.de"
+  },
+  {
     "objectID": "pages/projects.html",
     "href": "pages/projects.html",
     "title": "Projects",
     "section": "",
-    "text": "2025\n\nMaster Thesis: Analysis of the global canopy height model\n\n\n\n2024\n\nDetecting meadow orchards using a CNN.\n\n\n\n2022\n\nBachelor Thesis: Spatio-Temporal analysis of a central european bog.\n\nRecent trends in moisture conditions across European peatlands"
+    "text": "2025\n\nMaster Thesis: Deep Learning in the Woods: what can we learn about canopy height from optical remote sensing?\n\n\n\n2024\n\nDetecting meadow orchards using a CNN.\n\n\n\n2022\n\nBachelor Thesis: Spatio-Temporal analysis of a central european bog.\n\nRecent trends in moisture conditions across European peatlands"
   }
 ]

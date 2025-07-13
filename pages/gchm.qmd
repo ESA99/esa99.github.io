@@ -1,0 +1,32 @@
+---
+title: "Deep learning in the woods"
+---
+
+## Research question
+
+Deep Learning in the Woods: what can we learn about canopy height from optical remote sensing?
+
+### Hypothesis
+
+1. The model has not learned a connection of spectral values to canopy height.  
+2. Other variables like location and biome play a more important role.  
+
+## Results
+
+
+![](../resources/gchm_result.png)
+
+#### Colour blind friendly result plots
+
+
+## Data
+
+Tiles selected for the analysis.
+
+## Slides
+
+Some link or so to the slides.
+
+## Sources
+
+Nico Lang
