@@ -3,11 +3,25 @@ title: "Deep learning in the woods"
 format:
   html:
     embed-resources: true
+    page-layout: full
+    css: ../styles/gchm.css
+    toc: false
+    theme: none
 ---
+
+<div class="custom-sidebar">
+  <h2>Navigation</h2>
+  <nav id="dynamic-toc"></nav>
+</div>
+
+
+## Introduction
+
+This page documents the progress of my research on the global canopy height model by [Nico Lang (2024)](https://langnico.github.io/globalcanopyheight/). For the full data and scripts please visit my [GitHub](https://github.com/ESA99) and for other projects and more information about me visit my [Main Site](https://esa99.github.io).
 
 ## Research question
 
-Deep Learning in the Woods: what can we learn about canopy height from optical remote sensing?
+The main objective of this research is to uncover the prediction mechanisms of the CNN. Central question of the work is: **What can we learn about canopy height from optical remote sensing?**
 
 ### Hypothesis
 
@@ -16,15 +30,18 @@ Deep Learning in the Woods: what can we learn about canopy height from optical r
 
 ## Results
 
+The preliminary results already show no clear trend after spectral manipultation (Fig. 1). Differences between tiles have shown to be more significant than spectral manipulation, suggesting that the actual influence of spectral properties in the creation of the prediction is very low or none. Relationships between the location of the image tile and the predicted canopy height could already be observed. They will be properly analysed and shown at a later stage of this project.
 
-![](../resources/gchm_result.png)
+![Fig. 1: Average difference to the original prediction for all manipulated bands and degrees of manipulation.](../resources/gchm_result.png)
 
-#### Colour blind friendly result plots
+### Colour blind friendly result plots
 
+Soon to come:)
 
 ## Data
 
-These are the 11 tiles that were used for the analysis of the model. They were choosen to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper.
+These are the 11 tiles that were used for the analysis of the model. They were choosen to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper.  
+
 
 ```{r}
 #| message: false
@@ -48,8 +65,33 @@ tmap::tm_shape(tiles) +
 
 ## Slides
 
-Some link or so to the slides.
+PDF link of the slides.
+
+The slides used at the ILÖK Graduate Conference are available [here]().
+
 
 ## Sources
 
 Nico Lang
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toc = document.getElementById("dynamic-toc");
+  const headers = document.querySelectorAll("h2, h3");
+
+  headers.forEach((header) => {
+    const id = header.id || header.textContent.toLowerCase().replace(/\s+/g, "-");
+    header.id = id;
+
+    const link = document.createElement("a");
+    link.href = `#${id}`;
+    link.textContent = header.textContent;
+    link.style.marginLeft = header.tagName === "H3" ? "1rem" : "0";
+    toc.appendChild(link);
+  });
+});
+</script>

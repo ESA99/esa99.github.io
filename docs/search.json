@@ -1,38 +1,38 @@
 [
   {
-    "objectID": "pages/gchm.html",
-    "href": "pages/gchm.html",
+    "objectID": "pages/gchm.html#introduction",
+    "href": "pages/gchm.html#introduction",
     "title": "Deep learning in the woods",
-    "section": "",
-    "text": "Deep Learning in the Woods: what can we learn about canopy height from optical remote sensing?\n\n\n\nThe model has not learned a connection of spectral values to canopy height.\n\nOther variables like location and biome play a more important role."
+    "section": "Introduction",
+    "text": "Introduction\nThis page documents the progress of my research on the global canopy height model by Nico Lang (2024). For the full data and scripts please visit my GitHub and for other projects and more information about me visit my Main Site."
   },
   {
     "objectID": "pages/gchm.html#research-question",
     "href": "pages/gchm.html#research-question",
     "title": "Deep learning in the woods",
-    "section": "",
-    "text": "Deep Learning in the Woods: what can we learn about canopy height from optical remote sensing?\n\n\n\nThe model has not learned a connection of spectral values to canopy height.\n\nOther variables like location and biome play a more important role."
+    "section": "Research question",
+    "text": "Research question\nThe main objective of this research is to uncover the prediction mechanisms of the CNN. Central question of the work is: What can we learn about canopy height from optical remote sensing?\n\nHypothesis\n\nThe model has not learned a connection of spectral values to canopy height.\n\nOther variables like location and biome play a more important role."
   },
   {
     "objectID": "pages/gchm.html#results",
     "href": "pages/gchm.html#results",
     "title": "Deep learning in the woods",
     "section": "Results",
-    "text": "Results\n\n\nColour blind friendly result plots"
+    "text": "Results\nThe preliminary results already show no clear trend after spectral manipultation (Fig. 1). Differences between tiles have shown to be more significant than spectral manipulation, suggesting that the actual influence of spectral properties in the creation of the prediction is very low or none. Relationships between the location of the image tile and the predicted canopy height could already be observed. They will be properly analysed and shown at a later stage of this project.\n\n\n\nFig. 1: Average difference to the original prediction for all manipulated bands and degrees of manipulation.\n\n\n\nColour blind friendly result plots\nSoon to come:)"
   },
   {
     "objectID": "pages/gchm.html#data",
     "href": "pages/gchm.html#data",
     "title": "Deep learning in the woods",
     "section": "Data",
-    "text": "Data\n\n\n\n\n\n\nTiles selected for the analysis."
+    "text": "Data\nThese are the 11 tiles that were used for the analysis of the model. They were choosen to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper."
   },
   {
     "objectID": "pages/gchm.html#slides",
     "href": "pages/gchm.html#slides",
     "title": "Deep learning in the woods",
     "section": "Slides",
-    "text": "Slides\nSome link or so to the slides."
+    "text": "Slides\nPDF link of the slides.\nThe slides used at the ILÖK Graduate Conference are available here."
   },
   {
     "objectID": "pages/gchm.html#sources",
@@ -102,6 +102,6 @@
     "href": "pages/projects.html",
     "title": "Projects",
     "section": "",
-    "text": "2025\n\nMaster Thesis: Deep Learning in the Woods: what can we learn about canopy height from optical remote sensing?\n\n\n\n2024\n\nDetecting meadow orchards using a CNN.\n\n\n\n2022\n\nBachelor Thesis: Spatio-Temporal analysis of a central european bog.\n\nRecent trends in moisture conditions across European peatlands"
+    "text": "2025\n\nMaster Thesis:\nDeep Learning in the Woods: what can we learn about canopy height from optical remote sensing?\n\n\n\n2024\n\nDetecting meadow orchards using a CNN.\n\n\n\n2022\n\nBachelor Thesis: Spatio-Temporal analysis of a central european bog.\n\nRecent trends in moisture conditions across European peatlands"
   }
 ]

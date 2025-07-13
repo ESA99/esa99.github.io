@@ -1,0 +1,147 @@
+/* css styles */
+/* Canopy height model project page */
+
+/* ---------------------
+   GENERAL PAGE STYLING
+---------------------- */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f9f7f3; /* Soft beige */
+  color: #1e1e1e;
+}
+
+h1, h2, h3 {
+  color: #2b4c7e; /* Muted blue accent */
+  border-bottom: 2px solid #d9e0ef;
+  padding-bottom: 0.3em;
+}
+
+a {
+  color: #1e567a;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------
+   HIDE GLOBAL NAVBAR
+---------------------- */
+.navbar, .quarto-title-banner {
+  display: none !important;
+}
+
+/* ---------------------
+   SIDEBAR STYLING
+---------------------- */
+
+/* Sidebar layout */
+.custom-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background-color: #264e36;
+  color: #e6f9ef;
+  padding: 1.5rem 1rem;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.custom-sidebar h2 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+.custom-sidebar a {
+  color: #e6f9ef;
+  text-decoration: none;
+  display: block;
+  margin: 0.3rem 0;
+}
+
+.custom-sidebar a:hover {
+  color: #b6f5d2;
+}
+
+/* Main content shift */
+body {
+  margin-left: 260px;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* GitHub icon styling */
+.github-icon {
+  font-size: 1.6rem;
+  color: #e6f9ef;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.github-icon:hover {
+  color: #b5f5d2;
+}
+
+/* Back link styling */
+.back-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: #ffffff;
+}
+
+/* TOC links */
+.toc-nav a {
+  font-size: 0.9rem;
+  margin-left: 0;
+}
+
+.toc-nav a[href*="#-"] {
+  margin-left: 1rem;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ---------------------
+   MAIN CONTENT STYLING
+---------------------- */
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+pre, code {
+  background-color: #eef1f3;
+  border-radius: 4px;
+  padding: 0.3em 0.5em;
+}
+
+/* ---------------------
+   INTERACTIVE MAP AREA
+---------------------- */
+
+.leaflet-container {
+  width: 100% !important;
+  height: 500px !important;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+}
