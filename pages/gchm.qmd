@@ -1,5 +1,8 @@
 ---
 title: "Deep learning in the woods"
+format:
+  html:
+    embed-resources: true
 ---
 
 ## Research question
@@ -21,7 +24,27 @@ Deep Learning in the Woods: what can we learn about canopy height from optical r
 
 ## Data
 
-Tiles selected for the analysis.
+These are the 11 tiles that were used for the analysis of the model. They were choosen to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper.
+
+```{r}
+#| message: false
+#| echo: false
+
+library(tmap)
+library(sf)
+
+tiles <- st_read("../resources/data/not_final_tiles.gpkg", quiet = TRUE)
+
+tmap::tmap_mode("view")
+tmap::tm_shape(tiles) +
+  tmap::tm_borders(col = "red", lwd = 2) +
+  tmap::tm_text("Name", size = 0.8, col = "black")+
+  tmap::tm_view(
+                basemaps = c("Esri.WorldImagery", "OpenStreetMap"),
+                set.view = c(10.0, 20.0, 2))  # longitude, latitude, zoom level
+
+```
+
 
 ## Slides
 
