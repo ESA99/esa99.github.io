@@ -7,6 +7,8 @@ format:
     css: ../styles/gchm.css
     toc: false
     theme: none
+    text: |
+      <meta name="viewport" content="width=1024">
 ---
 
 <div class="custom-sidebar">
