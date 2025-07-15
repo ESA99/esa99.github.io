@@ -20,7 +20,7 @@ Hi, my name is Emilio Sánchez and I'm completing my Master's in Landscape Ecolo
 <hr class="hero-separator">
 
 <div class="hero-links">
-  <a href="projects.qmd" class="btn btn-primary">Explore My Work</a>
+  <a href="pages/projects.qmd" class="btn btn-primary">Explore My Work</a>
 
   <a href="https://github.com/ESA99" class="icon-link" target="_blank">
     <i class="bi bi-github"></i>

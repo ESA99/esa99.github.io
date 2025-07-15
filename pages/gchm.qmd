@@ -11,6 +11,12 @@ format:
 
 <div class="custom-sidebar">
   <nav id="dynamic-toc"></nav>
+  
+  <a href="https://github.com/ESA99/canopy_height" class="icon-link" target="_blank" aria-label="GitHub">
+  <i class="bi bi-github"></i>
+</a>
+  
+  
 </div>
 
 

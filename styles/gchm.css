@@ -93,6 +93,24 @@ a:hover {
   }
 }
 
+/* Github icon link */
+.icon-link {
+  color: #e6f9ef;
+  font-size: 28px;
+  position: absolute; /* or absolute inside sidebar */
+  bottom: 1rem;
+  left: 2rem;
+  z-index: 1100;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.icon-link:hover {
+  color: #b6f5d2;
+  text-decoration: none;
+}
+
+
 
 /* Main content shift */
 body {

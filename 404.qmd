@@ -21,7 +21,7 @@ It might have:
 - Gone locally extinct  
 - Or just curled up in a different directory  
 
-Try heading [home](index.qmd) or [tracking through the projects](projects.qmd).  
+Try heading [home](index.qmd) or [tracking through the projects](pages/projects.qmd).  
 Found a bug? Report ot on [GitHub](https://github.com/ESA99/esa99.github.io).
 Still lost? [Reach out](mailto:l79fcnwe9@mozmail.com)—we'll create new habitat.
 
