@@ -10,7 +10,6 @@ format:
 ---
 
 <div class="custom-sidebar">
-  <h2>Navigation</h2>
   <nav id="dynamic-toc"></nav>
 </div>
 

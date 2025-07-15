@@ -70,6 +70,30 @@ a:hover {
   color: #b6f5d2;
 }
 
+/* Mobile Devices sidebar settings */
+@media (max-width: 768px) {
+  .custom-sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    box-shadow: none;
+    overflow-y: visible;
+  }
+
+  .custom-sidebar h2 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .custom-sidebar a {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+
 /* Main content shift */
 body {
   margin-left: 260px;
