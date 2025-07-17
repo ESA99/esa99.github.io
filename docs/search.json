@@ -39,7 +39,7 @@
     "href": "pages/gchm.html#sources",
     "title": "Deep learning in the woods",
     "section": "Sources",
-    "text": "Sources\nNico Lang"
+    "text": "Sources\nLang, N., Jetz, W., Schindler, K., & Wegner, J. D. (2023).\nA high-resolution canopy height model of the Earth.\nNature Ecology & Evolution, 1-12.\n@article{lang2023high,\n  title={A high-resolution canopy height model of the Earth},\n  author={Lang, Nico and Jetz, Walter and Schindler, Konrad and Wegner, Jan Dirk},\n  journal={Nature Ecology \\& Evolution},\n  pages={1--12},\n  year={2023},\n  publisher={Nature Publishing Group UK London}\n}"
   },
   {
     "objectID": "pages/about.html",

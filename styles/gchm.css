@@ -34,125 +34,28 @@ a:hover {
 }
 
 /* ---------------------
-   SIDEBAR STYLING
+   BUTTONS
 ---------------------- */
-
-/* Sidebar layout */
-.custom-sidebar {
+.github-button {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 240px;
-  height: 100%;
-  background-color: #264e36;
-  color: #e6f9ef;
-  padding: 1.5rem 1rem;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
   z-index: 1000;
-  font-family: 'Segoe UI', sans-serif;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
 }
 
-.custom-sidebar h2 {
-  font-size: 1.1rem;
-  margin-top: 1rem;
-  color: #ffffff;
+.github-button:hover {
+  background: #f0f0f0;
+  color: #000;
 }
 
-.custom-sidebar a {
-  color: #e6f9ef;
-  text-decoration: none;
-  display: block;
-  margin: 0.3rem 0;
-}
-
-.custom-sidebar a:hover {
-  color: #b6f5d2;
-}
-
-
-/* Github icon link */
-.icon-link {
-  color: #e6f9ef;
-  font-size: 28px;
-  position: absolute; /* or absolute inside sidebar */
-  bottom: 1rem;
-  left: 2rem;
-  z-index: 1100;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.icon-link:hover {
-  color: #b6f5d2;
-  text-decoration: none;
-}
-
-
-
-/* Main content shift */
-body {
-  margin-left: 260px;
-  padding: 2rem;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* GitHub icon styling */
-.github-icon {
-  font-size: 1.6rem;
-  color: #e6f9ef;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 2rem;
-}
-
-.github-icon:hover {
-  color: #b5f5d2;
-}
-
-/* Back link styling */
-.back-link {
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  display: inline-block;
-  color: #ffffff;
-}
-
-/* TOC links */
-.toc-nav a {
-  font-size: 0.9rem;
-  margin-left: 0;
-}
-
-.toc-nav a[href*="#-"] {
-  margin-left: 1rem;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-
-/* ---------------------
-   MAIN CONTENT STYLING
----------------------- */
-
-main {
-  padding: 2rem;
-  max-width: 900px;
-}
-
-section {
-  margin-bottom: 3rem;
-}
-
-pre, code {
-  background-color: #eef1f3;
-  border-radius: 4px;
-  padding: 0.3em 0.5em;
-}
 
 /* ---------------------
    INTERACTIVE MAP AREA
