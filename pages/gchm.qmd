@@ -67,7 +67,7 @@ tmap::tm_shape(tiles) +
 
 ## Slides
 
-Here can you find the presentation of the ILÖK Graduate Conference:
+<!-- [Here](/resources/gchm.pdf) can you find the presentation of the ILÖK Graduate Conference. -->
 
 <a href="/resources/gchm.pdf" class="btn btn-primary" target="_blank">Conference slides (PDF)</a>
 
