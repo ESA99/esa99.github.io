@@ -11,7 +11,7 @@
     "href": "pages/gchm.html#research-question",
     "title": "Deep learning in the woods",
     "section": "Research question",
-    "text": "Research question\nThe main objective of this research is to uncover the prediction mechanisms of the CNN. Central question of the work is: What can we learn about canopy height from optical remote sensing?\n\nHypothesis\n\nThe model has not learned a connection of spectral values to canopy height.\n\nOther variables like location and biome play a more important role."
+    "text": "Research question\nCan canopy height be derived from spectral data?\nThe main objective of this research is to uncover the prediction mechanisms of the CNN. Central question of the work is What can be learned about canopy height from optical remote sensing.\n\nHypothesis\n\nThe model has not learned a connection of spectral values to canopy height.\n\nOther variables like location and biome play a more important role."
   },
   {
     "objectID": "pages/gchm.html#results",
@@ -32,7 +32,7 @@
     "href": "pages/gchm.html#slides",
     "title": "Deep learning in the woods",
     "section": "Slides",
-    "text": "Slides\nThe slides used at the ILÖK Graduate Conference are available here.\nView My Slides (PDF)"
+    "text": "Slides\nHere can you find the presentation of the ILÖK Graduate Conference:\nConference slides (PDF)"
   },
   {
     "objectID": "pages/gchm.html#sources",
