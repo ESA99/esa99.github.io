@@ -52,7 +52,7 @@ These are the 11 tiles that were used for the analysis of the model. They were c
 library(tmap)
 library(sf)
 
-tiles <- st_read("../resources/data/not_final_tiles.gpkg", quiet = TRUE)
+tiles <- st_read("../resources/data/final_tile_selection.gpkg", quiet = TRUE)
 
 tmap::tmap_mode("view")
 tmap::tm_shape(tiles) +
