@@ -5,7 +5,7 @@ title: "Projects"
 # 2025
 
 -   **Master Thesis:**  
-[Deep Learning in the Woods: what can we learn about canopy height from optical remote sensing?](gchm.qmd)
+[Canopy height mapping from optical remote sensing data: reassessing deep learning methods](gchm.qmd)
 
 # 2024
 

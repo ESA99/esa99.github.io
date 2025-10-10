@@ -1,45 +1,80 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Emilio Sánchez",
+    "section": "",
+    "text": "Hi, my name is Emilio Sánchez and I’m completing my Master’s in Landscape Ecology with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+  },
+  {
+    "objectID": "index.html#emilio-sánchez",
+    "href": "index.html#emilio-sánchez",
+    "title": "Emilio Sánchez",
+    "section": "",
+    "text": "Hi, my name is Emilio Sánchez and I’m completing my Master’s in Landscape Ecology with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+  },
+  {
+    "objectID": "pages/CV.html",
+    "href": "pages/CV.html",
+    "title": "CV",
+    "section": "",
+    "text": "Education\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector\nFreelance, annualy summer 2022 - 2025\nControl of agricultural fields.\nEcological Mapping\nLAKI GBR, May 2022 - July 2022\nEcological mappings of vegetation.\nIntern\nEFTAS Remote Sensing, Oct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nR | Ecological- and Geodata\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects\n\n\n\n\n\n\nEmilio Sánchez\nM.Sc. Landscape Ecology\nesanchez@uni-muenster.de"
+  },
+  {
     "objectID": "pages/gchm.html#introduction",
     "href": "pages/gchm.html#introduction",
-    "title": "Deep learning in the woods",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
     "section": "Introduction",
     "text": "Introduction\nThis page documents the progress of my research on the global canopy height model by Nico Lang (2024). For the full data and scripts please visit my GitHub and for other projects and more information about me visit my Main Site."
   },
   {
     "objectID": "pages/gchm.html#research-question",
     "href": "pages/gchm.html#research-question",
-    "title": "Deep learning in the woods",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
     "section": "Research question",
     "text": "Research question\nCan canopy height be derived from spectral data?\nThe main objective of this research is to uncover the prediction mechanisms of the CNN. Central question of the work is What can be learned about canopy height from optical remote sensing.\n\nHypothesis\n\nThe model has not learned a connection of spectral values to canopy height.\n\nOther variables like location and biome play a more important role."
   },
   {
-    "objectID": "pages/gchm.html#results",
-    "href": "pages/gchm.html#results",
-    "title": "Deep learning in the woods",
-    "section": "Results",
-    "text": "Results\nThe preliminary results already show no clear trend after spectral manipultation (Fig. 1). Differences between tiles have shown to be more significant than spectral manipulation, suggesting that the actual influence of spectral properties in the creation of the prediction is very low or none. Relationships between the location of the image tile and the predicted canopy height could already be observed. They will be properly analysed and shown at a later stage of this project.\n\n\n\nFig. 1: Average difference to the original prediction for all manipulated bands and degrees of manipulation.\n\n\n\nColour blind friendly result plots\nSoon to come:)"
+    "objectID": "pages/gchm.html#methods",
+    "href": "pages/gchm.html#methods",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "Methods",
+    "text": "Methods\nThis research builds on the model architecture created by Lang et al. (2023). Their promising global canopy height prediction model serves as a great base for investigating the mechanisms behind optical data canopy height predictions. By observing changes in the resulting predic- tions, after manipulating the input data, we would expect to detect (linear) patterns, if spectral properties would provide a strong explainatory value.\nConsistent with the original paper, Sentinel-2 data and ESA-WordCover data from 2020 was used. The code was mainly left unchanged and one function added to allow controlled manipulation of single input bands. A workflow was created in a single script to allow easy application,"
   },
   {
-    "objectID": "pages/gchm.html#data",
-    "href": "pages/gchm.html#data",
-    "title": "Deep learning in the woods",
-    "section": "Data",
-    "text": "Data\nThese are the 11 tiles that were used for the analysis of the model. They were choosen to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper."
+    "objectID": "pages/gchm.html#research-locations",
+    "href": "pages/gchm.html#research-locations",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "Research locations",
+    "text": "Research locations\nIn total 11 tiles were used for the analysis of the model. They were selected to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper."
+  },
+  {
+    "objectID": "pages/gchm.html#results",
+    "href": "pages/gchm.html#results",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "Results",
+    "text": "Results\nThe preliminary results already show no clear trend after spectral manipulation (Fig. 1). Differences between locations have shown to be more significant than spectral manipulation, suggesting that the actual influence of spectral properties in the creation of the prediction is very low or none. Relationships between the location of the image tile and the predicted canopy height could already be observed. They will be properly analysed and shown at a later stage of this project.\n\n\n\nFig. 1: Average absolute relative difference to the original prediction by degree of manipulation, for all bands and locations."
   },
   {
     "objectID": "pages/gchm.html#slides",
     "href": "pages/gchm.html#slides",
-    "title": "Deep learning in the woods",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
     "section": "Slides",
     "text": "Slides\n\nConference slides (PDF)"
   },
   {
     "objectID": "pages/gchm.html#sources",
     "href": "pages/gchm.html#sources",
-    "title": "Deep learning in the woods",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
     "section": "Sources",
     "text": "Sources\nLang, N., Jetz, W., Schindler, K., & Wegner, J. D. (2023).\nA high-resolution canopy height model of the Earth.\nNature Ecology & Evolution, 1-12.\n@article{lang2023high,\n  title={A high-resolution canopy height model of the Earth},\n  author={Lang, Nico and Jetz, Walter and Schindler, Konrad and Wegner, Jan Dirk},\n  journal={Nature Ecology \\& Evolution},\n  pages={1--12},\n  year={2023},\n  publisher={Nature Publishing Group UK London}\n}"
+  },
+  {
+    "objectID": "pages/projects.html",
+    "href": "pages/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "2025\n\nMaster Thesis:\nCanopy height mapping from optical remote sensing data: reassessing deep learning methods\n\n\n\n2024\n\nDetecting meadow orchards using a CNN.\n\n\n\n2022\n\nBachelor Thesis: Spatio-Temporal analysis of a central european bog.\n\nRecent trends in moisture conditions across European peatlands"
   },
   {
     "objectID": "pages/about.html",
@@ -75,33 +110,5 @@
     "title": "CV",
     "section": "Personal Interests",
     "text": "Personal Interests\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Emilio Sánchez",
-    "section": "",
-    "text": "Hi, my name is Emilio Sánchez and I’m completing my Master’s in Landscape Ecology with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
-  },
-  {
-    "objectID": "index.html#emilio-sánchez",
-    "href": "index.html#emilio-sánchez",
-    "title": "Emilio Sánchez",
-    "section": "",
-    "text": "Hi, my name is Emilio Sánchez and I’m completing my Master’s in Landscape Ecology with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
-  },
-  {
-    "objectID": "pages/CV.html",
-    "href": "pages/CV.html",
-    "title": "CV",
-    "section": "",
-    "text": "Education\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector\nFreelance, annualy summer 2022 - 2025\nControl of agricultural fields.\nEcological Mapping\nLAKI GBR, May 2022 - July 2022\nEcological mappings of vegetation.\nIntern\nEFTAS Remote Sensing, Oct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nR | Ecological- and Geodata\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects\n\n\n\n\n\n\nEmilio Sánchez\nM.Sc. Landscape Ecology\nesanchez@uni-muenster.de"
-  },
-  {
-    "objectID": "pages/projects.html",
-    "href": "pages/projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "2025\n\nMaster Thesis:\nDeep Learning in the Woods: what can we learn about canopy height from optical remote sensing?\n\n\n\n2024\n\nDetecting meadow orchards using a CNN.\n\n\n\n2022\n\nBachelor Thesis: Spatio-Temporal analysis of a central european bog.\n\nRecent trends in moisture conditions across European peatlands"
   }
 ]

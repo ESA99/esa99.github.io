@@ -1,5 +1,5 @@
 ---
-title: "Deep learning in the woods"
+title: "Canopy height mapping from optical remote sensing data: reassessing deep learning methods"
 format:
   html:
     embed-resources: true
@@ -30,19 +30,18 @@ The main objective of this research is to uncover the prediction mechanisms of t
 1. The model has not learned a connection of spectral values to canopy height.  
 2. Other variables like location and biome play a more important role.  
 
-## Results
 
-The preliminary results already show no clear trend after spectral manipultation (Fig. 1). Differences between tiles have shown to be more significant than spectral manipulation, suggesting that the actual influence of spectral properties in the creation of the prediction is very low or none. Relationships between the location of the image tile and the predicted canopy height could already be observed. They will be properly analysed and shown at a later stage of this project.
+## Methods
+This research builds on the model architecture created by Lang et al. (2023). Their promising
+global canopy height prediction model serves as a great base for investigating the mechanisms
+behind optical data canopy height predictions. By observing changes in the resulting predic-
+tions, after manipulating the input data, we would expect to detect (linear) patterns, if spectral
+properties would provide a strong explainatory value.
 
-![Fig. 1: Average difference to the original prediction for all manipulated bands and degrees of manipulation.](../resources/gchm_result.png)
+Consistent with the original paper, Sentinel-2 data and ESA-WordCover data from 2020 was used. The code was mainly left unchanged and one function added to allow controlled manipulation of single input bands. A workflow was created in a single script to allow easy application, 
 
-### Colour blind friendly result plots
-
-Soon to come:)
-
-## Data
-
-These are the 11 tiles that were used for the analysis of the model. They were choosen to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper.  
+## Research locations
+In total 11 tiles were used for the analysis of the model. They were selected to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper.  
 
 
 ```{r}
@@ -51,25 +50,41 @@ These are the 11 tiles that were used for the analysis of the model. They were c
 
 library(tmap)
 library(sf)
+library(dplyr)
 
 tiles <- st_read("../resources/data/final_tile_selection.gpkg", quiet = TRUE)
+
+tile_label <- c("55HEV" = "Australia", "20MMD" = "Brazil", "33NTG" = "Cameroon", "32UQU" = "Germany", 
+                "35VML" = "Finland", "49NHC" = "Malaysia", "49UCP" = "Mongolia", 
+                "34UFD" = "Poland", "32TMT" = "Switzerland", "10TES" = "USA East", "17SNB" = "USA West")
+
+
+tiles <- tiles %>%
+  mutate(Location = tile_label[Name])
 
 tmap::tmap_mode("view")
 tmap::tm_shape(tiles) +
   tmap::tm_borders(col = "red", lwd = 2) +
-  tmap::tm_text("Name", size = 0.8, col = "black")+
+  tmap::tm_text("Location", size = 0.8, col = "grey95")+
   tmap::tm_view(
-                basemaps = c("Esri.WorldImagery", "OpenStreetMap"),
+                basemaps = c("Esri.WorldImagery", "CartoDB.DarkMatterNoLabels"),
                 set.view = c(10.0, 20.0, 2))  # longitude, latitude, zoom level
 
 ```
 
 
+## Results
+
+The preliminary results already show no clear trend after spectral manipulation (Fig. 1). Differences between locations have shown to be more significant than spectral manipulation, suggesting that the actual influence of spectral properties in the creation of the prediction is very low or none. Relationships between the location of the image tile and the predicted canopy height could already be observed. They will be properly analysed and shown at a later stage of this project.
+
+![Fig. 1: Average absolute relative difference to the original prediction by degree of manipulation, for all bands and locations.](../resources/gchm/gchm_result.png)
+
+
 ## Slides
 
-<!-- [Here](/resources/gchm.pdf) can you find the presentation of the ILÖK Graduate Conference. -->
+<!-- [Here](/resources/gchm/presentation_slides.pdf) can you find the presentation of the ILÖK Graduate Conference. -->
 
-<a href="/resources/gchm.pdf" class="btn btn-primary" target="_blank">Conference slides (PDF)</a>
+<a href="/resources/gchm/presentation_slides.pdf" class="btn btn-primary" target="_blank">Conference slides (PDF)</a>
 
 
 ## Sources
