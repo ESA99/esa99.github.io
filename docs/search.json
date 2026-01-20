@@ -116,14 +116,14 @@
     "href": "pages/resources/VirtualEnvs.html#how-to-set-them-up",
     "title": "Virtual Environments",
     "section": "How to set them up",
-    "text": "How to set them up\nminiforge3 is installed via Miniforge3-Linux-x86_64.sh Important: Solver has to be set to libmamba. Classic solver is outdated and takes hours to solve. Check via . If not change it like this:\nconda config --set solver libmamba\nInstall the environment with all needed software and packages. Set the required versions in environment.yml and all other programs will be fitted to work together with them.\nmamba env create -f environment.yml\n\nCheck after installation\nTo see all installed software and packagaes with their exact version use conda list or filter for a specific item\nconda list\n\nconda list | grep numpy"
+    "text": "How to set them up\nMiniforge3 is a lightweight alternative to Anaconda that simplifies installation and avoids some licensing issues. Libmamba solver is much faster and more reliable than the classic Conda solver, especially for large environments with many dependencies. Using the old solver can take hours or even fail due to conflicts.\nminiforge3 is installed via Miniforge3-Linux-x86_64.sh Important: Solver has to be set to libmamba. Check via conda info and change like this if needed:\nconda info | grep solver\nconda config --set solver libmamba\n\nInstallation\nSet the desired software/packages and if needed versions in environment.yml. All undefined Versions will be fitted to work together. Create the Virtual Environment with the specified requirements.\nTip: Installing R inside the environment avoids mismatches between Python and R libraries and ensures your scripts are reproducible across machines.\nmamba env create -f environment.yml\n\nCheck after installation\nTo see all installed software and packages with their exact version use conda list or filter for a specific item\nconda list\n\nconda list | grep numpy"
   },
   {
     "objectID": "pages/resources/VirtualEnvs.html#deployment",
     "href": "pages/resources/VirtualEnvs.html#deployment",
     "title": "Virtual Environments",
     "section": "Deployment",
-    "text": "Deployment\nTo run the model use the following code inside the terminal. Beforehand set all the variables inside the script deploy.R and make sure all image folders are in the correct place and named correctly (Tile name without “T”: “49UCP”).\nconda activate gchm\ncd /home/emilio/canopy_height/\nRscript deploy.R\n\nUsefull bash code\nReal time GPU supervision:\nwatch -n 1 nvidia-smi"
+    "text": "Deployment\nFirst, the desired Virtual Environment has to be activated and the desired project directory set. Then we can deploy scripts by specifying the type and then the file.\nconda activate gchm\ncd /home/emilio/canopy_height/\nRscript deploy.R\n\nUsefull bash code\nReal time GPU supervision:\nwatch -n 1 nvidia-smi"
   },
   {
     "objectID": "pages/resources/VirtualEnvs.html#Example",
@@ -131,5 +131,19 @@
     "title": "Virtual Environments",
     "section": "Example environment",
     "text": "Example environment\nThe environment.yml file contains all info about what we want to install and tells conda our requirements. The solver then sorts out the correct versions for the virtual environment to work with each other. It works from top to bottom. gdal is included here; the version will fit to the required python and R. We included R here as well to have a fully encapsulated environment ensuring compatibility, instead of deploying scripts from outside the branch. -e. is added to install it as executable python “package”.\nname: gchm\n\nchannels:\n  - conda-forge\n  - pytorch\n  - nvidia\n\ndependencies:\n  - python&gt;=3.12.0\n  - r-base&gt;=4.4.0\n  - gdal\n  - sentinelhub\n  - pytables\n  - libgdal-jp2openjpeg\n  - ipython\n  - matplotlib\n  - numpy\n  - pathlib\n  - tqdm\n  - botocore\n  - urllib3\n  - wandb\n  - tensorboard\n  - scikit-image\n  - scikit-learn\n  - pytorch::pytorch\n  - pytorch::pytorch-cuda\n  - pytorch::torchvision\n  - pytorch::torchaudio\n  - conda-forge::cudatoolkit==11.8.0\n  - typing\n  - jupyter\n  - pip\n  - pip:\n    - -e ."
+  },
+  {
+    "objectID": "pages/resources/VirtualEnvs.html",
+    "href": "pages/resources/VirtualEnvs.html",
+    "title": "Virtual Environments",
+    "section": "",
+    "text": "A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:\n\nProjects do not interfere with each other.\nSpecific versions of packages can be maintained for reproducibility.\nExperiments and scripts run in a controlled, predictable setup.\n\nWhatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems."
+  },
+  {
+    "objectID": "pages/resources/VirtualEnvs.html#what-are-virtual-environments",
+    "href": "pages/resources/VirtualEnvs.html#what-are-virtual-environments",
+    "title": "Virtual Environments",
+    "section": "",
+    "text": "A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:\n\nProjects do not interfere with each other.\nSpecific versions of packages can be maintained for reproducibility.\nExperiments and scripts run in a controlled, predictable setup.\n\nWhatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems."
   }
 ]

@@ -166,7 +166,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#what-are-virtual-environments" id="toc-what-are-virtual-environments" class="nav-link active" data-scroll-target="#what-are-virtual-environments">What are Virtual Environments?</a></li>
-  <li><a href="#how-to-set-them-up" id="toc-how-to-set-them-up" class="nav-link" data-scroll-target="#how-to-set-them-up">How to set them up</a></li>
+  <li><a href="#how-to-set-them-up" id="toc-how-to-set-them-up" class="nav-link" data-scroll-target="#how-to-set-them-up">How to set them up</a>
+  <ul class="collapse">
+  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
+  </ul></li>
   <li><a href="#deployment" id="toc-deployment" class="nav-link" data-scroll-target="#deployment">Deployment</a>
   <ul class="collapse">
   <li><a href="#usefull-bash-code" id="toc-usefull-bash-code" class="nav-link" data-scroll-target="#usefull-bash-code">Usefull bash code</a></li>
@@ -199,24 +202,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="what-are-virtual-environments" class="level2">
 <h2 class="anchored" data-anchor-id="what-are-virtual-environments">What are Virtual Environments?</h2>
+<p>A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:</p>
+<ul>
+<li><p>Projects do not interfere with each other.</p></li>
+<li><p>Specific versions of packages can be maintained for reproducibility.</p></li>
+<li><p>Experiments and scripts run in a controlled, predictable setup.</p></li>
+</ul>
+<p>Whatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems.</p>
 </section>
 <section id="how-to-set-them-up" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-set-them-up">How to set them up</h2>
-<p><strong>miniforge3</strong> is installed via <code>Miniforge3-Linux-x86_64.sh</code> Important: Solver has to be set to <strong>libmamba</strong>. Classic solver is outdated and takes hours to solve. Check via <conda info="">. If not change it like this:</conda></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> config <span class="at">--set</span> solver libmamba</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Install the environment with all needed software and packages. Set the required versions in <code>environment.yml</code> and all other programs will be fitted to work together with them.</p>
+<p><strong>Miniforge3</strong> is a lightweight alternative to Anaconda that simplifies installation and avoids some licensing issues. <strong>Libmamba</strong> solver is much faster and more reliable than the classic Conda solver, especially for large environments with many dependencies. Using the old solver can take hours or even fail due to conflicts.</p>
+<p><em>miniforge3</em> is installed via <code>Miniforge3-Linux-x86_64.sh</code> Important: Solver has to be set to <em>libmamba</em>. Check via <code>conda info</code> and change like this if needed:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> info <span class="kw">|</span> <span class="fu">grep</span> solver</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> config <span class="at">--set</span> solver libmamba</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="installation" class="level3">
+<h3 class="anchored" data-anchor-id="installation">Installation</h3>
+<p>Set the desired software/packages and if needed versions in <code>environment.yml</code>. All undefined Versions will be fitted to work together. Create the Virtual Environment with the specified requirements.</p>
+<div class="line-block">Tip: Installing R inside the environment avoids mismatches between Python and R libraries and ensures your scripts are reproducible across machines.</div>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mamba</span> env create <span class="at">-f</span> environment.yml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="check-after-installation" class="level4">
 <h4 class="anchored" data-anchor-id="check-after-installation">Check after installation</h4>
-<p>To see all installed software and packagaes with their exact version use <code>conda list</code> or filter for a specific item</p>
+<p>To see all installed software and packages with their exact version use <code>conda list</code> or filter for a specific item</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> list</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> list <span class="kw">|</span> <span class="fu">grep</span> numpy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
+</section>
 <section id="deployment" class="level2">
 <h2 class="anchored" data-anchor-id="deployment">Deployment</h2>
-<p>To run the model use the following code inside the terminal. Beforehand set all the variables inside the script <code>deploy.R</code> and make sure all image folders are in the correct place and named correctly (Tile name without “T”: “49UCP”).</p>
+<p>First, the desired Virtual Environment has to be activated and the desired project directory set. Then we can deploy scripts by specifying the type and then the file.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate gchm</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /home/emilio/canopy_height/</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> deploy.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
