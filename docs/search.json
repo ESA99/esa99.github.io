@@ -18,7 +18,7 @@
     "href": "pages/CV.html",
     "title": "CV",
     "section": "",
-    "text": "Education\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector\nFreelance, annualy summer 2022 - 2025\nControl of agricultural fields.\nEcological Mapping\nLAKI GBR, May 2022 - July 2022\nEcological mappings of vegetation.\nIntern\nEFTAS Remote Sensing, Oct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nR | Ecological- and Geodata\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects\n\n\n\n\n\n\nEmilio Sánchez\nM.Sc. Landscape Ecology\nesanchez@uni-muenster.de"
+    "text": "Education\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector\nFreelance, annualy summer 2022 - 2025\nControl of agricultural fields.\nEcological Mapping\nLAKI GBR, May 2022 - July 2022\nEcological mappings of vegetation.\nIntern\nEFTAS Remote Sensing, Oct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects\n\n\n\n\n\n\nEmilio Sánchez\nM.Sc. Landscape Ecology\nesanchez@uni-muenster.de\n\n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS"
   },
   {
     "objectID": "pages/gchm.html#introduction",
@@ -145,5 +145,19 @@
     "title": "Virtual Environments",
     "section": "",
     "text": "A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:\n\nProjects do not interfere with each other.\nSpecific versions of packages can be maintained for reproducibility.\nExperiments and scripts run in a controlled, predictable setup.\n\nWhatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems."
+  },
+  {
+    "objectID": "pages/test.html",
+    "href": "pages/test.html",
+    "title": "Test",
+    "section": "",
+    "text": "::: columns"
+  },
+  {
+    "objectID": "pages/test.html#main",
+    "href": "pages/test.html#main",
+    "title": "Test",
+    "section": "Main",
+    "text": "Main\n\nEducation\nABC\n\n\nExperience\nIntern\nCompany\nMachine learning and reproducible workflows.\n\n\nSkills\n\nR | Ecological- and Geodata\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\nActivities\n\nSports\nBiking and trail running\nTeam sports at University\nWoodworking\nGardening\nDIY-Projects\n\n:::\n::: {.column width=“300px”}\n\nName Name\nM.Sc. Master\nmail@uni-mail.gov\n\n  \n\n\nLanguages\n\n\nEnglish\n\n\n\n\n\n\n\nGerman\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n:::"
   }
 ]

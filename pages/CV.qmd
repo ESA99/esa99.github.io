@@ -42,10 +42,9 @@ Machine learning and reproducible workflows.
 
 ### Skills
 
-- R | Ecological- and Geodata
+- Processing of ecological- and spatial data 
 - Data analysis and visualization
 - Scientific writing
-
 - Organisational talent
 - Project Management (University training)
 
@@ -56,11 +55,8 @@ Machine learning and reproducible workflows.
 - Sports  
     - Biking and trail running  
     - Team sports at University  
-
 - Woodworking
-
 - Gardening
-
 - DIY-Projects
 
 </div>
@@ -80,6 +76,60 @@ esanchez@uni-muenster.de
   <a href="https://orcid.org/0009-0004-0348-5434"><i class="ai ai-orcid"></i></a>
   <a href="mailto:esanchez@uni-muenster.de"><i class="bi bi-envelope-fill"></i></a>
 </div>
+
+
+  <h3>Languages</h3>
+  <div style="margin-bottom:10px;">
+  <span>German</span>
+  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
+  <div style="width:100%; height:100%; background:#99C644; border-radius:5px;"></div>
+  </div>
+  </div>
+  
+  <div style="margin-bottom:10px;">
+  <span>English</span>
+  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
+  <div style="width:95%; height:100%; background:#99C644; border-radius:5px;"></div>
+  </div>
+  </div>
+  
+  <div style="margin-bottom:10px;">
+  <span>Spanish</span>
+  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
+  <div style="width:90%; height:100%; background:#99C644; border-radius:5px;"></div>
+  </div>
+  </div>
+  
+  <div style="margin-bottom:10px;">
+  <span>Swedish</span>
+  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
+  <div style="width:75%; height:100%; background:#99C644; border-radius:5px;"></div>
+  </div>
+  </div>
+  
+
+  <h3>Programming</h3>
+  <div style="margin-bottom:10px;">
+  <span>R</span>
+  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
+  <div style="width:100%; height:100%; background:#007acc; border-radius:5px;"></div>
+  </div>
+  </div>
+  
+  <div style="margin-bottom:10px;">
+  <span>Python</span>
+  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
+  <div style="width:20%; height:100%; background:#007acc; border-radius:5px;"></div>
+  </div>
+  </div>
+
+  <div style="margin-bottom:10px;">
+  <span>CSS</span>
+  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
+  <div style="width:5%; height:100%; background:#007acc; border-radius:5px;"></div>
+  </div>
+  </div>
+  
 
 </aside>
 
