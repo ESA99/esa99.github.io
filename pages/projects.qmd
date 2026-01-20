@@ -4,14 +4,15 @@ title: "Projects"
 
 # 2025
 
--   **Master Thesis:**  
+-   **Master Thesis**  
 [Canopy height mapping from optical remote sensing data: reassessing deep learning methods](gchm.qmd)
 
 # 2024
 
--   Detecting meadow orchards using a CNN.
+-   **Student Project**
+Detecting meadow orchards in Germany using a convolution neural networks and aerial imagery.
 
 # 2022
 
--   **Bachelor Thesis:** Spatio-Temporal analysis of a central european bog.
+-   **Bachelor Thesis** Spatio-Temporal analysis of a central european bog
     - [Recent trends in moisture conditions across European peatlands](https://doi.org/10.1016/j.rsase.2024.101385){.external target="_blank"}

@@ -52,7 +52,7 @@ library(tmap)
 library(sf)
 library(dplyr)
 
-tiles <- st_read("../resources/data/final_tile_selection.gpkg", quiet = TRUE)
+tiles <- st_read("../content/data/final_tile_selection.gpkg", quiet = TRUE)
 
 tile_label <- c("55HEV" = "Australia", "20MMD" = "Brazil", "33NTG" = "Cameroon", "32UQU" = "Germany", 
                 "35VML" = "Finland", "49NHC" = "Malaysia", "49UCP" = "Mongolia", 
@@ -77,14 +77,14 @@ tmap::tm_shape(tiles) +
 
 The preliminary results already show no clear trend after spectral manipulation (Fig. 1). Differences between locations have shown to be more significant than spectral manipulation, suggesting that the actual influence of spectral properties in the creation of the prediction is very low or none. Relationships between the location of the image tile and the predicted canopy height could already be observed. They will be properly analysed and shown at a later stage of this project.
 
-![Fig. 1: Average absolute relative difference to the original prediction by degree of manipulation, for all bands and locations.](../resources/gchm/gchm_result.png)
+![Fig. 1: Average absolute relative difference to the original prediction by degree of manipulation, for all bands and locations.](../content/gchm/gchm_result.png)
 
 
 ## Slides
 
-<!-- [Here](/resources/gchm/presentation_slides.pdf) can you find the presentation of the ILÖK Graduate Conference. -->
+<!-- [Here](/content/gchm/presentation_slides.pdf) can you find the presentation of the ILÖK Graduate Conference. -->
 
-<a href="/resources/gchm/presentation_slides.pdf" class="btn btn-primary" target="_blank">Conference slides (PDF)</a>
+<a href="/content/gchm/presentation_slides.pdf" class="btn btn-primary" target="_blank">Conference slides (PDF)</a>
 
 
 ## Sources

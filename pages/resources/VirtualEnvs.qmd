@@ -1,0 +1,88 @@
+---
+title: "Virtual Environments"
+format: html
+---
+
+## What are Virtual Environments?
+
+
+## How to set them up
+
+**miniforge3** is installed via `Miniforge3-Linux-x86_64.sh` Important: Solver has to be set to **libmamba**. Classic solver is outdated and takes hours to solve. Check via <conda info>. If not change it like this:
+
+``` bash
+conda config --set solver libmamba
+```
+
+Install the environment with all needed software and packages. Set the required versions in `environment.yml` and all other programs will be fitted to work together with them.
+``` bash
+mamba env create -f environment.yml
+```
+
+#### Check after installation
+To see all installed software and packagaes with their exact version use `conda list` or filter for a specific item
+``` bash
+conda list
+
+conda list | grep numpy
+```
+
+## Deployment
+
+To run the model use the following code inside the terminal. Beforehand set all the variables inside the script `deploy.R` and make sure all image folders are in the correct place and named correctly (Tile name without "T": "49UCP").
+
+``` bash
+conda activate gchm
+cd /home/emilio/canopy_height/
+Rscript deploy.R
+```
+
+### Usefull bash code
+
+Real time GPU supervision:
+
+``` bash
+watch -n 1 nvidia-smi
+```
+
+## Example environment {#Example}
+
+The environment.yml file contains all info about what we want to install and tells conda our requirements. The solver then sorts out the correct versions for the virtual environment to work with each other. It works from top to bottom. **gdal** is included here; the version will fit to the required python and R. We included **R** here as well to have a fully encapsulated environment ensuring compatibility, instead of deploying scripts from outside the branch. `-e.` is added to install it as executable python "package".
+
+``` bash
+name: gchm
+
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+
+dependencies:
+  - python>=3.12.0
+  - r-base>=4.4.0
+  - gdal
+  - sentinelhub
+  - pytables
+  - libgdal-jp2openjpeg
+  - ipython
+  - matplotlib
+  - numpy
+  - pathlib
+  - tqdm
+  - botocore
+  - urllib3
+  - wandb
+  - tensorboard
+  - scikit-image
+  - scikit-learn
+  - pytorch::pytorch
+  - pytorch::pytorch-cuda
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - conda-forge::cudatoolkit==11.8.0
+  - typing
+  - jupyter
+  - pip
+  - pip:
+    - -e .
+```

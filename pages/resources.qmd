@@ -12,6 +12,6 @@ toc: false
 
 ## This page is currently under construction.
 
-![](../resources/penguins.jpg){width=450 align="center"}
+![](../content/penguins.jpg){width=450 align="center"}
 
 </div>

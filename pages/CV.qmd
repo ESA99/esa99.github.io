@@ -68,7 +68,7 @@ Machine learning and reproducible workflows.
 <!-- SIDEBAR -->
 <aside class="cv-sidebar" markdown="1">
 
-![](../resources/portrait_outdoor.jpg){.cv-photo}
+![](../content/portrait_outdoor.jpg){.cv-photo}
 
 **Emilio Sánchez**  
 _M.Sc. Landscape Ecology_  

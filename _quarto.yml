@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - resources/
+    - content/
 
 website:
   title: "Emilio Sánchez"
@@ -12,13 +12,22 @@ website:
     left:
       # - href: index.qmd
       #   text: Home
-      - pages/projects.qmd
-      - pages/resources.qmd
+      - text: "Projects"
+        href: pages/projects.qmd
+      - text: "Resources"
+        menu:
+          - text: "Overview"  
+            href: pages/resources.qmd
+          - text: "Virtual Environments"
+            href: pages/resources/VirtualEnvs.qmd
       # - href: CV.qmd
       #   text: CV
-      # - about.qmd
+      # #- about.qmd
     right: 
-      - pages/CV.qmd
+      - text: "CV"
+        href: pages/CV.qmd
+      # - text: "About"
+      #   href: pages/about.qmd
     tools:
       - href: https://github.com/ESA99
         icon: github

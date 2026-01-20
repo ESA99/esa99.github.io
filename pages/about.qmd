@@ -1,6 +1,6 @@
 ---
 title: "CV"
-image: resources/portrait_outdoor.jpg
+image: content/portrait_outdoor.jpg
 about:
   template: solana
   # image-shape: round
