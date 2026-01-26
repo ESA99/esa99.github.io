@@ -25,18 +25,29 @@ Thesis: *Spatio-temporal analysis of a central European bog.*
 ---
 
 ### Experience
-
 **Field Inspector**  
 _Freelance, annualy summer 2022 - 2025_  
-Control of agricultural fields.  
+Control of agricultural fields. 
+
+**Student Assistant**  
+_Institute of Landscape Ecology, Sep 2025 - Feb 2026_  
+Analysis of deep learning models
+
+**Student Assistant**  
+_Institute of Landscape Ecology,_  
+Botany tutor  
 
 **Ecological Mapping**  
 _LAKI GBR, May 2022 - July 2022_  
-Ecological mappings of vegetation.
+Ecological mappings of vegetation.  
+
+**Student Assistant**  
+_Institute of Landscape Ecology,_  
+Field Equipment rental  
 
 **Intern**  
 _EFTAS Remote Sensing, Oct - Nov 2021_  
-Machine learning and reproducible workflows.
+Machine learning and reproducible workflows.  
 
 ---
 
@@ -52,6 +63,7 @@ Machine learning and reproducible workflows.
 
 ### Activities
 
+- Volunteer at THW (German civil defense)
 - Sports  
     - Biking and trail running  
     - Team sports at University  

@@ -85,10 +85,10 @@ body.page-index .hero {
 
 /* Profile image styling */
 .hero-photo {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 15%;
   margin-bottom: 1.5rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }

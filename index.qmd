@@ -15,7 +15,7 @@ format:
 
 ## Emilio Sánchez
 
-Hi, my name is Emilio Sánchez and I'm completing my Master's in Landscape Ecology with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming — alongside a deep passion for botany and plant ecology.
+Hi, my name is Emilio Sánchez and I'm a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.
 
 <hr class="hero-separator">
 

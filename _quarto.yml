@@ -7,7 +7,7 @@ project:
 website:
   title: "Emilio Sánchez"
   navbar:
-    # logo: resources/logo.png
+    # logo: content/logo.png
     logo-alt: ESA99 Logo
     left:
       # - href: index.qmd
