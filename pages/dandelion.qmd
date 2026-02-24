@@ -1,0 +1,69 @@
+---
+title: "dandelion"
+format: html
+---
+```{R}
+#| echo: false
+library(dandelion)
+```
+
+# About
+
+The *dandelion* package is a collection of functions for spatial data handling and analysis in R. It is primarily aimed at scientific users in the fields of ecological modelling, remote sensing and machine learning. It's application however is not limited to this target group and you mind find some useful functions for your projects.
+
+# Installation
+
+The package can be installed from GitHub via the *remotes* package.
+
+```{R}
+#| eval: FALSE
+remotes::install_github("ESA99/dandelion")
+library(dandelion)
+```
+
+# Functions
+
+- [Worldcover Adjustment](#worldcover-adjustment)
+- [Parameter Dataframe](#parameter-dataframe)
+- [Global Point Grid](#global-point-grid)
+- [Bibtex Export](#bibtext-export-of-session)
+
+
+
+## Canopy Height analysis
+The following functions were specifically designed for the analysis of a canopy height model. Details on the project, the results and the application of the functions can be found on [the project page](pages/gchm.html).
+
+### Worldcover Adjustment
+Specific function for the processing of ESA Worldcover that is cropped to match Sentinel-2 tiles. It adjusts extend and resolution to match exactly the corresponding tile, enabeling further computations and analysis.
+
+```{r}
+#| eval: false
+worldcover_adjust()
+```
+
+### Parameter dataframe
+
+```{r}
+#| eval: false
+create_param_df()
+```
+
+### Global Point Grid
+Enables to create a global point grid on earth's landmasses within set boundaries (Lat/Lon).
+```{r}
+#| eval: false
+global_point_grid()
+```
+
+
+
+## Tools
+Collection of tools for an efficient work process.
+
+### Bibtext export of session
+To export a text file with all packages in BibTex format use bibtex_citation_session(). All actively loaded packages within your session will be included. Only non-base packages are taken into account. You can then import or copy the citations from the text file to your project.
+```{r}
+#| eval: false
+bibtex_citation_session("folder/filename.txt")
+```
+The function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory.

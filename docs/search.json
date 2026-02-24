@@ -74,7 +74,7 @@
     "href": "pages/projects.html",
     "title": "Projects",
     "section": "",
-    "text": "2025\n\nMaster Thesis\nCanopy height mapping from optical remote sensing data: reassessing deep learning methods\n\n\n\n2024\n\nStudent Project Detecting meadow orchards in Germany using a convolution neural networks and aerial imagery.\n\n\n\n2022\n\nBachelor Thesis Spatio-Temporal analysis of a central european bog\n\nRecent trends in moisture conditions across European peatlands"
+    "text": "2025\n\nMaster Thesis\nCanopy height mapping from optical remote sensing data: reassessing deep learning methods\n\n\n\n2024\n\nR-Package Development Creation and development of the R-Package ‘dandelion’\nStudent Project Detecting meadow orchards in Germany using a convolution neural networks and aerial imagery.\n\n\n\n2022\n\nBachelor Thesis Spatio-Temporal analysis of a central european bog\n\nRecent trends in moisture conditions across European peatlands"
   },
   {
     "objectID": "pages/about.html",
@@ -159,5 +159,26 @@
     "title": "Test",
     "section": "Main",
     "text": "Main\n\nEducation\nABC\n\n\nExperience\nIntern\nCompany\nMachine learning and reproducible workflows.\n\n\nSkills\n\nR | Ecological- and Geodata\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\nActivities\n\nSports\nBiking and trail running\nTeam sports at University\nWoodworking\nGardening\nDIY-Projects\n\n:::\n::: {.column width=“300px”}\n\nName Name\nM.Sc. Master\nmail@uni-mail.gov\n\n  \n\n\nLanguages\n\n\nEnglish\n\n\n\n\n\n\n\nGerman\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n:::"
+  },
+  {
+    "objectID": "pages/dandelion.html",
+    "href": "pages/dandelion.html",
+    "title": "dandelion",
+    "section": "",
+    "text": "The dandelion package is a collection of functions for spatial data handling and analysis in R. It is primarily aimed at scientific users in the fields of ecological modelling, remote sensing and machine learning. It’s application however is not limited to this target group and you mind find some useful functions for your projects."
+  },
+  {
+    "objectID": "pages/dandelion.html#canopy-height-analysis",
+    "href": "pages/dandelion.html#canopy-height-analysis",
+    "title": "dandelion",
+    "section": "Canopy Height analysis",
+    "text": "Canopy Height analysis\nThe following functions were specifically designed for the analysis of a canopy height model. Details on the project, the results and the application of the functions can be found on the project page.\n\nWorldcover Adjustment\nSpecific function for the processing of ESA Worldcover that is cropped to match Sentinel-2 tiles. It adjusts extend and resolution to match exactly the corresponding tile, enabeling further computations and analysis.\n\nworldcover_adjust()\n\n\n\nParameter dataframe\n\ncreate_param_df()\n\n\n\nGlobal Point Grid\nEnables to create a global point grid on earth’s landmasses within set boundaries (Lat/Lon).\n\nglobal_point_grid()"
+  },
+  {
+    "objectID": "pages/dandelion.html#tools",
+    "href": "pages/dandelion.html#tools",
+    "title": "dandelion",
+    "section": "Tools",
+    "text": "Tools\nCollection of tools for an efficient work process.\n\nBibtext export of session\nTo export a text file with all packages in BibTex format use bibtex_citation_session(). All actively loaded packages within your session will be included. Only non-base packages are taken into account. You can then import or copy the citations from the text file to your project.\n\nbibtex_citation_session(\"folder/filename.txt\")\n\nThe function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory."
   }
 ]

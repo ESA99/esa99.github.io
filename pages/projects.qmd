@@ -9,6 +9,9 @@ title: "Projects"
 
 # 2024
 
+- **R-Package Development**
+[Creation and development of the R-Package *'dandelion'*](dandelion.qmd)
+
 -   **Student Project**
 Detecting meadow orchards in Germany using a convolution neural networks and aerial imagery.
 

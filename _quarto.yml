@@ -18,6 +18,8 @@ website:
         menu:
           - text: "Overview"  
             href: pages/resources.qmd
+          - text: "dandelion"
+            href: pages/dandelion.qmd
           - text: "Virtual Environments"
             href: pages/resources/VirtualEnvs.qmd
       # - href: CV.qmd
