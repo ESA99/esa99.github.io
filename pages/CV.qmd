@@ -129,6 +129,13 @@ esanchez@uni-muenster.de
   </div>
   
   <div style="margin-bottom:10px;">
+  <span>Git</span>
+  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
+  <div style="width:55%; height:100%; background:#007acc; border-radius:5px;"></div>
+  </div>
+  </div>
+  
+  <div style="margin-bottom:10px;">
   <span>Python</span>
   <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
   <div style="width:20%; height:100%; background:#007acc; border-radius:5px;"></div>
