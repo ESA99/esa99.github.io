@@ -1,0 +1,58 @@
+---
+title: "Field Notes"
+---
+<!-- Alternative page name: Curiosities, Observations, Waypoints -->
+
+
+<!-- Quarto column structure -->
+:::: {.columns} 
+
+::: {.column width="50%"}
+
+
+## ISS Orbit
+<!-- html wrapper so the content gets executed and not only code displayed -->
+```{=html}
+<!-- Widget 1 -->
+<div id="av-orbit">
+    <script>
+        var avOrbitProperties = {
+            size: 'medium',
+            lang: 'en'
+        };
+    </script>
+    <script src="https://www.astroviewer.net/widgets/widgets/orbit.js"></script>
+</div>
+```
+
+:::
+
+::: {.column width="50%"}
+
+<div style="text-align: right;">  <!-- alignes full column content to the right-->
+
+## Next pass
+
+```{=html}
+<!-- Widget 2 -->
+<!-- <div style="text-align: right;"> --> <!-- Aligns only widget to the right -->
+<div id="av-passes">
+    <script>
+        var avPassesProperties = {
+            lon:   7.625,
+            lat:   51.963,
+            name:  'Münster',
+            tz:    'Europe/Berlin',
+            lang:  'en',
+            clock: '24h'
+        };
+    </script>
+    <script src="https://www.astroviewer.net/widgets/widgets/passes.js"></script>
+</div>
+```
+
+</div> <!-- closing div from widget alignement -->
+
+:::
+
+:::: 

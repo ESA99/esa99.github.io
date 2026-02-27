@@ -180,5 +180,33 @@
     "title": "dandelion",
     "section": "Tools",
     "text": "Tools\nCollection of tools for an efficient work process.\n\nBibtext export of session\nTo export a text file with all packages in BibTex format use bibtex_citation_session(). All actively loaded packages within your session will be included. Only non-base packages are taken into account. You can then import or copy the citations from the text file to your project.\n\nbibtex_citation_session(\"folder/filename.txt\")\n\nThe function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory."
+  },
+  {
+    "objectID": "pages/resources/fieldnotes.html",
+    "href": "pages/resources/fieldnotes.html",
+    "title": "Field Notes",
+    "section": "",
+    "text": "&lt;script&gt;\n    var avPassesProperties = {\n        lon:   7.625,\n        lat:   51.963,\n        name:  'Münster',\n        tz:    'Europe/Berlin',\n        lang:  'en',\n        clock: '24h'\n    };\n&lt;/script&gt;"
+  },
+  {
+    "objectID": "pages/resources/dandelion.html",
+    "href": "pages/resources/dandelion.html",
+    "title": "dandelion",
+    "section": "",
+    "text": "The dandelion package is a collection of functions for spatial data handling and analysis in R. It is primarily aimed at scientific users in the fields of ecological modelling, remote sensing and machine learning. It’s application however is not limited to this target group and you mind find some useful functions for your projects."
+  },
+  {
+    "objectID": "pages/resources/dandelion.html#canopy-height-analysis",
+    "href": "pages/resources/dandelion.html#canopy-height-analysis",
+    "title": "dandelion",
+    "section": "Canopy Height analysis",
+    "text": "Canopy Height analysis\nThe following functions were specifically designed for the analysis of a canopy height model. Details on the project, the results and the application of the functions can be found on the project page.\n\nWorldcover Adjustment\nSpecific function for the processing of ESA Worldcover that is cropped to match Sentinel-2 tiles. It adjusts extend and resolution to match exactly the corresponding tile, enabeling further computations and analysis.\n\nworldcover_adjust()\n\n\n\nParameter dataframe\n\ncreate_param_df()\n\n\n\nGlobal Point Grid\nEnables to create a global point grid on earth’s landmasses within set boundaries (Lat/Lon).\n\nglobal_point_grid()"
+  },
+  {
+    "objectID": "pages/resources/dandelion.html#tools",
+    "href": "pages/resources/dandelion.html#tools",
+    "title": "dandelion",
+    "section": "Tools",
+    "text": "Tools\nCollection of tools for an efficient work process.\n\nBibtext export of session\nTo export a text file with all packages in BibTex format use bibtex_citation_session(). All actively loaded packages within your session will be included. Only non-base packages are taken into account. You can then import or copy the citations from the text file to your project.\n\nbibtex_citation_session(\"folder/filename.txt\")\n\nThe function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory."
   }
 ]
