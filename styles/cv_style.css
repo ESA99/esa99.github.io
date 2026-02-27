@@ -1,0 +1,82 @@
+.cv-page {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Left sidebar */
+.cv-sidebar {
+  flex: 0 0 300px;
+  position: sticky;
+  top: 2rem;
+  padding-right: 1.5rem;
+  border-right: 1px solid #ccc;
+  border-left: none;
+  align-self: flex-start;
+}
+/*
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px; 
+  
+  */
+
+/* Right main content */
+.cv-main {
+  flex: 1;
+  flex-grow: 3; /* Increase the flex-grow value to make the main column wider */
+  min-width: 700px; /* Set a minimum width to ensure it doesn't get too narrow */
+}
+
+
+
+/* CV Photo styling */
+.cv-photo {
+  width: 200px;
+  height: 270px;
+  border-radius: 5%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.cv-basic-info {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.cv-icons a {
+  font-size: 1.2rem;
+  margin: 0 0.3rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.cv-icons a:hover {
+  color: #99C644;
+}
+
+
+/* cv_style.css – hide the title block that Quarto injects */
+.quarto-title-block {
+  display: none !important;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-page {
+    flex-direction: column;
+  }
+  .cv-sidebar {
+    position: relative;
+    top: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+

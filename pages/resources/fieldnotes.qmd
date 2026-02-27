@@ -1,5 +1,8 @@
 ---
 title: "Field Notes"
+format:
+  html:
+    toc: false
 ---
 <!-- Alternative page name: Curiosities, Observations, Waypoints -->
 

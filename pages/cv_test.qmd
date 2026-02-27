@@ -1,8 +1,7 @@
 ---
-title: "CV"
+title: "cv_test"
 format:
   html:
-    title-block: false 
     css: ../styles/cv_style.css
     toc: false
     sidebar: false
@@ -19,7 +18,7 @@ format:
 
 **Emilio Sánchez**  
 _M.Sc. Landscape Ecology_  
-<!-- esanchez@uni-muenster.de   -->
+esanchez@uni-muenster.de  
 <!-- +123 456 7890 -->
 
 <div class="cv-icons">
@@ -106,16 +105,12 @@ _M.Sc. Landscape Ecology_
   
 
 </div>
-
-<!-- =====================================================================================
-      End of Sidebar: Main content starts below
-     ===================================================================================== -->
+<!-- =====================================
+      End of Sidebar
+     =====================================-->
 
 
 <div class="cv-main">
-
-# About
-My Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.
 
 ### Education
 
@@ -129,28 +124,28 @@ Thesis: *Spatio-temporal analysis of a central European bog.*
 ---
 
 ### Experience
-**Field Inspector** | Freelance
-_Annualy since 2025_  
+**Field Inspector**  
+_Freelance, annualy summer 2022 - 2025_  
 Control of agricultural fields. 
 
-**Student Assistant** | Institute of Landscape Ecology  
-_Sep 2025 - Feb 2026_  
+**Student Assistant**  
+_Institute of Landscape Ecology, Sep 2025 - Feb 2026_  
 Analysis of deep learning models
 
-**Student Assistant** | Institute of Landscape Ecology  
+**Student Assistant**  
 _Institute of Landscape Ecology, Apr 2023 - Sep 2023_  
 Botany tutor  
 
-**Ecological Mapping** | LAKI GBR  
-_May 2022 - July 2022_  
+**Ecological Mapping**  
+_LAKI GBR, May 2022 - July 2022_  
 Ecological mappings of vegetation.  
 
-**Student Assistant** | Institute of Landscape Ecology  
-_Apr 2022 - Sep 2022_  
+**Student Assistant**  
+_Institute of Landscape Ecology, Apr 2022 - Sep 2022_  
 Field Equipment rental  
 
-**Intern** | EFTAS Remote Sensing  
-_Oct - Nov 2021_  
+**Intern**  
+_EFTAS Remote Sensing, Oct - Nov 2021_  
 Machine learning and reproducible workflows.  
 
 ---

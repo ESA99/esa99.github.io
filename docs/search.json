@@ -18,7 +18,7 @@
     "href": "pages/CV.html",
     "title": "CV",
     "section": "",
-    "text": "Education\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector\nFreelance, annualy summer 2022 - 2025\nControl of agricultural fields.\nStudent Assistant\nInstitute of Landscape Ecology, Sep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant\nInstitute of Landscape Ecology, Apr 2023 - Sep 2023\nBotany tutor\nEcological Mapping\nLAKI GBR, May 2022 - July 2022\nEcological mappings of vegetation.\nStudent Assistant\nInstitute of Landscape Ecology, Apr 2022 - Sep 2022\nField Equipment rental\nIntern\nEFTAS Remote Sensing, Oct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects\n\n\n\n\n\n\nEmilio Sánchez\nM.Sc. Landscape Ecology\nesanchez@uni-muenster.de\n\n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nWoodworking\n\n\n\n\n\n\n\nEcological Mapping"
+    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nWoodworking\n\n\n\n\n\n\n\nEcological Mapping\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance Annualy since 2025\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nInstitute of Landscape Ecology, Apr 2023 - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay 2022 - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr 2022 - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
   },
   {
     "objectID": "pages/gchm.html#introduction",
@@ -208,5 +208,26 @@
     "title": "dandelion",
     "section": "Tools",
     "text": "Tools\nCollection of tools for an efficient work process.\n\nBibtext export of session\nTo export a text file with all packages in BibTex format use bibtex_citation_session(). All actively loaded packages within your session will be included. Only non-base packages are taken into account. You can then import or copy the citations from the text file to your project.\n\nbibtex_citation_session(\"folder/filename.txt\")\n\nThe function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory."
+  },
+  {
+    "objectID": "pages/cv_test.html",
+    "href": "pages/cv_test.html",
+    "title": "cv_test",
+    "section": "",
+    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\nesanchez@uni-muenster.de\n\n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nWoodworking\n\n\n\n\n\n\n\nEcological Mapping\n\n\n\n\n\n\n\n\n\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector\nFreelance, annualy summer 2022 - 2025\nControl of agricultural fields.\nStudent Assistant\nInstitute of Landscape Ecology, Sep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant\nInstitute of Landscape Ecology, Apr 2023 - Sep 2023\nBotany tutor\nEcological Mapping\nLAKI GBR, May 2022 - July 2022\nEcological mappings of vegetation.\nStudent Assistant\nInstitute of Landscape Ecology, Apr 2022 - Sep 2022\nField Equipment rental\nIntern\nEFTAS Remote Sensing, Oct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+  },
+  {
+    "objectID": "pages/cv_test.html#education",
+    "href": "pages/cv_test.html#education",
+    "title": "cv_test",
+    "section": "",
+    "text": "Your CV content here…"
+  },
+  {
+    "objectID": "pages/cv_test.html#experience",
+    "href": "pages/cv_test.html#experience",
+    "title": "cv_test",
+    "section": "",
+    "text": "More content…"
   }
 ]
