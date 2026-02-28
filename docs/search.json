@@ -18,7 +18,7 @@
     "href": "pages/CV.html",
     "title": "CV",
     "section": "",
-    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nWoodworking\n\n\n\n\n\n\n\nEcological Mapping\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance Annualy since 2025\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nEcological Mapping\n\n\n\n\n\n\n\nSkills\n\n\nWoodworking\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance Annualy since 2025\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
   },
   {
     "objectID": "pages/gchm.html#introduction",
@@ -186,7 +186,7 @@
     "href": "pages/resources/fieldnotes.html",
     "title": "Field Notes",
     "section": "",
-    "text": "&lt;script&gt;\n    var avPassesProperties = {\n        lon:   7.625,\n        lat:   51.963,\n        name:  'Münster',\n        tz:    'Europe/Berlin',\n        lang:  'en',\n        clock: '24h'\n    };\n&lt;/script&gt;"
+    "text": "Test test test hhhhhhhhhhhhhhhsssssssssssssssssssssllllllllllllllllllllllppppppppppppppppppppppppppppeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrzzzzzzzzzzzzzzzzzz"
   },
   {
     "objectID": "pages/resources/dandelion.html",
@@ -229,5 +229,12 @@
     "title": "cv_test",
     "section": "",
     "text": "More content…"
+  },
+  {
+    "objectID": "pages/resources/fieldnotes.html#no-column-any-more",
+    "href": "pages/resources/fieldnotes.html#no-column-any-more",
+    "title": "Field Notes",
+    "section": "No column any more",
+    "text": "No column any more\nTest test test hhhhh hhhhhhhhhhss ssssssssssssss ssssslllllllll lllllllllllllp ppppppp ppppppp ppppppp ppppppe eeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeee eeeer rrrrrrrr rrrrr rrrrrrrrrrrr rrrzzzzz zzzzzzzz zzzzz"
   }
 ]

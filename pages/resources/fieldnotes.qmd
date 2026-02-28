@@ -3,6 +3,7 @@ title: "Field Notes"
 format:
   html:
     toc: false
+    # page-layout: full
 ---
 <!-- Alternative page name: Curiosities, Observations, Waypoints -->
 
@@ -59,3 +60,7 @@ format:
 :::
 
 :::: 
+
+## No column any more
+
+Test test test hhhhh hhhhhhhhhhss ssssssssssssss ssssslllllllll lllllllllllllp  ppppppp ppppppp ppppppp ppppppe eeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeee eeeer rrrrrrrr rrrrr rrrrrrrrrrrr rrrzzzzz zzzzzzzz zzzzz
