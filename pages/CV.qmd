@@ -88,6 +88,7 @@ _M.Sc. Landscape Ecology_
   </div>
   </div>
   
+  <h3>Skills</h3>
   <div style="margin-bottom:10px;">
   <span>Ecological Mapping</span>
   <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
@@ -95,7 +96,6 @@ _M.Sc. Landscape Ecology_
   </div>
   </div>
   
-  <h3>Skills</h3>
   <div style="margin-bottom:10px;">
   <span>Woodworking</span>
   <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
@@ -130,7 +130,7 @@ Thesis: *Spatio-temporal analysis of a central European bog.*
 
 ### Experience
 **Field Inspector** | Freelance
-_Annualy since 2025_  
+_Annualy since 2022_  
 Control of agricultural fields. 
 
 **Student Assistant** | Institute of Landscape Ecology  
