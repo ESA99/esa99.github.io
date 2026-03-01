@@ -3,6 +3,7 @@ title: "Field Notes"
 format:
   html:
     toc: false
+    css: ../../styles/fieldnotes.css
     # page-layout: full
 ---
 <!-- Alternative page name: Curiosities, Observations, Waypoints -->
@@ -61,6 +62,34 @@ format:
 
 :::: 
 
-## No column any more
+## A Closer Look
 
-Test test test hhhhh hhhhhhhhhhss ssssssssssssss ssssslllllllll lllllllllllllp  ppppppp ppppppp ppppppp ppppppe eeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeee eeeer rrrrrrrr rrrrr rrrrrrrrrrrr rrrzzzzz zzzzzzzz zzzzz
+```{=html}
+<div class="flip-grid">
+
+  <a href="/pages/resources.html" class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/content/penguins.jpg" alt="Penguins">
+      </div>
+      <div class="flip-back">
+        <h3>Resources</h3>
+        <p>All models are wrong, but some are usefull.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="/pages/CV.html" class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/content/red-cat.jpg" alt="Cats">
+      </div>
+      <div class="flip-back">
+        <h3>Cat Vitae</h3>
+        <p>The live of a scientific cat.</p>
+      </div>
+    </div>
+  </a>
+
+</div>
+```

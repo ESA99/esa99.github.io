@@ -10,7 +10,7 @@ toc: false
 
 <div class="centered-content">
 
-![](resources/red-cat.jpg){width=450 align="center"}
+![](content/red-cat.jpg){width=500 align="center"}
 
 ## 404 – Habitat Lost
 
