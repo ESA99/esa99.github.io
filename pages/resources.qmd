@@ -1,17 +1,68 @@
 ---
 title: "Resources"
-page-layout: full
-format: html
-freeze: true
-sidebar: false
-toc: false
+# page-layout: full
+format: 
+  html:
+    css: ../../styles/flipgrid.css
+    freeze: true
+    sidebar: false
+    toc: false
 ---
 
-<div class="centered-content">
 
+```{=html}
+<div class="flip-grid">
 
-## This page is currently under construction.
+  <a href="/pages/resources/dandelion.html" class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/content/dandelion_logo.png" alt="dandelion">
+      </div>
+      <div class="flip-back">
+        <h3>dandelion</h3>
+        <p>R-Package documentation.</p>
+      </div>
+    </div>
+  </a>
 
-![](../content/penguins.jpg){width=550 align="center"}
+  <a href="/pages/resources/VirtualEnvs.html" class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/content/gchm/clean_lines.png" alt="Lines">
+      </div>
+      <div class="flip-back">
+        <h3>Virtual environments</h3>
+        <p>Setup and Application.</p>
+      </div>
+    </div>
+  </a>
+  
+  <a href="/pages/resources/fieldnotes.html" class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/content/chinstrap_watercol.png" alt="Penguins">
+      </div>
+      <div class="flip-back">
+        <h3>Field Notes</h3>
+        <p>Experimental Collection.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="/pages/CV.html" class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="/content/red-cat.jpg" alt="Cats">
+      </div>
+      <div class="flip-back">
+        <h3>Cat Vitae</h3>
+        <p>The live of a scientific cat.</p>
+      </div>
+    </div>
+  </a>
 
 </div>
+```
+
+
+

@@ -1,5 +1,33 @@
 [
   {
+    "objectID": "pages/resources.html",
+    "href": "pages/resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "dandelion\n        R-Package documentation.\n      \n    \n  \n\n  \n    \n      \n        \n      \n      \n        Virtual environments\n        Setup and Application.\n      \n    \n  \n  \n  \n    \n      \n        \n      \n      \n        Field Notes\n        Experimental Collection.\n      \n    \n  \n\n  \n    \n      \n        \n      \n      \n        Cat Vitae\n        The live of a scientific cat."
+  },
+  {
+    "objectID": "pages/resources/fieldnotes.html#this-page-is-currently-under-construction.",
+    "href": "pages/resources/fieldnotes.html#this-page-is-currently-under-construction.",
+    "title": "Field Notes",
+    "section": "This page is currently under construction.",
+    "text": "This page is currently under construction."
+  },
+  {
+    "objectID": "pages/projects.html",
+    "href": "pages/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "2025\n\nMaster Thesis\nCanopy height mapping from optical remote sensing data: reassessing deep learning methods\n\n\n\n2024\n\nR-Package Development Creation and development of the R-Package ‘dandelion’\nStudent Project Detecting meadow orchards in Germany using a convolution neural networks and aerial imagery.\n\n\n\n2022\n\nBachelor Thesis Spatio-Temporal analysis of a central european bog\n\nRecent trends in moisture conditions across European peatlands"
+  },
+  {
+    "objectID": "pages/CV.html",
+    "href": "pages/CV.html",
+    "title": "CV",
+    "section": "",
+    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nEcological Mapping\n\n\n\n\n\n\n\nWoodworking\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance Annualy since 2022\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Emilio Sánchez",
@@ -12,69 +40,6 @@
     "title": "Emilio Sánchez",
     "section": "",
     "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
-  },
-  {
-    "objectID": "pages/CV.html",
-    "href": "pages/CV.html",
-    "title": "CV",
-    "section": "",
-    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nEcological Mapping\n\n\n\n\n\n\n\nWoodworking\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance Annualy since 2022\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
-  },
-  {
-    "objectID": "pages/gchm.html#introduction",
-    "href": "pages/gchm.html#introduction",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "Introduction",
-    "text": "Introduction\nThis page documents the progress of my research on the global canopy height model by Nico Lang (2024). For the full data and scripts please visit my GitHub and for other projects and more information about me visit my Main Site."
-  },
-  {
-    "objectID": "pages/gchm.html#research-question",
-    "href": "pages/gchm.html#research-question",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "Research question",
-    "text": "Research question\nCan canopy height be derived from spectral data?\nThe main objective of this research is to uncover the prediction mechanisms of the CNN. Central question of the work is What can be learned about canopy height from optical remote sensing.\n\nHypothesis\n\nThe model has not learned a connection of spectral values to canopy height.\n\nOther variables like location and biome play a more important role."
-  },
-  {
-    "objectID": "pages/gchm.html#methods",
-    "href": "pages/gchm.html#methods",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "Methods",
-    "text": "Methods\nThis research builds on the model architecture created by Lang et al. (2023). Their promising global canopy height prediction model serves as a great base for investigating the mechanisms behind optical data canopy height predictions. By observing changes in the resulting predic- tions, after manipulating the input data, we would expect to detect (linear) patterns, if spectral properties would provide a strong explainatory value.\nConsistent with the original paper, Sentinel-2 data and ESA-WordCover data from 2020 was used. The code was mainly left unchanged and one function added to allow controlled manipulation of single input bands. A workflow was created in a single script to allow easy application,"
-  },
-  {
-    "objectID": "pages/gchm.html#research-locations",
-    "href": "pages/gchm.html#research-locations",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "Research locations",
-    "text": "Research locations\nIn total 11 tiles were used for the analysis of the model. They were selected to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper."
-  },
-  {
-    "objectID": "pages/gchm.html#results",
-    "href": "pages/gchm.html#results",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "Results",
-    "text": "Results\nThe preliminary results already show no clear trend after spectral manipulation (Fig. 1). Differences between locations have shown to be more significant than spectral manipulation, suggesting that the actual influence of spectral properties in the creation of the prediction is very low or none. Relationships between the location of the image tile and the predicted canopy height could already be observed. They will be properly analysed and shown at a later stage of this project.\n\n\n\nFig. 1: Average absolute relative difference to the original prediction by degree of manipulation, for all bands and locations."
-  },
-  {
-    "objectID": "pages/gchm.html#slides",
-    "href": "pages/gchm.html#slides",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "Slides",
-    "text": "Slides\n\nConference slides (PDF)"
-  },
-  {
-    "objectID": "pages/gchm.html#sources",
-    "href": "pages/gchm.html#sources",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "Sources",
-    "text": "Sources\nLang, N., Jetz, W., Schindler, K., & Wegner, J. D. (2023).\nA high-resolution canopy height model of the Earth.\nNature Ecology & Evolution, 1-12.\n@article{lang2023high,\n  title={A high-resolution canopy height model of the Earth},\n  author={Lang, Nico and Jetz, Walter and Schindler, Konrad and Wegner, Jan Dirk},\n  journal={Nature Ecology \\& Evolution},\n  pages={1--12},\n  year={2023},\n  publisher={Nature Publishing Group UK London}\n}"
-  },
-  {
-    "objectID": "pages/projects.html",
-    "href": "pages/projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "2025\n\nMaster Thesis\nCanopy height mapping from optical remote sensing data: reassessing deep learning methods\n\n\n\n2024\n\nR-Package Development Creation and development of the R-Package ‘dandelion’\nStudent Project Detecting meadow orchards in Germany using a convolution neural networks and aerial imagery.\n\n\n\n2022\n\nBachelor Thesis Spatio-Temporal analysis of a central european bog\n\nRecent trends in moisture conditions across European peatlands"
   },
   {
     "objectID": "pages/about.html",
@@ -112,81 +77,53 @@
     "text": "Personal Interests\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects"
   },
   {
-    "objectID": "pages/resources/VirtualEnvs.html#how-to-set-them-up",
-    "href": "pages/resources/VirtualEnvs.html#how-to-set-them-up",
-    "title": "Virtual Environments",
-    "section": "How to set them up",
-    "text": "How to set them up\nMiniforge3 is a lightweight alternative to Anaconda that simplifies installation and avoids some licensing issues. Libmamba solver is much faster and more reliable than the classic Conda solver, especially for large environments with many dependencies. Using the old solver can take hours or even fail due to conflicts.\nminiforge3 is installed via Miniforge3-Linux-x86_64.sh Important: Solver has to be set to libmamba. Check via conda info and change like this if needed:\nconda info | grep solver\nconda config --set solver libmamba\n\nInstallation\nSet the desired software/packages and if needed versions in environment.yml. All undefined Versions will be fitted to work together. Create the Virtual Environment with the specified requirements.\nTip: Installing R inside the environment avoids mismatches between Python and R libraries and ensures your scripts are reproducible across machines.\nmamba env create -f environment.yml\n\nCheck after installation\nTo see all installed software and packages with their exact version use conda list or filter for a specific item\nconda list\n\nconda list | grep numpy"
+    "objectID": "pages/gchm.html#introduction",
+    "href": "pages/gchm.html#introduction",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "Introduction",
+    "text": "Introduction\nThis page documents the progress of my research on the global canopy height model by Nico Lang (2024). For the full data and scripts please visit my GitHub and for other projects and more information about me visit my Main Site."
   },
   {
-    "objectID": "pages/resources/VirtualEnvs.html#deployment",
-    "href": "pages/resources/VirtualEnvs.html#deployment",
-    "title": "Virtual Environments",
-    "section": "Deployment",
-    "text": "Deployment\nFirst, the desired Virtual Environment has to be activated and the desired project directory set. Then we can deploy scripts by specifying the type and then the file.\nconda activate gchm\ncd /home/emilio/canopy_height/\nRscript deploy.R\n\nUsefull bash code\nReal time GPU supervision:\nwatch -n 1 nvidia-smi"
+    "objectID": "pages/gchm.html#research-question",
+    "href": "pages/gchm.html#research-question",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "Research question",
+    "text": "Research question\nCan canopy height be derived from spectral data?\nThe main objective of this research is to uncover the prediction mechanisms of the CNN. Central question of the work is What can be learned about canopy height from optical remote sensing.\n\nHypothesis\n\nThe model has not learned a connection of spectral values to canopy height.\n\nOther variables like location and biome play a more important role."
   },
   {
-    "objectID": "pages/resources/VirtualEnvs.html#Example",
-    "href": "pages/resources/VirtualEnvs.html#Example",
-    "title": "Virtual Environments",
-    "section": "Example environment",
-    "text": "Example environment\nThe environment.yml file contains all info about what we want to install and tells conda our requirements. The solver then sorts out the correct versions for the virtual environment to work with each other. It works from top to bottom. gdal is included here; the version will fit to the required python and R. We included R here as well to have a fully encapsulated environment ensuring compatibility, instead of deploying scripts from outside the branch. -e. is added to install it as executable python “package”.\nname: gchm\n\nchannels:\n  - conda-forge\n  - pytorch\n  - nvidia\n\ndependencies:\n  - python&gt;=3.12.0\n  - r-base&gt;=4.4.0\n  - gdal\n  - sentinelhub\n  - pytables\n  - libgdal-jp2openjpeg\n  - ipython\n  - matplotlib\n  - numpy\n  - pathlib\n  - tqdm\n  - botocore\n  - urllib3\n  - wandb\n  - tensorboard\n  - scikit-image\n  - scikit-learn\n  - pytorch::pytorch\n  - pytorch::pytorch-cuda\n  - pytorch::torchvision\n  - pytorch::torchaudio\n  - conda-forge::cudatoolkit==11.8.0\n  - typing\n  - jupyter\n  - pip\n  - pip:\n    - -e ."
+    "objectID": "pages/gchm.html#methods",
+    "href": "pages/gchm.html#methods",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "Methods",
+    "text": "Methods\nThis research builds on the model architecture created by Lang et al. (2023). Their promising global canopy height prediction model serves as a great base for investigating the mechanisms behind optical data canopy height predictions. By observing changes in the resulting predic- tions, after manipulating the input data, we would expect to detect (linear) patterns, if spectral properties would provide a strong explainatory value.\nConsistent with the original paper, Sentinel-2 data and ESA-WordCover data from 2020 was used. The code was mainly left unchanged and one function added to allow controlled manipulation of single input bands. A workflow was created in a single script to allow easy application,"
   },
   {
-    "objectID": "pages/resources/VirtualEnvs.html",
-    "href": "pages/resources/VirtualEnvs.html",
-    "title": "Virtual Environments",
-    "section": "",
-    "text": "A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:\n\nProjects do not interfere with each other.\nSpecific versions of packages can be maintained for reproducibility.\nExperiments and scripts run in a controlled, predictable setup.\n\nWhatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems."
+    "objectID": "pages/gchm.html#research-locations",
+    "href": "pages/gchm.html#research-locations",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "Research locations",
+    "text": "Research locations\nIn total 11 tiles were used for the analysis of the model. They were selected to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper.\n\n\nWarning: Paket 'tmap' wurde unter R Version 4.5.2 erstellt\n\n\nWarning: Paket 'sf' wurde unter R Version 4.5.2 erstellt"
   },
   {
-    "objectID": "pages/resources/VirtualEnvs.html#what-are-virtual-environments",
-    "href": "pages/resources/VirtualEnvs.html#what-are-virtual-environments",
-    "title": "Virtual Environments",
-    "section": "",
-    "text": "A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:\n\nProjects do not interfere with each other.\nSpecific versions of packages can be maintained for reproducibility.\nExperiments and scripts run in a controlled, predictable setup.\n\nWhatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems."
+    "objectID": "pages/gchm.html#results",
+    "href": "pages/gchm.html#results",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "Results",
+    "text": "Results\nThe preliminary results already show no clear trend after spectral manipulation (Fig. 1). Differences between locations have shown to be more significant than spectral manipulation, suggesting that the actual influence of spectral properties in the creation of the prediction is very low or none. Relationships between the location of the image tile and the predicted canopy height could already be observed. They will be properly analysed and shown at a later stage of this project.\n\n\n\nFig. 1: Average absolute relative difference to the original prediction by degree of manipulation, for all bands and locations."
   },
   {
-    "objectID": "pages/test.html",
-    "href": "pages/test.html",
-    "title": "Test",
-    "section": "",
-    "text": "::: columns"
+    "objectID": "pages/gchm.html#slides",
+    "href": "pages/gchm.html#slides",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "Slides",
+    "text": "Slides\n\nConference slides (PDF)"
   },
   {
-    "objectID": "pages/test.html#main",
-    "href": "pages/test.html#main",
-    "title": "Test",
-    "section": "Main",
-    "text": "Main\n\nEducation\nABC\n\n\nExperience\nIntern\nCompany\nMachine learning and reproducible workflows.\n\n\nSkills\n\nR | Ecological- and Geodata\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\nActivities\n\nSports\nBiking and trail running\nTeam sports at University\nWoodworking\nGardening\nDIY-Projects\n\n:::\n::: {.column width=“300px”}\n\nName Name\nM.Sc. Master\nmail@uni-mail.gov\n\n  \n\n\nLanguages\n\n\nEnglish\n\n\n\n\n\n\n\nGerman\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n:::"
-  },
-  {
-    "objectID": "pages/dandelion.html",
-    "href": "pages/dandelion.html",
-    "title": "dandelion",
-    "section": "",
-    "text": "The dandelion package is a collection of functions for spatial data handling and analysis in R. It is primarily aimed at scientific users in the fields of ecological modelling, remote sensing and machine learning. It’s application however is not limited to this target group and you mind find some useful functions for your projects."
-  },
-  {
-    "objectID": "pages/dandelion.html#canopy-height-analysis",
-    "href": "pages/dandelion.html#canopy-height-analysis",
-    "title": "dandelion",
-    "section": "Canopy Height analysis",
-    "text": "Canopy Height analysis\nThe following functions were specifically designed for the analysis of a canopy height model. Details on the project, the results and the application of the functions can be found on the project page.\n\nWorldcover Adjustment\nSpecific function for the processing of ESA Worldcover that is cropped to match Sentinel-2 tiles. It adjusts extend and resolution to match exactly the corresponding tile, enabeling further computations and analysis.\n\nworldcover_adjust()\n\n\n\nParameter dataframe\n\ncreate_param_df()\n\n\n\nGlobal Point Grid\nEnables to create a global point grid on earth’s landmasses within set boundaries (Lat/Lon).\n\nglobal_point_grid()"
-  },
-  {
-    "objectID": "pages/dandelion.html#tools",
-    "href": "pages/dandelion.html#tools",
-    "title": "dandelion",
-    "section": "Tools",
-    "text": "Tools\nCollection of tools for an efficient work process.\n\nBibtext export of session\nTo export a text file with all packages in BibTex format use bibtex_citation_session(). All actively loaded packages within your session will be included. Only non-base packages are taken into account. You can then import or copy the citations from the text file to your project.\n\nbibtex_citation_session(\"folder/filename.txt\")\n\nThe function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory."
-  },
-  {
-    "objectID": "pages/resources/fieldnotes.html",
-    "href": "pages/resources/fieldnotes.html",
-    "title": "Field Notes",
-    "section": "",
-    "text": "Test test test hhhhhhhhhhhhhhhsssssssssssssssssssssllllllllllllllllllllllppppppppppppppppppppppppppppeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrzzzzzzzzzzzzzzzzzz"
+    "objectID": "pages/gchm.html#sources",
+    "href": "pages/gchm.html#sources",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "Sources",
+    "text": "Sources\nLang, N., Jetz, W., Schindler, K., & Wegner, J. D. (2023).\nA high-resolution canopy height model of the Earth.\nNature Ecology & Evolution, 1-12.\n@article{lang2023high,\n  title={A high-resolution canopy height model of the Earth},\n  author={Lang, Nico and Jetz, Walter and Schindler, Konrad and Wegner, Jan Dirk},\n  journal={Nature Ecology \\& Evolution},\n  pages={1--12},\n  year={2023},\n  publisher={Nature Publishing Group UK London}\n}"
   },
   {
     "objectID": "pages/resources/dandelion.html",
@@ -210,45 +147,38 @@
     "text": "Tools\nCollection of tools for an efficient work process.\n\nBibtext export of session\nTo export a text file with all packages in BibTex format use bibtex_citation_session(). All actively loaded packages within your session will be included. Only non-base packages are taken into account. You can then import or copy the citations from the text file to your project.\n\nbibtex_citation_session(\"folder/filename.txt\")\n\nThe function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory."
   },
   {
-    "objectID": "pages/cv_test.html",
-    "href": "pages/cv_test.html",
-    "title": "cv_test",
+    "objectID": "pages/resources/VirtualEnvs.html",
+    "href": "pages/resources/VirtualEnvs.html",
+    "title": "Virtual Environments",
     "section": "",
-    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\nesanchez@uni-muenster.de\n\n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nWoodworking\n\n\n\n\n\n\n\nEcological Mapping\n\n\n\n\n\n\n\n\n\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector\nFreelance, annualy summer 2022 - 2025\nControl of agricultural fields.\nStudent Assistant\nInstitute of Landscape Ecology, Sep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant\nInstitute of Landscape Ecology, Apr 2023 - Sep 2023\nBotany tutor\nEcological Mapping\nLAKI GBR, May 2022 - July 2022\nEcological mappings of vegetation.\nStudent Assistant\nInstitute of Landscape Ecology, Apr 2022 - Sep 2022\nField Equipment rental\nIntern\nEFTAS Remote Sensing, Oct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+    "text": "A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:\n\nProjects do not interfere with each other.\nSpecific versions of packages can be maintained for reproducibility.\nExperiments and scripts run in a controlled, predictable setup.\n\nWhatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems."
   },
   {
-    "objectID": "pages/cv_test.html#education",
-    "href": "pages/cv_test.html#education",
-    "title": "cv_test",
+    "objectID": "pages/resources/VirtualEnvs.html#what-are-virtual-environments",
+    "href": "pages/resources/VirtualEnvs.html#what-are-virtual-environments",
+    "title": "Virtual Environments",
     "section": "",
-    "text": "Your CV content here…"
+    "text": "A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:\n\nProjects do not interfere with each other.\nSpecific versions of packages can be maintained for reproducibility.\nExperiments and scripts run in a controlled, predictable setup.\n\nWhatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems."
   },
   {
-    "objectID": "pages/cv_test.html#experience",
-    "href": "pages/cv_test.html#experience",
-    "title": "cv_test",
-    "section": "",
-    "text": "More content…"
+    "objectID": "pages/resources/VirtualEnvs.html#how-to-set-them-up",
+    "href": "pages/resources/VirtualEnvs.html#how-to-set-them-up",
+    "title": "Virtual Environments",
+    "section": "How to set them up",
+    "text": "How to set them up\nMiniforge3 is a lightweight alternative to Anaconda that simplifies installation and avoids some licensing issues. Libmamba solver is much faster and more reliable than the classic Conda solver, especially for large environments with many dependencies. Using the old solver can take hours or even fail due to conflicts.\nminiforge3 is installed via Miniforge3-Linux-x86_64.sh Important: Solver has to be set to libmamba. Check via conda info and change like this if needed:\nconda info | grep solver\nconda config --set solver libmamba\n\nInstallation\nSet the desired software/packages and if needed versions in environment.yml. All undefined Versions will be fitted to work together. Create the Virtual Environment with the specified requirements.\nTip: Installing R inside the environment avoids mismatches between Python and R libraries and ensures your scripts are reproducible across machines.\nmamba env create -f environment.yml\n\nCheck after installation\nTo see all installed software and packages with their exact version use conda list or filter for a specific item\nconda list\n\nconda list | grep numpy"
   },
   {
-    "objectID": "pages/resources/fieldnotes.html#no-column-any-more",
-    "href": "pages/resources/fieldnotes.html#no-column-any-more",
-    "title": "Field Notes",
-    "section": "No column any more",
-    "text": "No column any more\nTest test test hhhhh hhhhhhhhhhss ssssssssssssss ssssslllllllll lllllllllllllp ppppppp ppppppp ppppppp ppppppe eeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeee eeeer rrrrrrrr rrrrr rrrrrrrrrrrr rrrzzzzz zzzzzzzz zzzzz"
+    "objectID": "pages/resources/VirtualEnvs.html#deployment",
+    "href": "pages/resources/VirtualEnvs.html#deployment",
+    "title": "Virtual Environments",
+    "section": "Deployment",
+    "text": "Deployment\nFirst, the desired Virtual Environment has to be activated and the desired project directory set. Then we can deploy scripts by specifying the type and then the file.\nconda activate gchm\ncd /home/emilio/canopy_height/\nRscript deploy.R\n\nUsefull bash code\nReal time GPU supervision:\nwatch -n 1 nvidia-smi"
   },
   {
-    "objectID": "pages/resources/fieldnotes.html#grid",
-    "href": "pages/resources/fieldnotes.html#grid",
-    "title": "Field Notes",
-    "section": "Grid",
-    "text": "Grid\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n      \n        \n      \n      \n        Resources\n        All models are wrong, but some are usefull.\n      \n    \n  \n\n  \n    \n      \n        \n      \n      \n        Cat Vitae\n        The live of a scientific cat."
-  },
-  {
-    "objectID": "pages/resources/fieldnotes.html#a-closer-look",
-    "href": "pages/resources/fieldnotes.html#a-closer-look",
-    "title": "Field Notes",
-    "section": "A Closer Look",
-    "text": "A Closer Look\n\n\n  \n    \n      \n        \n      \n      \n        Resources\n        All models are wrong, but some are usefull.\n      \n    \n  \n\n  \n    \n      \n        \n      \n      \n        Cat Vitae\n        The live of a scientific cat."
+    "objectID": "pages/resources/VirtualEnvs.html#Example",
+    "href": "pages/resources/VirtualEnvs.html#Example",
+    "title": "Virtual Environments",
+    "section": "Example environment",
+    "text": "Example environment\nThe environment.yml file contains all info about what we want to install and tells conda our requirements. The solver then sorts out the correct versions for the virtual environment to work with each other. It works from top to bottom. gdal is included here; the version will fit to the required python and R. We included R here as well to have a fully encapsulated environment ensuring compatibility, instead of deploying scripts from outside the branch. -e. is added to install it as executable python “package”.\nname: gchm\n\nchannels:\n  - conda-forge\n  - pytorch\n  - nvidia\n\ndependencies:\n  - python&gt;=3.12.0\n  - r-base&gt;=4.4.0\n  - gdal\n  - sentinelhub\n  - pytables\n  - libgdal-jp2openjpeg\n  - ipython\n  - matplotlib\n  - numpy\n  - pathlib\n  - tqdm\n  - botocore\n  - urllib3\n  - wandb\n  - tensorboard\n  - scikit-image\n  - scikit-learn\n  - pytorch::pytorch\n  - pytorch::pytorch-cuda\n  - pytorch::torchvision\n  - pytorch::torchaudio\n  - conda-forge::cudatoolkit==11.8.0\n  - typing\n  - jupyter\n  - pip\n  - pip:\n    - -e ."
   }
 ]
