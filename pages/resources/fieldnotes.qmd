@@ -69,6 +69,6 @@ format:
 
 ## This page is currently under construction.
 
-![](../content/penguins.jpg){width=550 align="center"}
+![](/content/penguins.jpg){width=550 align="center"}
 
 </div>
