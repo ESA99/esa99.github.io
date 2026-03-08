@@ -1,0 +1,160 @@
+---
+title: "Test"
+format:
+  html:
+    title-block: false 
+    css: ../styles/cv_style.css
+    toc: false
+    sidebar: false
+    page-layout: full
+---
+
+::: {.grid .gx-5}
+
+::: {.g-col-12 .g-col-md-3 .text-center}
+
+![](../content/portrait_outdoor.jpg){.cv-photo}  
+
+
+**Emilio Sánchez**  
+_M.Sc. Landscape Ecology_  
+<!-- esanchez@uni-muenster.de   -->
+<!-- +123 456 7890 -->
+
+<div class="cv-icons">
+  <a href="https://github.com/ESA99"><i class="bi bi-github"></i></a>
+  <a href="https://orcid.org/0009-0004-0348-5434"><i class="ai ai-orcid"></i></a>
+  <a href="mailto:esanchez@uni-muenster.de"><i class="bi bi-envelope-fill"></i></a>
+</div>
+
+### Languages
+
+<div class="skill">
+<span>German</span>
+<div class="skill-bar">
+<div class="skill-level skill-green" style="width:100%"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>English</span>
+<div class="skill-bar">
+<div class="skill-level skill-green" style="width: 90%"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>Spanish</span>
+<div class="skill-bar">
+<div class="skill-level skill-green" style="width: 90%"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>Swedish</span>
+<div class="skill-bar">
+<div class="skill-level skill-green" style="width: 60%"></div>
+</div>
+</div>
+
+
+### Programming
+
+<div class="skill">
+<span>R</span>
+<div class="skill-bar">
+<div class="skill-level skill-blue" style="width:95%"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>Git</span>
+<div class="skill-bar">
+<div class="skill-level skill-blue" style="width: 55%"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>Python</span>
+<div class="skill-bar">
+<div class="skill-level skill-blue" style="width: 20%"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>CSS</span>
+<div class="skill-bar">
+<div class="skill-level skill-blue" style="width: 5%"></div>
+</div>
+</div>
+
+
+:::
+
+::: {.g-col-12 .g-col-md-9}
+### About
+My Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.
+
+### Education
+
+**M.Sc. Landscape Ecology** – [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) _(Oct 2023 - present)_  
+Focus: *Remote Sensing, Restoration Ecology, Soil Ecology*  
+Thesis: *What can we learn about canopy height from optical data.*  
+
+**B.Sc. Landscape Ecology** – [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) _(Oct 2019 - Sept 2022)_  
+Thesis: *Spatio-temporal analysis of a central European bog.* 
+
+
+---
+
+### Experience
+**Field Inspector** | Freelance
+_Annualy since 2022_  
+Control of agricultural fields. 
+
+**Student Assistant** | Institute of Landscape Ecology  
+_Sep 2025 - Feb 2026_  
+Analysis of deep learning models
+
+**Student Assistant** | Institute of Landscape Ecology  
+_Apr - Sep 2023_  
+Botany tutor  
+
+**Ecological Mapping** | LAKI GBR  
+_May - July 2022_  
+Ecological mappings of vegetation.  
+
+**Student Assistant** | Institute of Landscape Ecology  
+_Apr - Sep 2022_  
+Field Equipment rental  
+
+**Intern** | EFTAS Remote Sensing  
+_Oct - Nov 2021_  
+Machine learning and reproducible workflows.  
+
+---
+
+### Skills
+
+- Processing of ecological- and spatial data 
+- Data analysis and visualization
+- Scientific writing
+- Organisational talent
+- Project Management (University training)
+
+---
+
+### Activities
+
+- Volunteer at THW (Federal Agency for Technical Relief)
+- Sports  
+    - Biking and trail running  
+    - Team sports at University  
+- Woodworking
+- Gardening
+- DIY-Projects
+
+
+:::
+
+:::

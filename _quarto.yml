@@ -15,16 +15,15 @@ website:
       - text: "Projects"
         href: pages/projects.qmd
       - text: "Resources"
-        menu:
-          - text: "Overview"  
-            href: pages/resources.qmd
-          - text: "Field Notes"
-            href: pages/resources/fieldnotes.qmd
-          - text: "dandelion"
-            href: pages/resources/dandelion.qmd
-          - text: "Virtual Environments"
-            href: pages/resources/VirtualEnvs.qmd
-      # - href: CV.qmd
+        href: pages/resources.qmd
+      #   menu:
+      #     - text: "Overview"  
+      #       href: pages/resources.qmd
+      #     - text: "dandelion"
+      #       href: pages/dandelion.qmd
+      #     - text: "Virtual Environments"
+      #       href: pages/resources/VirtualEnvs.qmd
+      # # - href: CV.qmd
       #   text: CV
       # #- about.qmd
     right: 
