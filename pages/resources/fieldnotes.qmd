@@ -8,6 +8,14 @@ format:
 ---
 <!-- Alternative page name: Curiosities, Observations, Waypoints -->
 
+<div class="centered-content">
+
+
+## This page is currently under construction.
+
+![](/content/penguins.jpg){width=550 align="center"}
+
+</div>
 
 <!-- Quarto column structure -->
 :::: {.columns} 
@@ -22,7 +30,7 @@ format:
 <div id="av-orbit">
     <script>
         var avOrbitProperties = {
-            size: 'medium',
+            size: 'large',
             lang: 'en'
         };
     </script>
@@ -64,11 +72,3 @@ format:
 
 
 
-<div class="centered-content">
-
-
-## This page is currently under construction.
-
-![](/content/penguins.jpg){width=550 align="center"}
-
-</div>
