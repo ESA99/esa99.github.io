@@ -129,13 +129,13 @@ Thesis: *Spatio-temporal analysis of a central European bog.*
 ---
 
 ### Experience
-**Field Inspector** | Freelance
+**Field Inspector** | Freelance  
 _Annualy since 2022_  
 Control of agricultural fields. 
 
 **Student Assistant** | Institute of Landscape Ecology  
 _Sep 2025 - Feb 2026_  
-Analysis of deep learning models
+Analysis of deep learning models  
 
 **Student Assistant** | Institute of Landscape Ecology  
 _Apr - Sep 2023_  
@@ -152,6 +152,12 @@ Field Equipment rental
 **Intern** | EFTAS Remote Sensing  
 _Oct - Nov 2021_  
 Machine learning and reproducible workflows.  
+
+---
+
+### Memberships
+
+- Floristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)
 
 ---
 
