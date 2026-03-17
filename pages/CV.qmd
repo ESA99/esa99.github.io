@@ -121,10 +121,11 @@ My Name is Emilio Sánchez and I am a landscape ecologist from Germany with spec
 
 **M.Sc. Landscape Ecology** – [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) _(Oct 2023 - present)_  
 Focus: *Remote Sensing, Restoration Ecology, Soil Ecology*  
-Thesis: *What can we learn about canopy height from optical data.*  
+Thesis: [*Canopy height mapping from optical remote sensing data: reassessing deep learning methods*](gchm.qmd)  
+
 
 **B.Sc. Landscape Ecology** – [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) _(Oct 2019 - Sept 2022)_  
-Thesis: *Spatio-temporal analysis of a central European bog.*  
+Thesis: [*Spatio-temporal analysis of a central European bog.*](https://doi.org/10.1016/j.rsase.2024.101385){.external target="_blank"}  
   
 ---
 
