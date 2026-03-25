@@ -32,39 +32,11 @@
 }
 
 
-
-/* CV Photo styling */
-.cv-photo {
-  width: 200px;
-  height: 270px;
-  border-radius: 5%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-
 .cv-basic-info {
   font-size: 1.05rem;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
-
-.cv-icons a {
-  font-size: 1.2rem;
-  margin: 0 0.3rem;
-  color: #333;
-  text-decoration: none;
-}
-
-.cv-icons a:hover {
-  color: #99C644;
-}
-
-
-/* cv_style.css – hide the title block that Quarto injects */
-.quarto-title-block {
-  display: none !important;
-}
-
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -80,13 +52,44 @@
 }
 
 
+/*===================================================================*/
+/* Core Setup */
+/*===================================================================*/
+
+/* CV Photo styling */
+.cv-photo {
+  width: 200px;
+  height: 270px;
+  border-radius: 5%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.cv-icons a {
+  font-size: 1.2rem;
+  margin: 0 0.3rem;
+  color: #666 ;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cv-icons a:hover {
+  color: #99C644;
+}
+
+
+/* cv_style.css – hide the title block that Quarto injects */
+.quarto-title-block {
+  display: none !important;
+}
+
 
 
 
 
 /*===================================================================*/
-/* Skill bar test setup */
 
+/* Skill bar setup */
 
 .skill {
   margin-bottom: 12px;
@@ -95,15 +98,16 @@
 .skill span {
   font-weight: normal;
 /*font-weight: 600; */ /*bold text*/
-  font-size: 0.9rem;
+  font-size: 1rem;
   /*display: block;
   text-align: left;*/ /* align text left*/
 }
 
+/*
 .skill-bar {
   width: 80%;
-  margin: 4px auto 0;  /* centers it horizontally */
-  height: 8px;
+  margin: 4px auto 0;  /* centers it horizontally */ /*
+  height: 10px;
   background: #e6e6e6;
   border-radius: 5px;
   margin-top: 4px;
@@ -114,21 +118,217 @@
   border-radius: 5px;
   transition: width 1s ease;
 }
+*/
+
+.skill-bar {
+  width: 80%;
+  margin: 6px auto 0;
+  height: 8px;              /* slightly slimmer */
+  background: #e6e6e6;
+  border-radius: 999px;     /* pill shape */
+}
+
+.skill-level {
+  height: 100%;
+  border-radius: 999px;
+}
 
 
 /* color variants */
 .skill-blue {
   background: #007acc;
 }
-
 .skill-green {
   background: #99C644;
 }
-
 .skill-orange {
   background: #ffd700;
 }
-
 .skill-purple {
   background: #8b5cf6;
+}
+
+/*===================================================================*/
+/* Skill dots (compact CV style) */
+/*===================================================================*/
+/*
+.skill-dots {
+  display: grid;
+  grid-template-columns: 1fr auto; /* label | dots */ /*
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+} */
+
+.skill-dots {
+  display: grid;
+  grid-template-columns: 95px auto; /* label | dots */
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+
+.skill-dots span {
+  color: #444;
+}
+
+.dots {
+  display: flex;
+  gap: 6px; /* tighter = cleaner */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e5e5e5;
+}
+
+
+/* Filled dots (color variants) */
+.dot.green { background: #99C644; }
+.dot.purple { background: #8b5cf6; }
+.dot.blue { background: #007acc; }
+.dot.orange { background: #ffd700; }
+
+
+h3 + .skill-dots,
+h2 + .skill-dots {
+  margin-top: 0.4rem;
+}
+
+.skill-dots + .skill-dots {
+  margin-top: 2px;
+}
+
+.skills-wrapper {
+  display: inline-block; /* shrink to fit content */
+  text-align: left;      /* labels still left-aligned inside */
+}
+
+/*===================================================================*/
+
+
+
+/* Vertical grid seperator */
+.grid > [class*="g-col"] {
+  position: relative;
+}
+
+.grid > [class*="g-col"]:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  /*right: -1rem;  pushes line into the gutter 
+  right: 0;*/
+  right: -0.75rem; /* 👈 move into gutter */
+  width: 1px;
+  height: 100%;
+  background-color: #ccc; /* line color */
+}
+
+.grid {
+  row-gap: 2rem;
+}
+
+/*
+.grid > [class*="g-col"]:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #ccc; /* thin grey line */
+} */
+
+
+
+/* Hide on small screens
+@media (max-width: 768px) {
+  .grid > [class*="g-col"]::after {
+    display: none;
+  }
+} */
+
+@media (max-width: 768px) {
+  .grid > [class*="g-col"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+/* Width of the page */
+.page-columns {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+
+
+/* Page Styling of Fonts, Text sizes and appearnace */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65;
+  color: #333;
+}
+
+/* Section Headings */
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: #111;
+  border-bottom: 1px solid #eee;/* Suttle section divider */
+  padding-bottom: 0.3rem;
+}
+
+/* Sub-Headings */
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+/* Muted Texts */
+.muted {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Sidebar styling */
+.grid > [class*="g-col"]:first-child {
+  font-size: 0.95rem;
+}
+
+.grid > [class*="g-col"]:first-child p {
+  margin-bottom: 0.4rem;
+}
+
+.grid > [class*="g-col"]:first-child h2 {
+  margin-top: 1.5rem;
+}
+
+/* Spacing between entries */
+p {
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+
+/* Slightly tighter main column text */
+.grid > [class*="g-col"]:last-child {
+  padding-left: 1.5rem;
 }

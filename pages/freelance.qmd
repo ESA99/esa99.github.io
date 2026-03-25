@@ -1,0 +1,49 @@
+---
+title: ""
+format:
+  html:
+    page-layout: full
+    toc: false
+    css: ../styles/freelance.css
+---
+
+<div class="hero-container">
+  <h1 class="hero-title">My Page Title</h1>
+</div>
+
+
+# Welcome to LÖGI Landschaftökologie und Geoinformatik!
+
+scdsf  
+vsdfds  
+
+
+asdfsadfa ds f  
+  
+sadfdsfdsfdsfa ssdffffffffffffffffffff  ssssssssssss  sddfasdf  
+
+
+
+sdfdsfds   
+adsffds  
+sdafsadfdsa  
+
+
+sadfdsfds 
+
+
+
+
+dsafdsafdsfds   
+
+
+
+
+
+
+
+
+
+
+
+

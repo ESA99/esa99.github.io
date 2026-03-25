@@ -4,7 +4,14 @@
     "href": "pages/test.html",
     "title": "Test",
     "section": "",
-    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\n\nProgramming\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: What can we learn about canopy height from optical data.\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance Annualy since 2022\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGerman\n\n\n\n\n\nEnglish\n\n\n\n\n\nSpanish\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\n\n\n\nR\n\n\n\n\n\nGit\n\n\n\n\n\nPython\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\n\n\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\n\n\nM.Sc. Landscape Ecology\nOct 2023-Present · University Münster\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods.\nB.Sc. Landscape Ecology\nOct 2019-Sep 2022 · University Münster\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\n\n\n\nField Inspector | Freelance\n2022–Present · Control of agricultural fields\n\n\n\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026 · Analysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023 · Botany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022 · Ecological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022 · Field Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021 · Machine learning and reproducible workflows.\n\n\n\n\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\n\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\n\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+  },
+  {
+    "objectID": "pages/test.html#about",
+    "href": "pages/test.html#about",
+    "title": "Test",
+    "section": "",
+    "text": "My Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\n\n\nM.Sc. Landscape Ecology\nOct 2023-Present · University Münster\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods.\nB.Sc. Landscape Ecology\nOct 2019-Sep 2022 · University Münster\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\n\n\n\nField Inspector | Freelance\n2022–Present · Control of agricultural fields\n\n\n\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026 · Analysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023 · Botany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022 · Ecological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022 · Field Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021 · Machine learning and reproducible workflows.\n\n\n\n\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\n\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\n\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
   },
   {
     "objectID": "pages/resources/VirtualEnvs.html",
@@ -112,6 +119,27 @@
     "text": "Sources\nLang, N., Jetz, W., Schindler, K., & Wegner, J. D. (2023).\nA high-resolution canopy height model of the Earth.\nNature Ecology & Evolution, 1-12.\n@article{lang2023high,\n  title={A high-resolution canopy height model of the Earth},\n  author={Lang, Nico and Jetz, Walter and Schindler, Konrad and Wegner, Jan Dirk},\n  journal={Nature Ecology \\& Evolution},\n  pages={1--12},\n  year={2023},\n  publisher={Nature Publishing Group UK London}\n}"
   },
   {
+    "objectID": "pages/CV.html",
+    "href": "pages/CV.html",
+    "title": "CV",
+    "section": "",
+    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nEcological Mapping\n\n\n\n\n\n\n\nWoodworking\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance\nAnnualy since 2022\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nMemberships\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Emilio Sánchez",
+    "section": "",
+    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+  },
+  {
+    "objectID": "index.html#emilio-sánchez",
+    "href": "index.html#emilio-sánchez",
+    "title": "Emilio Sánchez",
+    "section": "",
+    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+  },
+  {
     "objectID": "pages/about.html",
     "href": "pages/about.html",
     "title": "CV",
@@ -147,25 +175,11 @@
     "text": "Personal Interests\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Emilio Sánchez",
+    "objectID": "pages/freelance.html",
+    "href": "pages/freelance.html",
+    "title": "\nMy Page Title\n",
     "section": "",
-    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
-  },
-  {
-    "objectID": "index.html#emilio-sánchez",
-    "href": "index.html#emilio-sánchez",
-    "title": "Emilio Sánchez",
-    "section": "",
-    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
-  },
-  {
-    "objectID": "pages/CV.html",
-    "href": "pages/CV.html",
-    "title": "CV",
-    "section": "",
-    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nEcological Mapping\n\n\n\n\n\n\n\nWoodworking\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance\nAnnualy since 2022\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nMemberships\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+    "text": "Welcome to LÖGI Landschaftökologie und Geoinformatik!\nscdsf\nvsdfds\nasdfsadfa ds f\nsadfdsfdsfdsfa ssdffffffffffffffffffff ssssssssssss sddfasdf\nsdfdsfds\nadsffds\nsdafsadfdsa\nsadfdsfds\ndsafdsafdsfds"
   },
   {
     "objectID": "pages/projects.html",

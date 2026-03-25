@@ -1,0 +1,31 @@
+/* Flush hero image to the top */
+.hero-container {
+  position: relative;
+  width: 100vw;            /* full viewport width */
+  height: 400px;            /* adjust height */
+  margin: 0;                /* remove any margin */
+  padding: 0;               /* remove padding */
+  background-image: url('images/hero.jpg');
+  background-size: cover;    /* crop image to fill */
+  background-position: center;
+  top: 0;
+}
+
+/* Overlay title in center or bottom */
+.hero-title {
+  position: absolute;
+  bottom: 20px;             /* adjust vertical placement */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove any top spacing from Quarto wrappers */
+body, .page-wrapper, .main-container, .content-wrapper {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}

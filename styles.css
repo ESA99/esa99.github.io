@@ -241,3 +241,17 @@ code {
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
 }
+
+
+
+
+
+/* =======================================
+   Banner LÖGI
+   ======================================= */
+.hero-image {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+

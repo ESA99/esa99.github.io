@@ -1,0 +1,124 @@
+/*===================================================================*/
+/* Inline bar -> very compact */
+/*===================================================================*/
+
+.skill-inline {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.bar {
+  height: 5px;
+  background: #eee;
+  border-radius: 999px;
+}
+
+.level {
+  height: 100%;
+  background: #99C644;
+  border-radius: 999px;
+}
+
+/* Corresponding html code
+
+<div class="skill-inline">
+  <span>English</span>
+  <div class="bar">
+    <div class="level" style="width: 90%"></div>
+  </div>
+</div>
+
+*/
+
+
+/*===================================================================*/
+/* Inline dots */
+/*===================================================================*/
+
+.skill-dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.dots {
+  display: flex;
+  gap: 4px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.dot.filled {
+  background: #99C644;
+}
+
+/* html code:
+
+<div class="skill-dots">
+  <span>German</span>
+  <div class="dots">
+    <span class="dot filled"></span>
+    <span class="dot filled"></span>
+    <span class="dot filled"></span>
+    <span class="dot filled"></span>
+    <span class="dot filled"></span>
+  </div>
+</div>
+
+
+*/
+
+/*===================================================================*/
+/* Compact bars */
+/*===================================================================*/
+
+.skill {
+  margin-bottom: 8px;
+}
+
+.skill span {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 6px;              /* thinner */
+  background: #eee;
+  border-radius: 999px;
+}
+
+.skill-level {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.skill-green {background: #99C644;}
+
+/*
+<div class="skill">
+<span>German</span>
+<div class="skill-bar">
+<div class="skill-level skill-green" style="width:100%"></div>
+</div>
+</div>
+
+*/
+/**/
+
+/* Optional: show percentage:
+<span>English <span class="muted">90%</span></span>
+*/
