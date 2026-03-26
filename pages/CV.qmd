@@ -8,14 +8,14 @@ format:
     sidebar: false
     page-layout: full
 ---
+<!-- Used to be test page -> First CV moved to archive -->
 
+::: {.grid .gx-5}
 
+::: {.g-col-12 .g-col-md-4 .text-center}
 
-<div class="cv-page">
+![](../content/portrait_outdoor.jpg){.cv-photo}  
 
-<div class="cv-sidebar" markdown="1">
-
-![](../content/portrait_outdoor.jpg){.cv-photo}
 
 **Emilio Sánchez**  
 _M.Sc. Landscape Ecology_  
@@ -28,131 +28,167 @@ _M.Sc. Landscape Ecology_
   <a href="mailto:esanchez@uni-muenster.de"><i class="bi bi-envelope-fill"></i></a>
 </div>
 
+<!-- ### Languages -->
 
-  <h3>Languages</h3>
-  <div style="margin-bottom:10px;">
+<!-- <div class="skill"> -->
+<!-- <span>German</span> -->
+<!-- <div class="skill-bar"> -->
+<!-- <div class="skill-level skill-green" style="width:100%"></div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- <div class="skill"> -->
+<!-- <span>English</span> -->
+<!-- <div class="skill-bar"> -->
+<!-- <div class="skill-level skill-green" style="width: 90%"></div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- <div class="skill"> -->
+<!-- <span>Spanish</span> -->
+<!-- <div class="skill-bar"> -->
+<!-- <div class="skill-level skill-green" style="width: 90%"></div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- <div class="skill"> -->
+<!-- <span>Swedish</span> -->
+<!-- <div class="skill-bar"> -->
+<!-- <div class="skill-level skill-green" style="width: 60%"></div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+
+<!-- ### Programming -->
+
+<!-- <div class="skill"> -->
+<!-- <span>R</span> -->
+<!-- <div class="skill-bar"> -->
+<!-- <div class="skill-level skill-purple" style="width:95%"></div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- <div class="skill"> -->
+<!-- <span>Git</span> -->
+<!-- <div class="skill-bar"> -->
+<!-- <div class="skill-level skill-purple" style="width: 55%"></div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- <div class="skill"> -->
+<!-- <span>Python</span> -->
+<!-- <div class="skill-bar"> -->
+<!-- <div class="skill-level skill-purple" style="width: 20%"></div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- <div class="skill"> -->
+<!-- <span>CSS</span> -->
+<!-- <div class="skill-bar"> -->
+<!-- <div class="skill-level skill-purple" style="width: 5%"></div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+
+### Languages
+<div class="skills-wrapper">
+
+<div class="skill-dots" data-level="100" data-color="green">
   <span>German</span>
-  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
-  <div style="width:100%; height:100%; background:#99C644; border-radius:5px;"></div>
-  </div>
-  </div>
-  
-  <div style="margin-bottom:10px;">
+  <div class="dots"></div>
+</div>
+
+<div class="skill-dots" data-level="90" data-color="green">
   <span>English</span>
-  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
-  <div style="width:90%; height:100%; background:#99C644; border-radius:5px;"></div>
-  </div>
-  </div>
-  
-  <div style="margin-bottom:10px;">
+  <div class="dots"></div>
+</div>
+
+<div class="skill-dots" data-level="90" data-color="green">
   <span>Spanish</span>
-  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
-  <div style="width:90%; height:100%; background:#99C644; border-radius:5px;"></div>
-  </div>
-  </div>
-  
-  <div style="margin-bottom:10px;">
+  <div class="dots"></div>
+</div>
+
+<div class="skill-dots" data-level="60" data-color="green">
   <span>Swedish</span>
-  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
-  <div style="width:70%; height:100%; background:#99C644; border-radius:5px;"></div>
-  </div>
-  </div>
-  
+  <div class="dots"></div>
+</div>
 
-  <h3>Programming</h3>
-  <div style="margin-bottom:10px;">
-  <span>R</span>
-  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
-  <div style="width:100%; height:100%; background:#007acc; border-radius:5px;"></div>
-  </div>
-  </div>
-  
-  <div style="margin-bottom:10px;">
-  <span>Git</span>
-  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
-  <div style="width:55%; height:100%; background:#007acc; border-radius:5px;"></div>
-  </div>
-  </div>
-  
-  <div style="margin-bottom:10px;">
-  <span>Python</span>
-  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
-  <div style="width:20%; height:100%; background:#007acc; border-radius:5px;"></div>
-  </div>
-  </div>
-
-  <div style="margin-bottom:10px;">
-  <span>CSS</span>
-  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
-  <div style="width:5%; height:100%; background:#007acc; border-radius:5px;"></div>
-  </div>
-  </div>
-  
-  <h3>Skills</h3>
-  <div style="margin-bottom:10px;">
-  <span>Ecological Mapping</span>
-  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
-  <div style="width:85%; height:100%; background:#ffd700; border-radius:5px;"></div>
-  </div>
-  </div>
-  
-  <div style="margin-bottom:10px;">
-  <span>Woodworking</span>
-  <div style="width:100%; background:#e0e0e0; height:10px; border-radius:5px;">
-  <div style="width:75%; height:100%; background:#ffd700; border-radius:5px;"></div>
-  </div>
-  </div>
-  
-  
 
 </div>
 
-<!-- =====================================================================================
-      End of Sidebar: Main content starts below
-     ===================================================================================== -->
 
+### Programming
+<div class="skills-wrapper">
 
-<div class="cv-main">
+<div class="skill-dots" data-level="95" data-color="purple">
+  <span>R</span>
+  <div class="dots"></div>
+</div>
 
-# About
+<div class="skill-dots" data-level="60" data-color="purple">
+  <span>Git</span>
+  <div class="dots"></div>
+</div>
+
+<div class="skill-dots" data-level="20" data-color="purple">
+  <span>Python</span>
+  <div class="dots"></div>
+</div>
+
+<div class="skill-dots" data-level="15" data-color="purple">
+  <span>CSS</span>
+  <div class="dots"></div>
+</div>
+
+</div>
+
+:::
+
+::: {.g-col-12 .g-col-md-8}
+## About
 My Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.
+
+---
 
 ### Education
 
-**M.Sc. Landscape Ecology** – [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) _(Oct 2023 - present)_  
-Focus: *Remote Sensing, Restoration Ecology, Soil Ecology*  
-Thesis: [*Canopy height mapping from optical remote sensing data: reassessing deep learning methods*](gchm.qmd)  
+**M.Sc. Landscape Ecology**   
+<span class="muted">Oct 2023-Present · [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml)     
+Focus: *Remote Sensing, Restoration Ecology, Soil Ecology*   
+Thesis: *Canopy height mapping from optical remote sensing data: reassessing deep learning methods.*</span>    
 
+**B.Sc. Landscape Ecology**  
+<span class="muted">Oct 2019-Sep 2022 · [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml)     
+Thesis: *Spatio-temporal analysis of a central European bog.*</span>    
 
-**B.Sc. Landscape Ecology** – [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) _(Oct 2019 - Sept 2022)_  
-Thesis: [*Spatio-temporal analysis of a central European bog.*](https://doi.org/10.1016/j.rsase.2024.101385){.external target="_blank"}  
-  
+<!-- | [University Münster](https://www.uni-muenster.de/Landschaftsoekologie/en/index.shtml) _(Oct 2019 - Sep 2022)_   -->
+<!-- Thesis: *Spatio-temporal analysis of a central European bog.*  -->
+
 ---
 
 ### Experience
-**Field Inspector** | Freelance  
-_Annualy since 2022_  
-Control of agricultural fields. 
+
+**Field Inspector**  | Freelance  
+<span class="muted">2022–Present · Control of agricultural fields</span>
+
+<!-- **Field Inspector** | Freelance   -->
+<!-- _Annualy since 2022_   -->
+<!-- Control of agricultural fields.  -->
 
 **Student Assistant** | Institute of Landscape Ecology  
-_Sep 2025 - Feb 2026_  
-Analysis of deep learning models  
+<span class="muted">Sep 2025 - Feb 2026 · Analysis of deep learning models</span>  
 
 **Student Assistant** | Institute of Landscape Ecology  
-_Apr - Sep 2023_  
-Botany tutor  
+<span class="muted">Apr - Sep 2023 · Botany tutor</span>  
 
 **Ecological Mapping** | LAKI GBR  
-_May - July 2022_  
-Ecological mappings of vegetation.  
+<span class="muted">May - July 2022 · Ecological mappings of vegetation.</span>    
 
 **Student Assistant** | Institute of Landscape Ecology  
-_Apr - Sep 2022_  
-Field Equipment rental  
+<span class="muted">Apr - Sep 2022 · Field Equipment rental</span>  
 
 **Intern** | EFTAS Remote Sensing  
-_Oct - Nov 2021_  
-Machine learning and reproducible workflows.  
+<span class="muted">Oct - Nov 2021 · Machine learning and reproducible workflows.</span>  
 
 ---
 
@@ -181,4 +217,33 @@ Machine learning and reproducible workflows.
 - Woodworking
 - Gardening
 - DIY-Projects
-</div>
+
+
+:::
+
+:::
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".skill-dots").forEach(skill => {
+    const level = parseInt(skill.dataset.level) || 0;
+    const color = skill.dataset.color || "green";
+    const dotsContainer = skill.querySelector(".dots");
+
+    const totalDots = 5;
+    const filledDots = Math.round((level / 100) * totalDots);
+
+    dotsContainer.innerHTML = "";
+
+    for (let i = 0; i < totalDots; i++) {
+      const dot = document.createElement("span");
+      dot.classList.add("dot");
+      if (i < filledDots) {
+        dot.classList.add("filled", color);
+      }
+      dotsContainer.appendChild(dot);
+    }
+  });
+});
+</script>

@@ -273,8 +273,9 @@ h2 + .skill-dots {
 
 
 /* Page Styling of Fonts, Text sizes and appearnace */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+/* Apply font only to CV content */
+.cv-page {
+  font-family: "Georgia", serif; /* or whatever font you want */
   line-height: 1.65;
   color: #333;
 }

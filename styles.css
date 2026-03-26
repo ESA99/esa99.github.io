@@ -30,11 +30,24 @@ body {
 
 /* Link colors */
 a {
-  color: #007acc;
+  color: #1E643F; /* Blue: #007acc */
 }
 a:hover {
-  color: #005f99;
+  color: #7A9C33; /*Blue: #005f99 */
 }
+
+/* Navbar link color Styling */
+
+
+.navbar .nav-link:hover {
+  color: #7A9C33; /* color when hovered */
+}
+
+.navbar .nav-link.active {
+  color: #1E643F; /* color when on the current page */
+}
+
+
 
 /* Button styling (primary) */
 .btn-primary {

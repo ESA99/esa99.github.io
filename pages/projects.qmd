@@ -9,13 +9,14 @@ title: "Academic Projects"
 
 # 2024
 
-- **R-Package Development**
+- **R-Package Development**  
 [Creation and development of the R-Package *'dandelion'*](../pages/resources/dandelion.qmd)
 
--   **Student Project**
+-   **Student Project**  
 Detecting meadow orchards in Germany using a convolution neural networks and aerial imagery.
 
 # 2022
 
--   **Bachelor Thesis** Spatio-Temporal analysis of a central european bog
+-   **Bachelor Thesis**  
+    - Spatio-Temporal analysis of a central european bog
     - [Recent trends in moisture conditions across European peatlands](https://doi.org/10.1016/j.rsase.2024.101385){.external target="_blank"}
