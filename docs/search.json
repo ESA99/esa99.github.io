@@ -177,14 +177,14 @@
   {
     "objectID": "pages/freelance.html",
     "href": "pages/freelance.html",
-    "title": "\nMy Page Title\n",
+    "title": "LÖGI",
     "section": "",
-    "text": "Welcome to LÖGI Landschaftökologie und Geoinformatik!\nscdsf\nvsdfds\nasdfsadfa ds f\nsadfdsfdsfdsfa ssdffffffffffffffffffff ssssssssssss sddfasdf\nsdfdsfds\nadsffds\nsdafsadfdsa\nsadfdsfds\ndsafdsafdsfds"
+    "text": "LÖGI LANDSCAPE ECOLOGY & GEOINFORMATICS\n\n\n\n\n\nWelcome!\nSince 2022 I am working as a Freelancer in Ecological Fieldwork, Environmental Modelling and Geo data processing.\n\n\n\n\nServices\nMy experiences cover Botanical mappings, agricultural controls, geodata processing (R & GIS) and environmental modelling. I am specialiced in ecological restoration, remote sensing and vegetation ecology. Feel free to contact me for custom requests."
   },
   {
     "objectID": "pages/projects.html",
     "href": "pages/projects.html",
-    "title": "Projects",
+    "title": "Academic Projects",
     "section": "",
     "text": "2025\n\nMaster Thesis\nCanopy height mapping from optical remote sensing data: reassessing deep learning methods\n\n\n\n2024\n\nR-Package Development Creation and development of the R-Package ‘dandelion’\nStudent Project Detecting meadow orchards in Germany using a convolution neural networks and aerial imagery.\n\n\n\n2022\n\nBachelor Thesis Spatio-Temporal analysis of a central european bog\n\nRecent trends in moisture conditions across European peatlands"
   },

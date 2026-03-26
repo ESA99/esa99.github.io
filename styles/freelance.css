@@ -1,31 +1,142 @@
-/* Flush hero image to the top */
-.hero-container {
-  position: relative;
-  width: 100vw;            /* full viewport width */
-  height: 400px;            /* adjust height */
-  margin: 0;                /* remove any margin */
-  padding: 0;               /* remove padding */
-  background-image: url('images/hero.jpg');
-  background-size: cover;    /* crop image to fill */
-  background-position: center;
-  top: 0;
+/*======================================*/
+/* Head Banner at the top*/
+/*======================================*/
+.hero-image-section {
+  width: 100vw;               /* full viewport width */
+  position: relative;          /* standard positioning */
+  left: 50%;                  /* reset container centering */
+  right: 50%;
+  margin-left: -50vw;          /* shift to left edge */
+  margin-right: -50vw;         /* shift to right edge */
+  margin-top: -50px;           /* move image up; adjust as needed */
+  padding: 0;                 /* remove default padding */
+  z-index: 1000;                 /* send image behind navbar = -1*/
 }
 
-/* Overlay title in center or bottom */
-.hero-title {
-  position: absolute;
-  bottom: 20px;             /* adjust vertical placement */
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 3rem;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-  margin: 0;
-  padding: 0;
+.hero-image-section img {
+  width: 100%;                 /* make image fill section */
+  display: block;              /* remove inline spacing */
 }
 
-/* Remove any top spacing from Quarto wrappers */
-body, .page-wrapper, .main-container, .content-wrapper {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
+/*======================================*/
+/* General Purpose*/
+/*======================================*/
+.loegi-color {
+  color: #1E643F;
+}
+
+/* Green headings */
+ h2,
+ h3 {
+  color: #1E643F;
+  margin-top: 0;
+}
+
+/* Hides the Title of the Page! */
+h1.title {
+  display: none;
+}
+
+/* Custom Title */
+/* Page title styling */
+h1.page-title {
+  text-align: center;      /* center the text */
+  border-bottom: none;     /* remove line */
+  color: #1E643F;          /* optional, same green */
+  font-weight: 700;        /* bold */
+  margin-bottom: 50px;     /* spacing before the grid */
+  margin-top: 10px;
+}
+
+
+/*======================================*/
+/* Content Grid */
+/*======================================*/
+
+/* .content-row = grid container */
+/* .content-img = image column */
+/* .content-text = text column */
+
+
+.content-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+
+
+/* Create card effect with hover for more seperation */
+.content-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+
+  /* Separation */
+  margin-bottom: 50px;
+  padding: 30px;                   /* more padding for breathing room */
+  border-radius: 15px;             /* slightly more rounded */
+  background-color: ##f9fdf9;       /* soft but noticeable contrast */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle but visible shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* nice hover effect */
+}
+
+/* Optional: hover effect to add visual depth */
+.content-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+
+
+/* Image styling */
+.content-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Text styling */
+.content-text {
+  padding: 1rem;
+}
+
+.content-text h2,
+.content-text h3 {
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* Links styling */
+.content-text h2 a,
+.content-text h3 a {
+  color: #1E643F;       /* green */
+  font-weight: inherit;   /* inherit the heading's bold */
+  /*text-decoration: none;*/ /* remove underline */
+}
+/* Optional: add hover effect */
+.content-text h2 a:hover,
+.content-text h3 a:hover {
+  text-decoration: underline; /* subtle feedback */
+  color: #AFD953; /* slightly darker green on hover #14532d */
+}
+
+
+
+/* Mobile: stack all rows */
+@media (max-width: 700px) {
+  .content-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Remove any ordering for stacked view */
+  .content-row .content-img,
+  .content-row .content-text {
+    order: unset;
+  }
 }

@@ -1,49 +1,62 @@
 ---
-title: ""
+title: "LÖGI"
 format:
   html:
-    page-layout: full
+    # page-layout: full
     toc: false
     css: ../styles/freelance.css
 ---
 
-<div class="hero-container">
-  <h1 class="hero-title">My Page Title</h1>
-</div>
+
+::: {.hero-image-section}
+![](../content/loegi/Header_green.png)
+:::
+
+# LÖGI LANDSCAPE ECOLOGY & GEOINFORMATICS {.page-title}
 
 
-# Welcome to LÖGI Landschaftökologie und Geoinformatik!
+::: {.content-row}
 
-scdsf  
-vsdfds  
+::: {.content-img}
+![](../content/storemosse_tall.jpg)
+:::
 
+::: {.content-text}
+### Welcome!
+Since 2022 I am working as a Freelancer in Ecological Fieldwork, Environmental Modelling and Geo data processing. 
+:::
 
-asdfsadfa ds f  
-  
-sadfdsfdsfdsfa ssdffffffffffffffffffff  ssssssssssss  sddfasdf  
-
-
-
-sdfdsfds   
-adsffds  
-sdafsadfdsa  
-
-
-sadfdsfds 
+:::
 
 
 
+::: {.content-row}
 
-dsafdsafdsfds   
+::: {.content-text}
+### [Services](../pages/projects.html)
+My experiences cover Botanical mappings, agricultural controls, geodata processing (R & GIS) and environmental modelling. I am specialiced in ecological restoration, remote sensing and vegetation ecology. Feel free to contact me for custom requests.
+:::
+
+::: {.content-img}
+![](../content/loegi/LÖGI-ENG.png)
+:::
+
+
+:::
 
 
 
+<!-- ::: {.content-row} -->
 
+<!-- ::: {.content-img} -->
+<!-- ![](../content/loegi/MOCKUP.jpg) -->
+<!-- ::: -->
 
+<!-- ::: {.content-text} -->
+<!-- ## Third Section -->
 
+<!-- ::: -->
 
-
-
-
+<!-- ::: -->
 
 
