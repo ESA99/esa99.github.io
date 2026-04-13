@@ -38,7 +38,6 @@ a:hover {
 
 /* Navbar link color Styling */
 
-
 .navbar .nav-link:hover {
   color: #7A9C33; /* color when hovered */
 }
@@ -47,6 +46,9 @@ a:hover {
   color: #1E643F; /* color when on the current page */
 }
 
+.quarto-navbar-tools a:hover { /* icon colouring */
+  color: #7A9C33 !important;
+}
 
 
 /* Button styling (primary) */

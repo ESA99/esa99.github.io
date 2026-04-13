@@ -1,0 +1,70 @@
+/* css styles */
+/* Canopy height model project page */
+
+/* ---------------------
+   GENERAL PAGE STYLING
+---------------------- */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f9f7f3; /* Soft beige */
+  color: #1e1e1e;
+}
+
+h1, h2, h3 {
+  color: #2b4c7e; /* Muted blue accent */
+  border-bottom: 2px solid #d9e0ef;
+  padding-bottom: 0.3em;
+}
+
+a {
+  color: #1e567a;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------
+   HIDE GLOBAL NAVBAR
+---------------------- */
+.navbar, .quarto-title-banner {
+  display: none !important;
+}
+
+/* ---------------------
+   BUTTONS
+---------------------- */
+.github-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  z-index: 1000;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+.github-button:hover {
+  background: #f0f0f0;
+  color: #000;
+}
+
+
+/* ---------------------
+   INTERACTIVE MAP AREA
+---------------------- */
+
+.leaflet-container {
+  width: 100% !important;
+  height: 500px !important;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+}
