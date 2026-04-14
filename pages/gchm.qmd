@@ -20,6 +20,7 @@ reference-location: margin
 citation-location: margin
 bibliography: ../content/gchm/references.bib
 csl: https://www.zotero.org/styles/apa
+
 ---
 
 ::: {.aside}
@@ -28,10 +29,14 @@ csl: https://www.zotero.org/styles/apa
 </a>
 :::
 
-
-## Introduction
-
 This page documents the progress of the research on the operating mechanisms of the global canopy height model by @lang_gchm_2023. For the full data and scripts please visit the corresponding [GitHub page](https://github.com/ESA99/canopy_height) and for other projects and more information about me visit my [Main Site](https://esa99.github.io).
+
+## Abstract
+Accurate canopy height data is crucial for understanding ecosystem structure and function, assessing biodiversity or calculating carbon stocks. Traditional in-situ collection of canopy height data is complex, labor-intensive and spatially limited. While Airborne Laser Scanning enables analysis on a regional or country-wide scale, a global application is not feasible due to high costs.
+Fusing deep learning, space borne LIDAR samples and optical remote sensing data, recent developments of canopy height models have produced remarkable results. Although spectral data is widely used in ecological analysis, a link to canopy height is unknown. The driving mechanisms of canopy height estimation on a global scale were investigated, using the approach presented by @lang_gchm_2023. To isolate the relevance of optical properties in prediction, controlled spectral manipulation of the input data was performed, and the model reaction analyzed.
+The observed patterns do not suggest a direct link of spectral values to canopy height. The results demonstrate that its prediction from optical remote sensing data is primarily influenced by factors beyond spectral signatures. Thorough understanding of the mechanisms driving prediction and clear communication of limitations in applicability and explanatory value is crucial in the development of ecological models.
+
+
 
 ## Research question
 The goal of this research is to understand the role of spectral data in the creation of deep learning approaches in order to predict canopy height, and generate insights to improve future approaches. The lack of a known ecological connection between spectral data and canopy height raises questions on the mechanisms driving prediction. This thesis aims to address the following question:
@@ -44,17 +49,17 @@ about canopy height, and that other factors, like coordinates, are more relevant
 
 
 ## Methods
-This research builds on an existing model architecture promising global canopy height prediction [@lang_github2023], delivering high spatial resolution, easy data accessibility and reproducibility. The authors claim that the model has learned connections to spectral values as well as texture and present a remarkably low overall Root-Mean-Square-Error (RMSE) of 6.0 m. It was therefore selected to be used as an experimental subject in this research.
+This research builds on an existing model architecture promising global canopy height prediction, delivering high spatial resolution, easy data accessibility and reproducibility [@lang_github2023]. The authors claim that the model has learned connections to spectral values as well as texture and present a remarkably low overall Root-Mean-Square-Error (RMSE) of 6.0 m. It was therefore selected to be used as an experimental subject in this research.
 
 As we cannot retrace the reasoning of the model due to the nature of deep learning approaches and their size, the effect of spectral values has to be isolated. To address this limitation, we approach this question by deploying the selected model on systematically manipulated spectral input data to observe the resulting change in canopy height estimates. Assuming the model has learned connections to spectral values, such perturbations would be expected to change proportionally, resulting in an approximately linear explanatory relationship between the magnitude of the spectral manipulation and the corresponding change in the predicted canopy height. Consistent with the original paper, Sentinel-2 imagery [@sentinel2_2020] and ESA-WordCover data [@worldcover_2020] from 2020 was used. 
 
-To systematically analyze the role of spectral data in deep learning models for estimating canopy height, an automated workflow was developed. This workflow encompasses data preparation, variable creation, file management, model deployment, and the export of results. @fig-methods illustrates the key elements of the process and the sequence of operations. The spectral manipulation function is integrated into the model deployment scripts. The original code of the model remained unchanged.
+To systematically analyze the role of spectral data in deep learning models for estimating canopy height, an automated workflow was developed (See @fig-methods). This workflow encompasses data preparation, variable creation, file management, model deployment, and the export of results. @fig-methods illustrates the key elements of the process and the sequence of operations. The spectral manipulation function is integrated into the model deployment scripts. The original code of the model remained unchanged.
 
 
 ::: {#fig-methods}
-![](../content/gchm/Workflow.png)
-Conceptual illustration of the developed workflow created for the analysis. Components developed as part of this thesis are highlighted in pink, adapted infrastructure originating from Lang et al. (2023a) is shown in green. The automated workflow processes one Sentinel-2 Tile at a time and repeats the process for the next manipulation step and image, after saving the results.
+![Conceptual illustration of the developed workflow created for the analysis. Components developed as part of this thesis are highlighted in pink, adapted infrastructure originating from Lang et al. (2023a) is shown in green. The automated workflow processes one Sentinel-2 Tile at a time and repeats the process for the next manipulation step and image, after saving the results.](../content/gchm/Workflow.png)
 :::
+
 
 ## Research locations
 In total 11 tiles were used for the analysis of the model. They were selected to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper.  
@@ -64,6 +69,7 @@ In total 11 tiles were used for the analysis of the model. They were selected to
 #| message: false
 #| echo: false
 #| warning: false
+#| fig-cap: "Sample tiles selected for the Analysis."
 #| fig-width: 11
 #| fig-height: 3
 #| fig-column: page-right
@@ -91,10 +97,15 @@ tmap::tm_shape(tiles) +
                 set.view = c(10.0, 20.0, 2))  # longitude, latitude, zoom level
 
 ```
-Sample tiles selected for the Analysis.
+
 :::
 
 ## Results
+
+### Influece of spectral properties on prediction
+The results do not show any linear relationship, but rather a symmetric behavior around 0
+along the x-axis. The direction of manipulation does not influence the direction and magnitude
+of differences. @fig-lineplot illustrates the average absolute difference by absolute manipulation degree for each band, across all tiles. 
 
 ```{r}
 #| label: fig-lineplot
@@ -146,18 +157,14 @@ ggplot(result_table, aes(x = abs_increment, y = avg_difference_percent,
 
 ```
 
-The preliminary results already show no clear trend after spectral manipulation (Fig. 1). Differences between locations have shown to be more significant than spectral manipulation, suggesting that the actual influence of spectral properties in the creation of the prediction is very low or none. Relationships between the location of the image tile and the predicted canopy height could already be observed. They will be properly analysed and shown at a later stage of this project. See @fig-CHridge
 
 
+### Differences in response between sample tiles
+The impact of spectral manipulation on canopy height prediction was assessed across eleven globally distributed sample tiles. The selection of these tiles tried to cover a wide range of biomes, continents, management regimes and latitudes, both inside and outside the range of the reference data. They differ in landscape structure and species composition, resulting in different ranges of canopy heights. The distribution of unmanipulated canopy height estimations per tile is illustrated in @fig-CHridge, sorted by mean canopy height from top to bottom. The tiles Finland and Mongolia consist of very low vegetation with an average lower than 5 m. Malaysia has the highest predicted average canopy height with 43.5 m. Switzerland and Cameroon show a very wide spectrum of canopy heights with a very strong distinction between high and low vegetation in Cameroon.
 
 ::: {#fig-CHridge}
-![](../content/gchm/CH_RIdge_Tile.png))
-Distribution of predicted canopy height per tile. Sorted by mean canopy height in meters,
-across the whole tile
-:::
-
-:::{.column-margin}
-TEST Content to fit into the page margin. This can be any content, even a figure or equation.
+![Distribution of predicted canopy height per tile. Sorted by mean canopy height in meters,
+across the whole tile.](../content/gchm/CH_RIdge_Tile.png))
 :::
 
 
@@ -167,8 +174,8 @@ TEST Content to fit into the page margin. This can be any content, even a figure
 #| message: false
 #| echo: false
 #| warning: false
-#| fig-width: 11
-#| fig-height: 10
+#| fig-width: 10
+#| fig-height: 9
 
 library(plotly)
 library(dplyr)
@@ -395,7 +402,9 @@ ggscatter(result_table,
 
 
 
-
+:::{.column-margin}
+TEST Content to fit into the page margin. This can be any content, even a figure or equation.
+:::
 
 
 

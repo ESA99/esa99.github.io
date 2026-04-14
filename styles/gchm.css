@@ -18,6 +18,10 @@ figcaption {
   font-size: 0.9em;
 }
 
+p {
+  text-align: justify;
+}
+
 /* ---------------------
    HIDE GLOBAL NAVBAR
 ---------------------- */
