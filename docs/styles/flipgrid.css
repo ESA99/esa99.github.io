@@ -94,4 +94,17 @@
   .flip-grid {
     grid-template-columns: 1fr;
   }
+  
+  
+  /* Stack columns on mobile screens */
+  .columns {
+    display: block; /* stop flex layout */
+  }
+
+  .column {
+    width: 100% !important; /* force full width */
+    margin-bottom: 20px;    /* spacing between stacked items */
+  }
+  
+  
 }

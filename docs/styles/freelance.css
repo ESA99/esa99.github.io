@@ -10,7 +10,7 @@
   margin-right: -50vw;         /* shift to right edge */
   margin-top: -50px;           /* move image up; adjust as needed */
   padding: 0;                 /* remove default padding */
-  z-index: 1000;                 /* send image behind navbar = -1*/
+  z-index: 2000;                 /* send image behind navbar = -1*/
 }
 
 .hero-image-section img {
@@ -140,6 +140,6 @@ h1.page-title {
     order: unset;
   }
   .hero-image-section{
-    margin-top: 10;
+    margin-top: -25px;
   }
 }
