@@ -1,0 +1,146 @@
+---
+title: "Switching from HTTPS to SSH for GitHub"
+format: html
+date: "2026-04-29"
+---
+
+## Overview
+
+This document summarizes the process of switching Git repositories from HTTPS authentication (token-based) to SSH authentication using a newly generated SSH key.
+
+---
+
+## 1. Initial Situation
+
+* Goal: Replace HTTPS authentication with SSH to avoid token management.
+  * Setup ssh globally and change for all existing repos
+
+---
+
+## 2. Verify Existing SSH Access
+
+Tested SSH connection to GitHub:
+
+```bash
+ssh -T git@github.com
+```
+
+Result:
+
+* First connection prompted to trust GitHub host key
+* Initial failure: `Permission denied (publickey)` indicated no SSH key was configured
+
+---
+
+## 3. Generate SSH Key Pair
+
+Created a new SSH key using ed25519 algorithm:
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+* (Optionally) set passphrase
+* Key stored in default location: `~/.ssh/id_ed25519`
+
+Output may include a randomart image confirming key generation
+
+---
+
+## 4. Start SSH Agent and Load Key
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+-> "Identity added.." confirms the availability of the private key for authentication
+
+---
+
+## 5. Add Public Key to GitHub
+
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+Copy the public key and add it to GitHub:
+
+* Settings → SSH and GPG keys → New SSH key
+
+Paste the full key string (including trailing email label)
+
+---
+
+## 6. Verify Authentication
+
+Re-tested connection:
+
+```bash
+ssh -T git@github.com
+```
+
+Successful output:
+
+* "You've successfully authenticated, but GitHub does not provide shell access."
+
+This confirmed SSH setup was working
+
+---
+
+## 7. Convert All Repositories from HTTPS to SSH
+
+Bulk conversion across multiple repositories:
+
+```bash
+for d in */.git; do 
+  repo="${d%/.git}"
+  url=$(git -C "$repo" remote get-url origin)
+
+  if [[ $url == https://github.com/* ]]; then
+    ssh_url=$(echo "$url" | sed 's#https://github.com/#git@github.com:#')
+    git -C "$repo" remote set-url origin "$ssh_url"
+    echo "Converted $repo"
+  else
+    echo "Skipped $repo"
+  fi
+done
+```
+
+
+---
+
+## 8. Verification
+
+Check updated remotes:
+```bash
+for d in */.git; do 
+  repo="${d%/.git}"
+  echo "=== $repo ==="
+  git -C "$repo" remote -v
+done
+```
+Check individual repositories:
+```bash
+git remote -v
+```
+
+Confirm all repositories now used SSH format:
+
+```
+git@github.com:user/repo.git
+```
+
+---
+
+## 9. Result
+
+* SSH authentication is now fully configured
+* All repositories use SSH instead of HTTPS
+* No dependency on expiring personal access tokens
+
+---
+
+## Key Takeaway
+
+SSH setup is performed once per machine/user and automatically applies to all Git repositories once remotes are switched from HTTPS to SSH.

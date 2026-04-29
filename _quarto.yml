@@ -17,14 +17,18 @@ website:
       - text: "Freelance"
         href: pages/freelance.qmd
       - text: "Resources"
-        href: pages/resources.qmd
-      #   menu:
-      #     - text: "Overview"  
-      #       href: pages/resources.qmd
-      #     - text: "dandelion"
-      #       href: pages/dandelion.qmd
-      #     - text: "Virtual Environments"
-      #       href: pages/resources/VirtualEnvs.qmd
+        # href: pages/resources.qmd
+        menu:
+          - text: "Overview"
+            href: pages/resources.qmd
+          - text: "dandelion"
+            href: pages/resources/dandelion.qmd
+          - text: "Virtual Environments"
+            href: pages/resources/VirtualEnvs.qmd
+          - text: "Git SSH setup"
+            href: pages/resources/ssh_git.qmd
+          - text: "Fieldnotes"
+            href: pages/resources/fieldnotes.qmd
       # # - href: CV.qmd
       #   text: CV
       # #- about.qmd

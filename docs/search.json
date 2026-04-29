@@ -7,102 +7,102 @@
     "text": "dandelion\n        R-Package documentation.\n      \n    \n  \n\n  \n    \n      \n        \n      \n      \n        Virtual environments\n        Setup and Application.\n      \n    \n  \n  \n  \n    \n      \n        \n      \n      \n        Field Notes\n        Experimental Collection.\n      \n    \n  \n\n  \n    \n      \n        \n      \n      \n        Cat Vitae\n        The live of a scientific cat."
   },
   {
-    "objectID": "pages/resources/fieldnotes.html#iss-orbit",
-    "href": "pages/resources/fieldnotes.html#iss-orbit",
-    "title": "Field Notes",
-    "section": "ISS Orbit",
-    "text": "ISS Orbit"
-  },
-  {
-    "objectID": "pages/resources/fieldnotes.html#next-pass",
-    "href": "pages/resources/fieldnotes.html#next-pass",
-    "title": "Field Notes",
-    "section": "Next pass",
-    "text": "Next pass"
-  },
-  {
-    "objectID": "pages/projects.html",
-    "href": "pages/projects.html",
-    "title": "Academic Projects",
+    "objectID": "pages/resources/ssh_git.html",
+    "href": "pages/resources/ssh_git.html",
+    "title": "Switching from HTTPS to SSH for GitHub",
     "section": "",
-    "text": "2025\n\nMaster Thesis\nCanopy height mapping from optical remote sensing data: reassessing deep learning methods\n\n\n\n2024\n\nR-Package Development\nCreation and development of the R-Package ‘dandelion’\nStudent Project\nDetecting meadow orchards in Germany using a convolution neural networks and aerial imagery.\n\n\n\n2022\n\nBachelor Thesis\n\nSpatio-Temporal analysis of a central european bog\nRecent trends in moisture conditions across European peatlands"
+    "text": "This document summarizes the process of switching Git repositories from HTTPS authentication (token-based) to SSH authentication using a newly generated SSH key."
   },
   {
-    "objectID": "pages/freelance.html",
-    "href": "pages/freelance.html",
-    "title": "LÖGI",
+    "objectID": "pages/resources/ssh_git.html#overview",
+    "href": "pages/resources/ssh_git.html#overview",
+    "title": "Switching from HTTPS to SSH for GitHub",
     "section": "",
-    "text": "LÖGI LANDSCAPE ECOLOGY & GEOINFORMATICS\n\n\n\n\n\nWelcome!\nSince 2022 I am working as a Freelancer in Ecological Fieldwork, Environmental Modelling and Geo data processing.\n\n\n\n\nServices\nMy experiences cover Botanical mappings, agricultural controls, geodata processing (R & GIS) and environmental modelling. I am specialiced in ecological restoration, remote sensing and vegetation ecology. Feel free to contact me for custom requests."
+    "text": "This document summarizes the process of switching Git repositories from HTTPS authentication (token-based) to SSH authentication using a newly generated SSH key."
   },
   {
-    "objectID": "pages/about.html",
-    "href": "pages/about.html",
-    "title": "CV",
-    "section": "",
-    "text": "Master of Science in Landscape Ecology\nUniversity Münster GER, Oct 2023 - present\nFinal Grade: TBD (German grading scale)\nFocus: Restoration Ecology, Remote Sensing, Soil Ecology\nBachelor of Science in Landscape Ecology\nUniversity Münster GER, Oct 2019 - Sept 2022\nFinal Grade: 1.4 (German grading scale)"
+    "objectID": "pages/resources/ssh_git.html#initial-situation",
+    "href": "pages/resources/ssh_git.html#initial-situation",
+    "title": "Switching from HTTPS to SSH for GitHub",
+    "section": "1. Initial Situation",
+    "text": "1. Initial Situation\n\nGoal: Replace HTTPS authentication with SSH to avoid token management.\n\nSetup ssh globally and change for all existing repos"
   },
   {
-    "objectID": "pages/about.html#education",
-    "href": "pages/about.html#education",
-    "title": "CV",
-    "section": "",
-    "text": "Master of Science in Landscape Ecology\nUniversity Münster GER, Oct 2023 - present\nFinal Grade: TBD (German grading scale)\nFocus: Restoration Ecology, Remote Sensing, Soil Ecology\nBachelor of Science in Landscape Ecology\nUniversity Münster GER, Oct 2019 - Sept 2022\nFinal Grade: 1.4 (German grading scale)"
+    "objectID": "pages/resources/ssh_git.html#verify-existing-ssh-access",
+    "href": "pages/resources/ssh_git.html#verify-existing-ssh-access",
+    "title": "Switching from HTTPS to SSH for GitHub",
+    "section": "2. Verify Existing SSH Access",
+    "text": "2. Verify Existing SSH Access\nTested SSH connection to GitHub:\nssh -T git@github.com\nResult:\n\nFirst connection prompted to trust GitHub host key\nInitial failure: Permission denied (publickey) indicated no SSH key was configured"
   },
   {
-    "objectID": "pages/about.html#experience",
-    "href": "pages/about.html#experience",
-    "title": "CV",
-    "section": "Experience",
-    "text": "Experience\nFreelance | Agricultural Field Control | Summer 2022/23/24/25\nLAKI | Ecological mapping | Intern & Job | May 2022 - July 2022\nEFTAS | Remote Sensing | Intern | Oct 2021 - Nov 2021"
+    "objectID": "pages/resources/ssh_git.html#generate-ssh-key-pair",
+    "href": "pages/resources/ssh_git.html#generate-ssh-key-pair",
+    "title": "Switching from HTTPS to SSH for GitHub",
+    "section": "3. Generate SSH Key Pair",
+    "text": "3. Generate SSH Key Pair\nCreated a new SSH key using ed25519 algorithm:\nssh-keygen -t ed25519 -C \"your_email@example.com\"\n\n(Optionally) set passphrase\nKey stored in default location: ~/.ssh/id_ed25519\n\nOutput may include a randomart image confirming key generation"
   },
   {
-    "objectID": "pages/about.html#skills",
-    "href": "pages/about.html#skills",
-    "title": "CV",
-    "section": "Skills",
-    "text": "Skills\n\nOrganisational talent\nProject Management (University training)"
+    "objectID": "pages/resources/ssh_git.html#start-ssh-agent-and-load-key",
+    "href": "pages/resources/ssh_git.html#start-ssh-agent-and-load-key",
+    "title": "Switching from HTTPS to SSH for GitHub",
+    "section": "4. Start SSH Agent and Load Key",
+    "text": "4. Start SSH Agent and Load Key\neval \"$(ssh-agent -s)\"\nssh-add ~/.ssh/id_ed25519\n-&gt; “Identity added..” confirms the availability of the private key for authentication"
   },
   {
-    "objectID": "pages/about.html#personal-interests",
-    "href": "pages/about.html#personal-interests",
-    "title": "CV",
-    "section": "Personal Interests",
-    "text": "Personal Interests\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects"
+    "objectID": "pages/resources/ssh_git.html#add-public-key-to-github",
+    "href": "pages/resources/ssh_git.html#add-public-key-to-github",
+    "title": "Switching from HTTPS to SSH for GitHub",
+    "section": "5. Add Public Key to GitHub",
+    "text": "5. Add Public Key to GitHub\ncat ~/.ssh/id_ed25519.pub\nCopy the public key and add it to GitHub:\n\nSettings → SSH and GPG keys → New SSH key\n\nPaste the full key string (including trailing email label)"
   },
   {
-    "objectID": "archive/CV.html",
-    "href": "archive/CV.html",
-    "title": "CV",
-    "section": "",
-    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nEcological Mapping\n\n\n\n\n\n\n\nWoodworking\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance\nAnnualy since 2022\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nMemberships\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+    "objectID": "pages/resources/ssh_git.html#verify-authentication",
+    "href": "pages/resources/ssh_git.html#verify-authentication",
+    "title": "Switching from HTTPS to SSH for GitHub",
+    "section": "6. Verify Authentication",
+    "text": "6. Verify Authentication\nRe-tested connection:\nssh -T git@github.com\nSuccessful output:\n\n“You’ve successfully authenticated, but GitHub does not provide shell access.”\n\nThis confirmed SSH setup was working"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Emilio Sánchez",
-    "section": "",
-    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+    "objectID": "pages/resources/ssh_git.html#convert-all-repositories-from-https-to-ssh",
+    "href": "pages/resources/ssh_git.html#convert-all-repositories-from-https-to-ssh",
+    "title": "Switching from HTTPS to SSH for GitHub",
+    "section": "7. Convert All Repositories from HTTPS to SSH",
+    "text": "7. Convert All Repositories from HTTPS to SSH\nBulk conversion across multiple repositories:\nfor d in */.git; do \n  repo=\"${d%/.git}\"\n  url=$(git -C \"$repo\" remote get-url origin)\n\n  if [[ $url == https://github.com/* ]]; then\n    ssh_url=$(echo \"$url\" | sed 's#https://github.com/#git@github.com:#')\n    git -C \"$repo\" remote set-url origin \"$ssh_url\"\n    echo \"Converted $repo\"\n  else\n    echo \"Skipped $repo\"\n  fi\ndone"
   },
   {
-    "objectID": "index.html#emilio-sánchez",
-    "href": "index.html#emilio-sánchez",
-    "title": "Emilio Sánchez",
-    "section": "",
-    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+    "objectID": "pages/resources/ssh_git.html#verification",
+    "href": "pages/resources/ssh_git.html#verification",
+    "title": "Switching from HTTPS to SSH for GitHub",
+    "section": "8. Verification",
+    "text": "8. Verification\nCheck updated remotes:\nfor d in */.git; do \n  repo=\"${d%/.git}\"\n  echo \"=== $repo ===\"\n  git -C \"$repo\" remote -v\ndone\nCheck individual repositories:\ngit remote -v\nConfirm all repositories now used SSH format:\ngit@github.com:user/repo.git"
   },
   {
-    "objectID": "pages/CV.html",
-    "href": "pages/CV.html",
-    "title": "CV",
-    "section": "",
-    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGerman\n\n\n\n\n\nEnglish\n\n\n\n\n\nSpanish\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\n\n\n\nR\n\n\n\n\n\nGit\n\n\n\n\n\nPython\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\n\n\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\n\n\nM.Sc. Landscape Ecology\nOct 2023-Present · University Münster\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods.\nB.Sc. Landscape Ecology\nOct 2019-Sep 2022 · University Münster\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\n\n\n\nField Inspector | Freelance\n2022–Present · Control of agricultural fields\n\n\n\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026 · Analysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023 · Botany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022 · Ecological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022 · Field Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021 · Machine learning and reproducible workflows.\n\n\n\n\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\n\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\n\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+    "objectID": "pages/resources/ssh_git.html#result",
+    "href": "pages/resources/ssh_git.html#result",
+    "title": "Switching from HTTPS to SSH for GitHub",
+    "section": "9. Result",
+    "text": "9. Result\n\nSSH authentication is now fully configured\nAll repositories use SSH instead of HTTPS\nNo dependency on expiring personal access tokens"
   },
   {
-    "objectID": "pages/CV.html#about",
-    "href": "pages/CV.html#about",
-    "title": "CV",
-    "section": "",
-    "text": "My Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\n\n\nM.Sc. Landscape Ecology\nOct 2023-Present · University Münster\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods.\nB.Sc. Landscape Ecology\nOct 2019-Sep 2022 · University Münster\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\n\n\n\nField Inspector | Freelance\n2022–Present · Control of agricultural fields\n\n\n\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026 · Analysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023 · Botany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022 · Ecological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022 · Field Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021 · Machine learning and reproducible workflows.\n\n\n\n\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\n\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\n\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+    "objectID": "pages/resources/ssh_git.html#key-takeaway",
+    "href": "pages/resources/ssh_git.html#key-takeaway",
+    "title": "Switching from HTTPS to SSH for GitHub",
+    "section": "Key Takeaway",
+    "text": "Key Takeaway\nSSH setup is performed once per machine/user and automatically applies to all Git repositories once remotes are switched from HTTPS to SSH."
+  },
+  {
+    "objectID": "pages/resources/dandelion.html#canopy-height-analysis",
+    "href": "pages/resources/dandelion.html#canopy-height-analysis",
+    "title": "dandelion",
+    "section": "Canopy Height analysis",
+    "text": "Canopy Height analysis\nThe following functions were specifically designed for the analysis of a canopy height model. Details on the project, the results and the application of the functions can be found on the project page.\n\nWorldcover Adjustment\nSpecific function for the processing of ESA Worldcover that is cropped to match Sentinel-2 tiles. It adjusts extend and resolution to match exactly the corresponding tile, enabeling further computations and analysis.\n\nworldcover_adjust()\n\n\n\nParameter dataframe\n\ncreate_param_df()\n\n\n\nGlobal Point Grid\nEnables to create a global point grid on earth’s landmasses within set boundaries (Lat/Lon).\n\nglobal_point_grid()"
+  },
+  {
+    "objectID": "pages/resources/dandelion.html#tools",
+    "href": "pages/resources/dandelion.html#tools",
+    "title": "dandelion",
+    "section": "Tools",
+    "text": "Tools\nCollection of tools for an efficient work process.\n\nBibtext export of session\nTo export a text file with all packages in BibTex format use bibtex_citation_session(). All actively loaded packages within your session will be included. Only non-base packages are taken into account. You can then import or copy the citations from the text file to your project.\n\nbibtex_citation_session(\"folder/filename.txt\")\n\nThe function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory."
   },
   {
     "objectID": "pages/gchm.html",
@@ -154,25 +154,102 @@
     "text": "6 Slides\n\nConference slides (PDF)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTEST Content to fit into the page margin. This can be any content, even a figure or equation."
   },
   {
-    "objectID": "pages/resources/dandelion.html",
-    "href": "pages/resources/dandelion.html",
-    "title": "dandelion",
+    "objectID": "pages/CV.html",
+    "href": "pages/CV.html",
+    "title": "CV",
     "section": "",
-    "text": "The dandelion package is a collection of functions for spatial data handling and analysis in R. It is primarily aimed at scientific users in the fields of ecological modelling, remote sensing and machine learning. It’s application however is not limited to this target group and you mind find some useful functions for your projects."
+    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGerman\n\n\n\n\n\nEnglish\n\n\n\n\n\nSpanish\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\n\n\n\nR\n\n\n\n\n\nGit\n\n\n\n\n\nPython\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\n\n\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\n\n\nM.Sc. Landscape Ecology\nOct 2023-Present · University Münster\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods.\nB.Sc. Landscape Ecology\nOct 2019-Sep 2022 · University Münster\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\n\n\n\nField Inspector | Freelance\n2022–Present · Control of agricultural fields\n\n\n\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026 · Analysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023 · Botany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022 · Ecological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022 · Field Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021 · Machine learning and reproducible workflows.\n\n\n\n\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\n\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\n\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
   },
   {
-    "objectID": "pages/resources/dandelion.html#canopy-height-analysis",
-    "href": "pages/resources/dandelion.html#canopy-height-analysis",
-    "title": "dandelion",
-    "section": "Canopy Height analysis",
-    "text": "Canopy Height analysis\nThe following functions were specifically designed for the analysis of a canopy height model. Details on the project, the results and the application of the functions can be found on the project page.\n\nWorldcover Adjustment\nSpecific function for the processing of ESA Worldcover that is cropped to match Sentinel-2 tiles. It adjusts extend and resolution to match exactly the corresponding tile, enabeling further computations and analysis.\n\nworldcover_adjust()\n\n\n\nParameter dataframe\n\ncreate_param_df()\n\n\n\nGlobal Point Grid\nEnables to create a global point grid on earth’s landmasses within set boundaries (Lat/Lon).\n\nglobal_point_grid()"
+    "objectID": "pages/CV.html#about",
+    "href": "pages/CV.html#about",
+    "title": "CV",
+    "section": "",
+    "text": "My Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\n\n\nM.Sc. Landscape Ecology\nOct 2023-Present · University Münster\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods.\nB.Sc. Landscape Ecology\nOct 2019-Sep 2022 · University Münster\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\n\n\n\nField Inspector | Freelance\n2022–Present · Control of agricultural fields\n\n\n\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026 · Analysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023 · Botany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022 · Ecological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022 · Field Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021 · Machine learning and reproducible workflows.\n\n\n\n\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\n\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\n\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
   },
   {
-    "objectID": "pages/resources/dandelion.html#tools",
-    "href": "pages/resources/dandelion.html#tools",
-    "title": "dandelion",
-    "section": "Tools",
-    "text": "Tools\nCollection of tools for an efficient work process.\n\nBibtext export of session\nTo export a text file with all packages in BibTex format use bibtex_citation_session(). All actively loaded packages within your session will be included. Only non-base packages are taken into account. You can then import or copy the citations from the text file to your project.\n\nbibtex_citation_session(\"folder/filename.txt\")\n\nThe function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory."
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Emilio Sánchez",
+    "section": "",
+    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+  },
+  {
+    "objectID": "index.html#emilio-sánchez",
+    "href": "index.html#emilio-sánchez",
+    "title": "Emilio Sánchez",
+    "section": "",
+    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+  },
+  {
+    "objectID": "archive/CV.html",
+    "href": "archive/CV.html",
+    "title": "CV",
+    "section": "",
+    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nEcological Mapping\n\n\n\n\n\n\n\nWoodworking\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance\nAnnualy since 2022\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nMemberships\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+  },
+  {
+    "objectID": "pages/about.html",
+    "href": "pages/about.html",
+    "title": "CV",
+    "section": "",
+    "text": "Master of Science in Landscape Ecology\nUniversity Münster GER, Oct 2023 - present\nFinal Grade: TBD (German grading scale)\nFocus: Restoration Ecology, Remote Sensing, Soil Ecology\nBachelor of Science in Landscape Ecology\nUniversity Münster GER, Oct 2019 - Sept 2022\nFinal Grade: 1.4 (German grading scale)"
+  },
+  {
+    "objectID": "pages/about.html#education",
+    "href": "pages/about.html#education",
+    "title": "CV",
+    "section": "",
+    "text": "Master of Science in Landscape Ecology\nUniversity Münster GER, Oct 2023 - present\nFinal Grade: TBD (German grading scale)\nFocus: Restoration Ecology, Remote Sensing, Soil Ecology\nBachelor of Science in Landscape Ecology\nUniversity Münster GER, Oct 2019 - Sept 2022\nFinal Grade: 1.4 (German grading scale)"
+  },
+  {
+    "objectID": "pages/about.html#experience",
+    "href": "pages/about.html#experience",
+    "title": "CV",
+    "section": "Experience",
+    "text": "Experience\nFreelance | Agricultural Field Control | Summer 2022/23/24/25\nLAKI | Ecological mapping | Intern & Job | May 2022 - July 2022\nEFTAS | Remote Sensing | Intern | Oct 2021 - Nov 2021"
+  },
+  {
+    "objectID": "pages/about.html#skills",
+    "href": "pages/about.html#skills",
+    "title": "CV",
+    "section": "Skills",
+    "text": "Skills\n\nOrganisational talent\nProject Management (University training)"
+  },
+  {
+    "objectID": "pages/about.html#personal-interests",
+    "href": "pages/about.html#personal-interests",
+    "title": "CV",
+    "section": "Personal Interests",
+    "text": "Personal Interests\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects"
+  },
+  {
+    "objectID": "pages/freelance.html",
+    "href": "pages/freelance.html",
+    "title": "LÖGI",
+    "section": "",
+    "text": "LÖGI LANDSCAPE ECOLOGY & GEOINFORMATICS\n\n\n\n\n\nWelcome!\nSince 2022 I am working as a Freelancer in Ecological Fieldwork, Environmental Modelling and Geo data processing.\n\n\n\n\nServices\nMy experiences cover Botanical mappings, agricultural controls, geodata processing (R & GIS) and environmental modelling. I am specialiced in ecological restoration, remote sensing and vegetation ecology. Feel free to contact me for custom requests."
+  },
+  {
+    "objectID": "pages/projects.html",
+    "href": "pages/projects.html",
+    "title": "Academic Projects",
+    "section": "",
+    "text": "2025\n\nMaster Thesis\nCanopy height mapping from optical remote sensing data: reassessing deep learning methods\n\n\n\n2024\n\nR-Package Development\nCreation and development of the R-Package ‘dandelion’\nStudent Project\nDetecting meadow orchards in Germany using a convolution neural networks and aerial imagery.\n\n\n\n2022\n\nBachelor Thesis\n\nSpatio-Temporal analysis of a central european bog\nRecent trends in moisture conditions across European peatlands"
+  },
+  {
+    "objectID": "pages/resources/fieldnotes.html#iss-orbit",
+    "href": "pages/resources/fieldnotes.html#iss-orbit",
+    "title": "Field Notes",
+    "section": "ISS Orbit",
+    "text": "ISS Orbit"
+  },
+  {
+    "objectID": "pages/resources/fieldnotes.html#next-pass",
+    "href": "pages/resources/fieldnotes.html#next-pass",
+    "title": "Field Notes",
+    "section": "Next pass",
+    "text": "Next pass"
   },
   {
     "objectID": "pages/resources/VirtualEnvs.html",

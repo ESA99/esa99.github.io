@@ -270,3 +270,17 @@ code {
   background-position: center;
 }
 
+
+/* =======================================
+   Page Logo (Like dandelion page)   
+   ======================================= */
+   
+.page-logo {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.page-logo img {
+  height: 280px;
+}

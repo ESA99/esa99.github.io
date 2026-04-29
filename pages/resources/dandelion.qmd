@@ -1,11 +1,25 @@
 ---
 title: "dandelion"
 format: html
+
 ---
 ```{R}
 #| echo: false
 library(dandelion)
 ```
+
+<style>
+p {
+  text-align: justify;
+  hyphens: auto;
+}
+</style>
+
+<div class="page-logo">
+  <img src="../../content/dandelion_logo_B.png" alt="logo">
+</div>
+
+<!-- ![](../../content/dandelion_logo_B.png){.page-logo} -->
 
 # About
 
@@ -67,3 +81,4 @@ To export a text file with all packages in BibTex format use bibtex_citation_ses
 bibtex_citation_session("folder/filename.txt")
 ```
 The function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory.
+
