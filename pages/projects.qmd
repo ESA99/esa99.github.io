@@ -2,21 +2,65 @@
 title: "Academic Projects"
 ---
 
+
 # 2025
 
--   **Master Thesis**  
-[Canopy height mapping from optical remote sensing data: reassessing deep learning methods](gchm.qmd)
+::: {.post}
+### Master Thesis
+*Canopy height mapping from optical remote sensing data: reassessing deep learning methods*  
+[View project →](gchm.qmd)
+:::
+
+---
 
 # 2024
 
-- **R-Package Development**  
-[Creation and development of the R-Package *'dandelion'*](../pages/resources/dandelion.qmd)
+::: {.post}
 
--   **Student Project**  
-Detecting meadow orchards in Germany using a convolution neural networks and aerial imagery.
+::: {.columns}
+
+::: {.column width="80%"}
+### R-Package Development  
+<!-- <span class="meta">2024 • R • Spatial Analysis</span>   -->
+Creation and development of the R package *dandelion*, focused on spatial ecological workflows in R.  
+[View documentation →](../pages/resources/dandelion.qmd)
+
+:::
+
+::: {.column width="20%"}
+
+[![](../content/dandelion_logo_A.png)](../pages/resources/dandelion.qmd)
+
+:::
+
+:::
+
+:::
+
+
+
+
+<!-- ::: {.post} -->
+<!-- ### R-Package Development -->
+<!-- ![](){width="200px" style="float:right; margin:0 0 1rem 1rem; border-radius:8px;"} -->
+<!-- Creation and development of the R package *dandelion*   -->
+<!-- A tool for spatial ecological data processing in R.   -->
+<!-- [View documentation →](../pages/resources/dandelion.qmd) -->
+<!-- ::: -->
+
+::: {.post}
+### Student Project
+Detecting meadow orchards in Germany using convolutional neural networks and aerial imagery
+
+:::
+
+---
 
 # 2022
 
--   **Bachelor Thesis**  
-    - Spatio-Temporal analysis of a central european bog
-    - [Recent trends in moisture conditions across European peatlands](https://doi.org/10.1016/j.rsase.2024.101385){.external target="_blank"}
+::: {.post}
+### Bachelor Thesis
+- Spatio-temporal analysis of a Central European bog
+- [Recent trends in moisture conditions across European peatlands](https://doi.org/10.1016/j.rsase.2024.101385){.external target="_blank"}
+
+:::

@@ -74,13 +74,13 @@ knitr::include_graphics("../content/gchm/Workflow.png")
 Sample tiles at eleven different locations were selected to ensure broad geographic representation across all continents, covering a wide range of latitudes, elevations, and biomes. I used the three sample tiles presented in the paper as well as the tile provided as demo data [@lang_github2023]. This set was extended by three European forests under different management regimes, of which two are located outside the GEDI reference range of 51.6° N-S [@Dubayah_gedi-1_2020]. Four additional tiles from various continents, considered to be representative of their respective regions, were included. Care was taken to ensure sufficient vegetation cover, within each individual tile. 
 
 
+<!-- #| fig-column: page-right -->
 ```{r}
 #| message: false
 #| echo: false
 #| warning: false
 #| fig-width: 11
 #| fig-height: 3
-#| fig-column: page-right
 
 library(tmap)
 library(sf)
