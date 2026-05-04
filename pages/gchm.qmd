@@ -29,7 +29,7 @@ csl: https://www.zotero.org/styles/apa
 </a>
 :::
 
-This page documents the progress of the research on the operating mechanisms of the global canopy height model by @lang_gchm_2023. For the full data and scripts please visit the corresponding [GitHub page](https://github.com/ESA99/canopy_height) and for other projects and more information about me visit my [Main Site](https://esa99.github.io).
+This page documents the progress of the research on the operating mechanisms of the global canopy height model by @lang_gchm_2023. For the full data and scripts please visit the corresponding [GitHub repository](https://github.com/ESA99/canopy_height) and for other projects and more information about me visit my [Main Site](https://esa99.github.io).
 
 ## Abstract
 Accurate canopy height data is crucial for understanding ecosystem structure and function, assessing biodiversity or calculating carbon stocks. Traditional in-situ collection of canopy height data is complex, labor-intensive and spatially limited. While Airborne Laser Scanning enables analysis on a regional or country-wide scale, a global application is not feasible due to high costs.
@@ -56,20 +56,29 @@ As we cannot retrace the reasoning of the model due to the nature of deep learni
 To systematically analyze the role of spectral data in deep learning models for estimating canopy height, an automated workflow was developed (See @fig-methods). This workflow encompasses data preparation, variable creation, file management, model deployment, and the export of results. @fig-methods illustrates the key elements of the process and the sequence of operations. The spectral manipulation function is integrated into the model deployment scripts. The original code of the model remained unchanged.
 
 
-::: {#fig-methods}
-![Conceptual illustration of the developed workflow created for the analysis. Components developed as part of this thesis are highlighted in pink, adapted infrastructure originating from Lang et al. (2023a) is shown in green. The automated workflow processes one Sentinel-2 Tile at a time and repeats the process for the next manipulation step and image, after saving the results.](../content/gchm/Workflow.png)
-:::
+<!-- ::: {#fig-methods} -->
+<!-- ![Conceptual illustration of the developed workflow created for the analysis. Components developed as part of this thesis are highlighted in pink, adapted infrastructure originating from Lang et al. (2023a) is shown in green. The automated workflow processes one Sentinel-2 Tile at a time and repeats the process for the next manipulation step and image, after saving the results.](../content/gchm/Workflow.png) -->
+<!-- ::: -->
+
+```{R}
+#| label: fig-methods
+#| fig-cap: "Conceptual illustration of the developed workflow created for the analysis. Components developed as part of this thesis are highlighted in pink, adapted infrastructure originating from Lang et al. (2023a) is shown in green. The automated workflow processes one Sentinel-2 Tile at a time and repeats the process for the next manipulation step and image, after saving the results."
+#| fig-width: 10
+#| echo: False
+
+knitr::include_graphics("../content/gchm/Workflow.png")
+
+```
 
 
 ## Research locations
 In total 11 tiles were used for the analysis of the model. They were selected to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper.  
 
-::: {#fig-tilemap}
+
 ```{r}
 #| message: false
 #| echo: false
 #| warning: false
-#| fig-cap: "Sample tiles selected for the Analysis."
 #| fig-width: 11
 #| fig-height: 3
 #| fig-column: page-right
@@ -98,7 +107,6 @@ tmap::tm_shape(tiles) +
 
 ```
 
-:::
 
 ## Results
 
@@ -162,15 +170,23 @@ ggplot(result_table, aes(x = abs_increment, y = avg_difference_percent,
 ### Differences in response between sample tiles
 The impact of spectral manipulation on canopy height prediction was assessed across eleven globally distributed sample tiles. The selection of these tiles tried to cover a wide range of biomes, continents, management regimes and latitudes, both inside and outside the range of the reference data. They differ in landscape structure and species composition, resulting in different ranges of canopy heights. The distribution of unmanipulated canopy height estimations per tile is illustrated in @fig-CHridge, sorted by mean canopy height from top to bottom. The tiles Finland and Mongolia consist of very low vegetation with an average lower than 5 m. Malaysia has the highest predicted average canopy height with 43.5 m. Switzerland and Cameroon show a very wide spectrum of canopy heights with a very strong distinction between high and low vegetation in Cameroon.
 
-::: {#fig-CHridge}
-![Distribution of predicted canopy height per tile. Sorted by mean canopy height in meters,
-across the whole tile.](../content/gchm/CH_RIdge_Tile.png))
-:::
+```{R}
+#| label: fig-CHridge
+#| fig-cap: "Distribution of predicted canopy height per tile. Sorted by mean canopy height in meters, across the whole tile."
+#| fig-width: 10
+#| echo: False
+#| 
+knitr::include_graphics("../content/gchm/CH_RIdge_Tile.png")
+```
+
+<!-- ::: {#fig-CHridge} -->
+<!-- ![](../content/gchm/CH_RIdge_Tile.png){fig-cap="Distribution of predicted canopy height per tile. Sorted by mean canopy height in meters, across the whole tile."} -->
+<!-- ::: -->
 
 
 ```{r}
 #| label: fig-tileband
-#| fig-cap: "Single band by tile"
+#| fig-cap: "Average signed differences between the sample tiles by manipulation degree, within a single band. Bands can be selected in the top left corner."
 #| message: false
 #| echo: false
 #| warning: false
@@ -376,13 +392,26 @@ ggscatter(result_table,
 
 
 
+## Discussion
 
 
 
+## Conclusion
 
+This research demonstrates that spectral values are not a primary driver in the operating mechanism of optical data based deep learning models for canopy height prediction. While sensitivity to the spectral input was observed, no systematic pattern emerged linking spectral values directly to canopy height. Instead, my results indicate a substantial influence of tiles specific properties, including the canopy height it is deployed on, representation of biomes in the training data, local unique characteristics and geographical coordinates. Furthermore, substantial variability within the individual models of the ensemble prediction influences prediction accuracy. 
 
+These findings contribute to the development of deep learning models in ecological modeling by highlighting the importance of spatial context and model variability. Future research should explore the influence of spatial patterns and texture, to further refine our understanding of the driving mechanisms of these models.
 
+Deep learning, ensemble prediction and the use of publicly accessible remote sensing data have the potential to significantly expand our knowledge of ecosystems, improve modeling approaches and facilitate large scale analysis. However, understanding the spatial and ecological limits of model application is crucial. It needs to be our goal to understand the products we produce and communicate its limitations. Model metrics do not tell the full story, ignoring its applicability and prediction mechanisms. What a model can’t do and where it is applicable is
+even more important than its performance.
 
+As creators of deep learning models, we need to clearly understand and communicate their
+operating principles, to avoid misunderstandings and build trust. This ensures a high quality of
+derivative products and information, as well as a strong explanatory value. Establishing common
+standards for evaluation, contextual calibration and unambiguous communication of application
+limits are the keystones for future development. Measures of applicability are vital for model
+assessment. This way we ensure high quality products using the full potential of deep learning
+in remote sensing.
 
 
 
@@ -403,7 +432,7 @@ ggscatter(result_table,
 
 
 :::{.column-margin}
-TEST Content to fit into the page margin. This can be any content, even a figure or equation.
+Sildes were created for the ILÖK Graduate Conference, at an intermediate state of the Project. Newer slides will be provided soon, in preperation for the GFÖ Conference.
 :::
 
 
