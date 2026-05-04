@@ -7,13 +7,12 @@ format:
     theme: none
     css: ../styles/gchm.css
     embed-resources: true
+    page-layout: full
+    number-sections: true
     toc: true
     toc-location: left
-    number-sections: true
-    # page-layout: full
-    # number-sections: true
-    fig-cap-location: bottom
     fig-numbering: true
+    fig-cap-location: bottom
     text: |
       <meta name="viewport" content="width=1024">
 reference-location: margin
@@ -63,7 +62,7 @@ To systematically analyze the role of spectral data in deep learning models for 
 ```{R}
 #| label: fig-methods
 #| fig-cap: "Conceptual illustration of the developed workflow created for the analysis. Components developed as part of this thesis are highlighted in pink, adapted infrastructure originating from Lang et al. (2023a) is shown in green. The automated workflow processes one Sentinel-2 Tile at a time and repeats the process for the next manipulation step and image, after saving the results."
-#| fig-width: 10
+#| fig-height: 14
 #| echo: False
 
 knitr::include_graphics("../content/gchm/Workflow.png")
@@ -71,8 +70,8 @@ knitr::include_graphics("../content/gchm/Workflow.png")
 ```
 
 
-## Research locations
-In total 11 tiles were used for the analysis of the model. They were selected to be distributed globally, cover multiple different biomes and based on the presented tiles by the original paper.  
+## Sample Tiles
+Sample tiles at eleven different locations were selected to ensure broad geographic representation across all continents, covering a wide range of latitudes, elevations, and biomes. I used the three sample tiles presented in the paper as well as the tile provided as demo data [@lang_github2023]. This set was extended by three European forests under different management regimes, of which two are located outside the GEDI reference range of 51.6° N-S [@Dubayah_gedi-1_2020]. Four additional tiles from various continents, considered to be representative of their respective regions, were included. Care was taken to ensure sufficient vegetation cover, within each individual tile. 
 
 
 ```{r}
@@ -122,7 +121,7 @@ of differences. @fig-lineplot illustrates the average absolute difference by abs
 #| echo: false
 #| warning: false
 #| fig-width: 12
-#| fig-height: 8
+#| fig-height: 9
 
 library(dplyr)
 library(ggplot2)
@@ -130,7 +129,7 @@ library(ggpubr)
 library(ggrepel)
 library(viridis)
 
-result_table <- read.csv("../content/gchm/2025-10-20_main.csv")
+result_table <- read.csv("../content/gchm/result_table.csv")
 
 cbf_colors <- c(Blue= "#0072B2", Green = "#009E73", Red= "#D55E00", RedEdge  ="#CC79A7",NIR= "#9E0142", NIR2 = "#5E4FA2", SWIR1= "#E6AB02", SWIR2 = "#999999")
 
@@ -422,12 +421,24 @@ in remote sensing.
 
 
 
-## Slides
+## Resources
 
+::: {.columns}
+
+::: {.column width="50%"}
+<a href="../content/gchm/result_table.csv" download class="btn btn-primary">
+  Download data (CSV)
+</a>
+:::
+
+::: {.column width="50%"}
+<a href="/content/gchm/presentation_slides.pdf" class="btn btn-primary" target="_blank">
+  Conference slides (PDF)
+</a>
+:::
+
+:::
 <!-- [Here](/content/gchm/presentation_slides.pdf) can you find the presentation of the ILÖK Graduate Conference. -->
-
-<a href="/content/gchm/presentation_slides.pdf" class="btn btn-primary" target="_blank">Conference slides (PDF)</a>
-
 
 
 
