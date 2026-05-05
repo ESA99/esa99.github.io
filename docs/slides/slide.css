@@ -1,0 +1,124 @@
+/* --- GENERAL STYLE --- */
+.reveal {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 28px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+.reveal {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+
+/* Headings */
+.reveal h1, .reveal h2, .reveal h3 {
+  color: #1E643F; /* deep green */
+}
+
+
+/* Strong text */
+.reveal strong {
+  font-weight: 600;
+}
+
+/* --- PROGRESS BAR (GREEN) --- */
+.reveal .progress {
+  height: 6px;
+  background: rgba(0,0,0,0.1);
+}
+
+.reveal .progress span {
+  background: #1E643F; /* ecological green */
+}
+
+/* --- SLIDE NUMBERS (TOP RIGHT) --- */
+.reveal .slide-number {
+  position: fixed !important;
+  top: 20px!important;
+  right: 25px!important;
+  bottom: auto;
+  left: auto;
+
+  font-size: 14px;
+  color: #1E643F; /*Alternative #444*/
+}
+
+.reveal .slide-number a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* --- LOGO (BOTTOM Right, FIXED) --- */
+.reveal::after {
+  content: "";
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  
+  height: 80px;
+  width: 200px;
+  
+  background-image: url("../content/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  
+  opacity: 0.9;
+  z-index: 1000;
+}
+
+/* --- FOOTER TEXT --- */
+.reveal .footer {
+  font-size: 14px;
+  color: #666;
+}
+
+/* --- REFERENCES SLIDE --- */
+.smaller {
+  font-size: 0.7em;
+  line-height: 1.4em;
+}
+
+/* --- IMAGE STYLING --- */
+.reveal img {
+  border-radius: 10px;
+}
+
+/* --- COLUMNS SPACING --- */
+.reveal .columns {
+  gap: 20px;
+}
+
+/* --- DARK BACKGROUND SLIDES (for maps) --- */
+.dark-slide {
+  background-color: #111 !important;
+  color: #eee;
+}
+
+
+
+
+/* =========================
+   TITLE SLIDE META ONLY
+   (subtitle, author, date)
+   ========================= */
+
+/* Subtitle + author + date on title slide */
+.reveal .slides section:first-of-type p {
+  color: rgba(255, 255, 255, 0.25) !important;
+  font-weight: 300;
+}
+
+/* EXTRA SAFETY: ensure title is NOT affected */
+.reveal .slides section:first-of-type h1 {
+  color: #1b5e20 !important; /* keeps your green title */
+}

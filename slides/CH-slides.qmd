@@ -1,0 +1,74 @@
+---
+title: "CH modelling"
+subtitle: "University Münster • Remote Sensing"
+author: "Emilio Sánchez"
+date: today
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    progress: true
+    css: slide.css
+    footer: ""
+    transition: fade
+    background-transition: fade
+    title-slide-attributes:
+      data-background-image: "../content/gchm/clean_lines.png"
+      data-background-size: cover
+execute:
+  echo: false
+bibliography: ../content/gchm/references.bib
+# csl: ecological-applications.csl
+---
+
+
+## Research Question
+
+**Are spectral reflectance values the driving force in recent deep learning models predicting canopy height?**
+
+
+
+---
+
+## Sample Tiles
+![](../content/gchm/map_tiles.png)
+
+
+---
+
+## Model training
+
+::: columns
+::: column
+![GEDI reference data](../content/gchm/gedi.png)
+:::
+::: column
+- Location description
+- Key variables
+- Data sources
+:::
+:::
+
+
+
+---
+
+## Results
+
+![Canopy Height distribution](../content/gchm/CH_RIdge_Tile.png)
+Some key finding here [@lang_gchm_2023].
+
+::: {.footer}
+::: {.smaller}
+::: {#refs}
+:::
+:::
+:::
+
+---
+
+
+
+## Thank You
+
+Questions?
