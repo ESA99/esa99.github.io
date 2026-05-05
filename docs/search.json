@@ -299,5 +299,68 @@
     "title": "Virtual Environments",
     "section": "Example environment",
     "text": "Example environment\nThe environment.yml file contains all info about what we want to install and tells conda our requirements. The solver then sorts out the correct versions for the virtual environment to work with each other. It works from top to bottom. gdal is included here; the version will fit to the required python and R. We included R here as well to have a fully encapsulated environment ensuring compatibility, instead of deploying scripts from outside the branch. -e. is added to install it as executable python “package”.\nname: gchm\n\nchannels:\n  - conda-forge\n  - pytorch\n  - nvidia\n\ndependencies:\n  - python&gt;=3.12.0\n  - r-base&gt;=4.4.0\n  - gdal\n  - sentinelhub\n  - pytables\n  - libgdal-jp2openjpeg\n  - ipython\n  - matplotlib\n  - numpy\n  - pathlib\n  - tqdm\n  - botocore\n  - urllib3\n  - wandb\n  - tensorboard\n  - scikit-image\n  - scikit-learn\n  - pytorch::pytorch\n  - pytorch::pytorch-cuda\n  - pytorch::torchvision\n  - pytorch::torchaudio\n  - conda-forge::cudatoolkit==11.8.0\n  - typing\n  - jupyter\n  - pip\n  - pip:\n    - -e ."
+  },
+  {
+    "objectID": "slides/CH-slides.html#research-context",
+    "href": "slides/CH-slides.html#research-context",
+    "title": "CH modelling",
+    "section": "Research Context",
+    "text": "Research Context\n\nRemote sensing data {.fragment}\nEcological modeling {.fragment}\nData {.fragment}\nModel {.fragment}\nPrediction {.fragment}"
+  },
+  {
+    "objectID": "slides/CH-slides.html#study-area",
+    "href": "slides/CH-slides.html#study-area",
+    "title": "CH modelling",
+    "section": "Study Area",
+    "text": "Study Area\n\n\n\n\n\nGEDI reference data\n\n\n\n\nLocation description\nKey variables\nData sources"
+  },
+  {
+    "objectID": "slides/CH-slides.html#methods",
+    "href": "slides/CH-slides.html#methods",
+    "title": "CH modelling",
+    "section": "Methods",
+    "text": "Methods\n\nCanopy Height distribution"
+  },
+  {
+    "objectID": "slides/CH-slides.html#results",
+    "href": "slides/CH-slides.html#results",
+    "title": "CH modelling",
+    "section": "Results",
+    "text": "Results\n Some key finding here (Lang et al. 2023).\n\n\n\n\nLang, Nico, Walter Jetz, Konrad Schindler, and Jan Dirk Wegner. 2023. “A High-Resolution Canopy Height Model of the Earth.” Nature Ecology & Evolution 7 (11): 1778–89. https://doi.org/10.1038/s41559-023-02206-6."
+  },
+  {
+    "objectID": "slides/CH-slides.html#references",
+    "href": "slides/CH-slides.html#references",
+    "title": "CH modelling",
+    "section": "References",
+    "text": "References\n\n\nAuthor et al. (2020)\nAuthor et al. (2021)"
+  },
+  {
+    "objectID": "slides/CH-slides.html#thank-you",
+    "href": "slides/CH-slides.html#thank-you",
+    "title": "CH modelling",
+    "section": "Thank You",
+    "text": "Thank You\nQuestions?"
+  },
+  {
+    "objectID": "slides/CH-slides.html#research-question",
+    "href": "slides/CH-slides.html#research-question",
+    "title": "CH modelling",
+    "section": "Research Question",
+    "text": "Research Question\nAre spectral reflectance values the driving force in recent deep learning models predicting canopy height?"
+  },
+  {
+    "objectID": "slides/CH-slides.html#sample-tiles",
+    "href": "slides/CH-slides.html#sample-tiles",
+    "title": "CH modelling",
+    "section": "Sample Tiles",
+    "text": "Sample Tiles"
+  },
+  {
+    "objectID": "slides/CH-slides.html#model-training",
+    "href": "slides/CH-slides.html#model-training",
+    "title": "CH modelling",
+    "section": "Model training",
+    "text": "Model training\n\n\n\n\n\nGEDI reference data\n\n\n\n\nLocation description\nKey variables\nData sources"
   }
 ]
