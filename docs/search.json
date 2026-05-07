@@ -1,10 +1,248 @@
 [
   {
-    "objectID": "pages/resources.html",
-    "href": "pages/resources.html",
-    "title": "Resources",
+    "objectID": "slides/CH-slides.html#research-question",
+    "href": "slides/CH-slides.html#research-question",
+    "title": "CH modelling",
+    "section": "Research Question",
+    "text": "Research Question\nAre spectral reflectance values the driving force in recent deep learning models predicting canopy height?"
+  },
+  {
+    "objectID": "slides/CH-slides.html#sample-tiles",
+    "href": "slides/CH-slides.html#sample-tiles",
+    "title": "CH modelling",
+    "section": "Sample Tiles",
+    "text": "Sample Tiles"
+  },
+  {
+    "objectID": "slides/CH-slides.html#model-training",
+    "href": "slides/CH-slides.html#model-training",
+    "title": "CH modelling",
+    "section": "Model training",
+    "text": "Model training\n\n\n\n\n\nGEDI reference data\n\n\n\n\nLocation description\nKey variables\nData sources"
+  },
+  {
+    "objectID": "slides/CH-slides.html#results",
+    "href": "slides/CH-slides.html#results",
+    "title": "CH modelling",
+    "section": "Results",
+    "text": "Results\n Some key finding here (Lang et al. 2023).\n\n\n\n\nLang, Nico, Walter Jetz, Konrad Schindler, and Jan Dirk Wegner. 2023. “A High-Resolution Canopy Height Model of the Earth.” Nature Ecology & Evolution 7 (11): 1778–89. https://doi.org/10.1038/s41559-023-02206-6."
+  },
+  {
+    "objectID": "slides/CH-slides.html#thank-you",
+    "href": "slides/CH-slides.html#thank-you",
+    "title": "CH modelling",
+    "section": "Thank You",
+    "text": "Thank You\nQuestions?"
+  },
+  {
+    "objectID": "pages/resources/VirtualEnvs.html",
+    "href": "pages/resources/VirtualEnvs.html",
+    "title": "Virtual Environments",
     "section": "",
-    "text": "dandelion\n        R-Package documentation.\n      \n    \n  \n\n  \n    \n      \n        \n      \n      \n        Virtual environments\n        Setup and Application.\n      \n    \n  \n  \n  \n    \n      \n        \n      \n      \n        Field Notes\n        Experimental Collection.\n      \n    \n  \n\n  \n    \n      \n        \n      \n      \n        Cat Vitae\n        The live of a scientific cat."
+    "text": "A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:\n\nProjects do not interfere with each other.\nSpecific versions of packages can be maintained for reproducibility.\nExperiments and scripts run in a controlled, predictable setup.\n\nWhatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems."
+  },
+  {
+    "objectID": "pages/resources/VirtualEnvs.html#what-are-virtual-environments",
+    "href": "pages/resources/VirtualEnvs.html#what-are-virtual-environments",
+    "title": "Virtual Environments",
+    "section": "",
+    "text": "A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:\n\nProjects do not interfere with each other.\nSpecific versions of packages can be maintained for reproducibility.\nExperiments and scripts run in a controlled, predictable setup.\n\nWhatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems."
+  },
+  {
+    "objectID": "pages/resources/VirtualEnvs.html#how-to-set-them-up",
+    "href": "pages/resources/VirtualEnvs.html#how-to-set-them-up",
+    "title": "Virtual Environments",
+    "section": "How to set them up",
+    "text": "How to set them up\nMiniforge3 is a lightweight alternative to Anaconda that simplifies installation and avoids some licensing issues. Libmamba solver is much faster and more reliable than the classic Conda solver, especially for large environments with many dependencies. Using the old solver can take hours or even fail due to conflicts.\nminiforge3 is installed via Miniforge3-Linux-x86_64.sh Important: Solver has to be set to libmamba. Check via conda info and change like this if needed:\nconda info | grep solver\nconda config --set solver libmamba\n\nInstallation\nSet the desired software/packages and if needed versions in environment.yml. All undefined Versions will be fitted to work together. Create the Virtual Environment with the specified requirements.\nTip: Installing R inside the environment avoids mismatches between Python and R libraries and ensures your scripts are reproducible across machines.\nmamba env create -f environment.yml\n\nCheck after installation\nTo see all installed software and packages with their exact version use conda list or filter for a specific item\nconda list\n\nconda list | grep numpy"
+  },
+  {
+    "objectID": "pages/resources/VirtualEnvs.html#deployment",
+    "href": "pages/resources/VirtualEnvs.html#deployment",
+    "title": "Virtual Environments",
+    "section": "Deployment",
+    "text": "Deployment\nFirst, the desired Virtual Environment has to be activated and the desired project directory set. Then we can deploy scripts by specifying the type and then the file.\nconda activate gchm\ncd /home/emilio/canopy_height/\nRscript deploy.R\n\nUsefull bash code\nReal time GPU supervision:\nwatch -n 1 nvidia-smi"
+  },
+  {
+    "objectID": "pages/resources/VirtualEnvs.html#Example",
+    "href": "pages/resources/VirtualEnvs.html#Example",
+    "title": "Virtual Environments",
+    "section": "Example environment",
+    "text": "Example environment\nThe environment.yml file contains all info about what we want to install and tells conda our requirements. The solver then sorts out the correct versions for the virtual environment to work with each other. It works from top to bottom. gdal is included here; the version will fit to the required python and R. We included R here as well to have a fully encapsulated environment ensuring compatibility, instead of deploying scripts from outside the branch. -e. is added to install it as executable python “package”.\nname: gchm\n\nchannels:\n  - conda-forge\n  - pytorch\n  - nvidia\n\ndependencies:\n  - python&gt;=3.12.0\n  - r-base&gt;=4.4.0\n  - gdal\n  - sentinelhub\n  - pytables\n  - libgdal-jp2openjpeg\n  - ipython\n  - matplotlib\n  - numpy\n  - pathlib\n  - tqdm\n  - botocore\n  - urllib3\n  - wandb\n  - tensorboard\n  - scikit-image\n  - scikit-learn\n  - pytorch::pytorch\n  - pytorch::pytorch-cuda\n  - pytorch::torchvision\n  - pytorch::torchaudio\n  - conda-forge::cudatoolkit==11.8.0\n  - typing\n  - jupyter\n  - pip\n  - pip:\n    - -e ."
+  },
+  {
+    "objectID": "pages/resources/fieldnotes.html#iss-orbit",
+    "href": "pages/resources/fieldnotes.html#iss-orbit",
+    "title": "Field Notes",
+    "section": "ISS Orbit",
+    "text": "ISS Orbit"
+  },
+  {
+    "objectID": "pages/resources/fieldnotes.html#next-pass",
+    "href": "pages/resources/fieldnotes.html#next-pass",
+    "title": "Field Notes",
+    "section": "Next pass",
+    "text": "Next pass"
+  },
+  {
+    "objectID": "pages/projects.html",
+    "href": "pages/projects.html",
+    "title": "Academic Projects",
+    "section": "",
+    "text": "2025\n\nMaster Thesis\nCanopy height mapping from optical remote sensing data: reassessing deep learning methods\nView project →\n\n\n\n\n2024\n\n\n\n\nR-Package Development\n\nCreation and development of the R package dandelion, focused on spatial ecological workflows in R.\nView documentation →\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStudent Project\nDetecting meadow orchards in Germany using convolutional neural networks and aerial imagery\n\n\n\n\n2022\n\nBachelor Thesis\n\nSpatio-temporal analysis of a Central European bog\nRecent trends in moisture conditions across European peatlands"
+  },
+  {
+    "objectID": "pages/freelance.html",
+    "href": "pages/freelance.html",
+    "title": "LÖGI",
+    "section": "",
+    "text": "LÖGI LANDSCAPE ECOLOGY & GEOINFORMATICS\n\n\n\n\n\nWelcome!\nSince 2022 I am working as a Freelancer in Ecological Fieldwork, Environmental Modelling and Geo data processing.\n\n\n\n\nServices\nMy experiences cover Botanical mappings, agricultural controls, geodata processing (R & GIS) and environmental modelling. I am specialiced in ecological restoration, remote sensing and vegetation ecology. Feel free to contact me for custom requests."
+  },
+  {
+    "objectID": "pages/about.html",
+    "href": "pages/about.html",
+    "title": "CV",
+    "section": "",
+    "text": "Master of Science in Landscape Ecology\nUniversity Münster GER, Oct 2023 - present\nFinal Grade: TBD (German grading scale)\nFocus: Restoration Ecology, Remote Sensing, Soil Ecology\nBachelor of Science in Landscape Ecology\nUniversity Münster GER, Oct 2019 - Sept 2022\nFinal Grade: 1.4 (German grading scale)"
+  },
+  {
+    "objectID": "pages/about.html#education",
+    "href": "pages/about.html#education",
+    "title": "CV",
+    "section": "",
+    "text": "Master of Science in Landscape Ecology\nUniversity Münster GER, Oct 2023 - present\nFinal Grade: TBD (German grading scale)\nFocus: Restoration Ecology, Remote Sensing, Soil Ecology\nBachelor of Science in Landscape Ecology\nUniversity Münster GER, Oct 2019 - Sept 2022\nFinal Grade: 1.4 (German grading scale)"
+  },
+  {
+    "objectID": "pages/about.html#experience",
+    "href": "pages/about.html#experience",
+    "title": "CV",
+    "section": "Experience",
+    "text": "Experience\nFreelance | Agricultural Field Control | Summer 2022/23/24/25\nLAKI | Ecological mapping | Intern & Job | May 2022 - July 2022\nEFTAS | Remote Sensing | Intern | Oct 2021 - Nov 2021"
+  },
+  {
+    "objectID": "pages/about.html#skills",
+    "href": "pages/about.html#skills",
+    "title": "CV",
+    "section": "Skills",
+    "text": "Skills\n\nOrganisational talent\nProject Management (University training)"
+  },
+  {
+    "objectID": "pages/about.html#personal-interests",
+    "href": "pages/about.html#personal-interests",
+    "title": "CV",
+    "section": "Personal Interests",
+    "text": "Personal Interests\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects"
+  },
+  {
+    "objectID": "archive/CV.html",
+    "href": "archive/CV.html",
+    "title": "CV",
+    "section": "",
+    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nEcological Mapping\n\n\n\n\n\n\n\nWoodworking\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance\nAnnualy since 2022\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nMemberships\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Emilio Sánchez",
+    "section": "",
+    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+  },
+  {
+    "objectID": "index.html#emilio-sánchez",
+    "href": "index.html#emilio-sánchez",
+    "title": "Emilio Sánchez",
+    "section": "",
+    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
+  },
+  {
+    "objectID": "pages/CV.html",
+    "href": "pages/CV.html",
+    "title": "CV",
+    "section": "",
+    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGerman\n\n\n\n\n\nEnglish\n\n\n\n\n\nSpanish\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\n\n\n\nR\n\n\n\n\n\nGit\n\n\n\n\n\nPython\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\n\n\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\n\n\nM.Sc. Landscape Ecology\nOct 2023-Present · University Münster\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods.\nB.Sc. Landscape Ecology\nOct 2019-Sep 2022 · University Münster\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\n\n\n\nField Inspector | Freelance\n2022–Present · Control of agricultural fields\n\n\n\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026 · Analysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023 · Botany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022 · Ecological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022 · Field Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021 · Machine learning and reproducible workflows.\n\n\n\n\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\nEurasian Dry Grassland Group (EDGG)\nEuropean Young Rewilders network (EYR)\n\n\n\n\n\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\n\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+  },
+  {
+    "objectID": "pages/CV.html#about",
+    "href": "pages/CV.html#about",
+    "title": "CV",
+    "section": "",
+    "text": "My Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\n\n\nM.Sc. Landscape Ecology\nOct 2023-Present · University Münster\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods.\nB.Sc. Landscape Ecology\nOct 2019-Sep 2022 · University Münster\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\n\n\n\nField Inspector | Freelance\n2022–Present · Control of agricultural fields\n\n\n\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026 · Analysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023 · Botany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022 · Ecological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022 · Field Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021 · Machine learning and reproducible workflows.\n\n\n\n\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\nEurasian Dry Grassland Group (EDGG)\nEuropean Young Rewilders network (EYR)\n\n\n\n\n\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\n\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
+  },
+  {
+    "objectID": "pages/gchm.html",
+    "href": "pages/gchm.html",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "",
+    "text": "This page documents the progress of the research on the operating mechanisms of the global canopy height model by Lang et al. (2023a). For the full data and scripts please visit the corresponding GitHub repository and for other projects and more information about me visit my Main Site."
+  },
+  {
+    "objectID": "pages/gchm.html#abstract",
+    "href": "pages/gchm.html#abstract",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "1 Abstract",
+    "text": "1 Abstract\nAccurate canopy height data is crucial for understanding ecosystem structure and function, assessing biodiversity or calculating carbon stocks. Traditional in-situ collection of canopy height data is complex, labor-intensive and spatially limited. While Airborne Laser Scanning enables analysis on a regional or country-wide scale, a global application is not feasible due to high costs. Fusing deep learning, space borne LIDAR samples and optical remote sensing data, recent developments of canopy height models have produced remarkable results. Although spectral data is widely used in ecological analysis, a link to canopy height is unknown. The driving mechanisms of canopy height estimation on a global scale were investigated, using the approach presented by Lang et al. (2023a). To isolate the relevance of optical properties in prediction, controlled spectral manipulation of the input data was performed, and the model reaction analyzed. The observed patterns do not suggest a direct link of spectral values to canopy height. The results demonstrate that its prediction from optical remote sensing data is primarily influenced by factors beyond spectral signatures. Thorough understanding of the mechanisms driving prediction and clear communication of limitations in applicability and explanatory value is crucial in the development of ecological models.\n\nLang, N., Jetz, W., Schindler, K., & Wegner, J. D. (2023a). A high-resolution canopy height model of the earth. Nature Ecology & Evolution, 7(11), 1778–1789. https://doi.org/10.1038/s41559-023-02206-6"
+  },
+  {
+    "objectID": "pages/gchm.html#research-question",
+    "href": "pages/gchm.html#research-question",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "2 Research question",
+    "text": "2 Research question\nThe goal of this research is to understand the role of spectral data in the creation of deep learning approaches in order to predict canopy height, and generate insights to improve future approaches. The lack of a known ecological connection between spectral data and canopy height raises questions on the mechanisms driving prediction. This thesis aims to address the following question:\nAre spectral reflectance values the driving force in recent deep learning models predicting canopy height?\nIt is hypothesized that spectral data does not contain information about canopy height, and that other factors, like coordinates, are more relevant for prediction."
+  },
+  {
+    "objectID": "pages/gchm.html#methods",
+    "href": "pages/gchm.html#methods",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "3 Methods",
+    "text": "3 Methods\nThis research builds on an existing model architecture promising global canopy height prediction, delivering high spatial resolution, easy data accessibility and reproducibility (Lang et al., 2023b). The authors claim that the model has learned connections to spectral values as well as texture and present a remarkably low overall Root-Mean-Square-Error (RMSE) of 6.0 m. It was therefore selected to be used as an experimental subject in this research.\n\nESA. (2020). Copernicus sentinel-2. European Space Agency (ESA). https://browser.dataspace.copernicus.eu\n\nZanaga, D., Van De Kerchove, R., De Keersmaecker, W., Souverijns, N., Brockmann, C., Quast, R., Wevers, J., Grosu, A., Paccini, A., Vergnaud, S., Cartus, O., Santoro, M., Fritz, S., Georgieva, I., Lesiv, M., Carter, S., Herold, M., Li, L., Tsendbazar, N.-E., … Arino, O. (2020). ESA WorldCover 10 m 2020 v100. Zenodo. https://doi.org/10.5281/zenodo.5571936\nAs we cannot retrace the reasoning of the model due to the nature of deep learning approaches and their size, the effect of spectral values has to be isolated. To address this limitation, we approach this question by deploying the selected model on systematically manipulated spectral input data to observe the resulting change in canopy height estimates. Assuming the model has learned connections to spectral values, such perturbations would be expected to change proportionally, resulting in an approximately linear explanatory relationship between the magnitude of the spectral manipulation and the corresponding change in the predicted canopy height. Consistent with the original paper, Sentinel-2 imagery (ESA, 2020) and ESA-WordCover data (Zanaga et al., 2020) from 2020 was used.\nTo systematically analyze the role of spectral data in deep learning models for estimating canopy height, an automated workflow was developed (See Figure 1). This workflow encompasses data preparation, variable creation, file management, model deployment, and the export of results. Figure 1 illustrates the key elements of the process and the sequence of operations. The spectral manipulation function is integrated into the model deployment scripts. The original code of the model remained unchanged.\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Conceptual illustration of the developed workflow created for the analysis. Components developed as part of this thesis are highlighted in pink, adapted infrastructure originating from Lang et al. (2023a) is shown in green. The automated workflow processes one Sentinel-2 Tile at a time and repeats the process for the next manipulation step and image, after saving the results."
+  },
+  {
+    "objectID": "pages/gchm.html#sample-tiles",
+    "href": "pages/gchm.html#sample-tiles",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "4 Sample Tiles",
+    "text": "4 Sample Tiles\nSample tiles at eleven different locations were selected to ensure broad geographic representation across all continents, covering a wide range of latitudes, elevations, and biomes. I used the three sample tiles presented in the paper as well as the tile provided as demo data (Lang et al., 2023b). This set was extended by three European forests under different management regimes, of which two are located outside the GEDI reference range of 51.6° N-S (Dubayah et al., 2020). Four additional tiles from various continents, considered to be representative of their respective regions, were included. Care was taken to ensure sufficient vegetation cover, within each individual tile.\n\n\nLang, N., Jetz, W., Schindler, K., & Wegner, J. D. (2023b). A high-resolution canopy height model of the Earth [Source Code]. https://github.com/langnico/global-canopy-height-model\n\nDubayah, R., Blair, J. B., Goetz, S., Fatoyinbo, L., Hansen, M., Healey, S., Hofton, M., Hurtt, G., Kellner, J., Luthcke, S., Armston, J., Tang, H., Duncanson, L., Hancock, S., Jantz, P., Marselis, S., Patterson, P. L., Qi, W., & Silva, C. (2020). The Global Ecosystem Dynamics Investigation: High-resolution laser ranging of the Earth’s forests and topography. Science of Remote Sensing, 1. https://doi.org/10.1016/j.srs.2020.100002"
+  },
+  {
+    "objectID": "pages/gchm.html#results",
+    "href": "pages/gchm.html#results",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "5 Results",
+    "text": "5 Results\n\n5.1 Influece of spectral properties on prediction\nThe results do not show any linear relationship, but rather a symmetric behavior around 0 along the x-axis. The direction of manipulation does not influence the direction and magnitude of differences. Figure 2 illustrates the average absolute difference by absolute manipulation degree for each band, across all tiles.\n\n\n\n\n\n\n\n\nFigure 2: Average relative difference [%] by absolute manipulation degree for each manipulated band.\n\n\n\n\n\n\n\n5.2 Differences in response between sample tiles\nThe impact of spectral manipulation on canopy height prediction was assessed across eleven globally distributed sample tiles. The selection of these tiles tried to cover a wide range of biomes, continents, management regimes and latitudes, both inside and outside the range of the reference data. They differ in landscape structure and species composition, resulting in different ranges of canopy heights. The distribution of unmanipulated canopy height estimations per tile is illustrated in Figure 3, sorted by mean canopy height from top to bottom. The tiles Finland and Mongolia consist of very low vegetation with an average lower than 5 m. Malaysia has the highest predicted average canopy height with 43.5 m. Switzerland and Cameroon show a very wide spectrum of canopy heights with a very strong distinction between high and low vegetation in Cameroon.\n\n\n\n\n\n\n\n\nFigure 3: Distribution of predicted canopy height per tile. Sorted by mean canopy height in meters, across the whole tile.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: Average signed differences between the sample tiles by manipulation degree, within a single band. Bands can be selected in the top left corner.\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 5: Difference to original prediction after manipulating single bands, shown by sample tile"
+  },
+  {
+    "objectID": "pages/gchm.html#discussion",
+    "href": "pages/gchm.html#discussion",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "6 Discussion",
+    "text": "6 Discussion"
+  },
+  {
+    "objectID": "pages/gchm.html#conclusion",
+    "href": "pages/gchm.html#conclusion",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "7 Conclusion",
+    "text": "7 Conclusion\nThis research demonstrates that spectral values are not a primary driver in the operating mechanism of optical data based deep learning models for canopy height prediction. While sensitivity to the spectral input was observed, no systematic pattern emerged linking spectral values directly to canopy height. Instead, my results indicate a substantial influence of tiles specific properties, including the canopy height it is deployed on, representation of biomes in the training data, local unique characteristics and geographical coordinates. Furthermore, substantial variability within the individual models of the ensemble prediction influences prediction accuracy.\nThese findings contribute to the development of deep learning models in ecological modeling by highlighting the importance of spatial context and model variability. Future research should explore the influence of spatial patterns and texture, to further refine our understanding of the driving mechanisms of these models.\nDeep learning, ensemble prediction and the use of publicly accessible remote sensing data have the potential to significantly expand our knowledge of ecosystems, improve modeling approaches and facilitate large scale analysis. However, understanding the spatial and ecological limits of model application is crucial. It needs to be our goal to understand the products we produce and communicate its limitations. Model metrics do not tell the full story, ignoring its applicability and prediction mechanisms. What a model can’t do and where it is applicable is even more important than its performance.\nAs creators of deep learning models, we need to clearly understand and communicate their operating principles, to avoid misunderstandings and build trust. This ensures a high quality of derivative products and information, as well as a strong explanatory value. Establishing common standards for evaluation, contextual calibration and unambiguous communication of application limits are the keystones for future development. Measures of applicability are vital for model assessment. This way we ensure high quality products using the full potential of deep learning in remote sensing."
+  },
+  {
+    "objectID": "pages/gchm.html#resources",
+    "href": "pages/gchm.html#resources",
+    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "section": "8 Resources",
+    "text": "8 Resources\n\n\n Download data (CSV) \n\n Conference slides (PDF) \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSildes were created for the ILÖK Graduate Conference, at an intermediate state of the Project. Newer slides will be provided soon, in preperation for the GFÖ Conference."
+  },
+  {
+    "objectID": "pages/resources/dandelion.html#canopy-height-analysis",
+    "href": "pages/resources/dandelion.html#canopy-height-analysis",
+    "title": "dandelion",
+    "section": "Canopy Height analysis",
+    "text": "Canopy Height analysis\nThe following functions were specifically designed for the analysis of a canopy height model. Details on the project, the results and the application of the functions can be found on the project page.\n\nWorldcover Adjustment\nSpecific function for the processing of ESA Worldcover that is cropped to match Sentinel-2 tiles. It adjusts extend and resolution to match exactly the corresponding tile, enabeling further computations and analysis.\n\nworldcover_adjust()\n\n\n\nParameter dataframe\n\ncreate_param_df()\n\n\n\nGlobal Point Grid\nEnables to create a global point grid on earth’s landmasses within set boundaries (Lat/Lon).\n\nglobal_point_grid()"
+  },
+  {
+    "objectID": "pages/resources/dandelion.html#tools",
+    "href": "pages/resources/dandelion.html#tools",
+    "title": "dandelion",
+    "section": "Tools",
+    "text": "Tools\nCollection of tools for an efficient work process.\n\nBibtext export of session\nTo export a text file with all packages in BibTex format use bibtex_citation_session(). All actively loaded packages within your session will be included. Only non-base packages are taken into account. You can then import or copy the citations from the text file to your project.\n\nbibtex_citation_session(\"folder/filename.txt\")\n\nThe function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory."
   },
   {
     "objectID": "pages/resources/ssh_git.html",
@@ -91,276 +329,10 @@
     "text": "Key Takeaway\nSSH setup is performed once per machine/user and automatically applies to all Git repositories once remotes are switched from HTTPS to SSH."
   },
   {
-    "objectID": "pages/resources/dandelion.html#canopy-height-analysis",
-    "href": "pages/resources/dandelion.html#canopy-height-analysis",
-    "title": "dandelion",
-    "section": "Canopy Height analysis",
-    "text": "Canopy Height analysis\nThe following functions were specifically designed for the analysis of a canopy height model. Details on the project, the results and the application of the functions can be found on the project page.\n\nWorldcover Adjustment\nSpecific function for the processing of ESA Worldcover that is cropped to match Sentinel-2 tiles. It adjusts extend and resolution to match exactly the corresponding tile, enabeling further computations and analysis.\n\nworldcover_adjust()\n\n\n\nParameter dataframe\n\ncreate_param_df()\n\n\n\nGlobal Point Grid\nEnables to create a global point grid on earth’s landmasses within set boundaries (Lat/Lon).\n\nglobal_point_grid()"
-  },
-  {
-    "objectID": "pages/resources/dandelion.html#tools",
-    "href": "pages/resources/dandelion.html#tools",
-    "title": "dandelion",
-    "section": "Tools",
-    "text": "Tools\nCollection of tools for an efficient work process.\n\nBibtext export of session\nTo export a text file with all packages in BibTex format use bibtex_citation_session(). All actively loaded packages within your session will be included. Only non-base packages are taken into account. You can then import or copy the citations from the text file to your project.\n\nbibtex_citation_session(\"folder/filename.txt\")\n\nThe function only requires the desired location where the text file should be saved. Otherwise it will just save it to your current working directory."
-  },
-  {
-    "objectID": "pages/gchm.html",
-    "href": "pages/gchm.html",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
+    "objectID": "pages/resources.html",
+    "href": "pages/resources.html",
+    "title": "Resources",
     "section": "",
-    "text": "This page documents the progress of the research on the operating mechanisms of the global canopy height model by Lang et al. (2023a). For the full data and scripts please visit the corresponding GitHub repository and for other projects and more information about me visit my Main Site."
-  },
-  {
-    "objectID": "pages/gchm.html#abstract",
-    "href": "pages/gchm.html#abstract",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "1 Abstract",
-    "text": "1 Abstract\nAccurate canopy height data is crucial for understanding ecosystem structure and function, assessing biodiversity or calculating carbon stocks. Traditional in-situ collection of canopy height data is complex, labor-intensive and spatially limited. While Airborne Laser Scanning enables analysis on a regional or country-wide scale, a global application is not feasible due to high costs. Fusing deep learning, space borne LIDAR samples and optical remote sensing data, recent developments of canopy height models have produced remarkable results. Although spectral data is widely used in ecological analysis, a link to canopy height is unknown. The driving mechanisms of canopy height estimation on a global scale were investigated, using the approach presented by Lang et al. (2023a). To isolate the relevance of optical properties in prediction, controlled spectral manipulation of the input data was performed, and the model reaction analyzed. The observed patterns do not suggest a direct link of spectral values to canopy height. The results demonstrate that its prediction from optical remote sensing data is primarily influenced by factors beyond spectral signatures. Thorough understanding of the mechanisms driving prediction and clear communication of limitations in applicability and explanatory value is crucial in the development of ecological models.\n\nLang, N., Jetz, W., Schindler, K., & Wegner, J. D. (2023a). A high-resolution canopy height model of the earth. Nature Ecology & Evolution, 7(11), 1778–1789. https://doi.org/10.1038/s41559-023-02206-6"
-  },
-  {
-    "objectID": "pages/gchm.html#research-question",
-    "href": "pages/gchm.html#research-question",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "2 Research question",
-    "text": "2 Research question\nThe goal of this research is to understand the role of spectral data in the creation of deep learning approaches in order to predict canopy height, and generate insights to improve future approaches. The lack of a known ecological connection between spectral data and canopy height raises questions on the mechanisms driving prediction. This thesis aims to address the following question:\nAre spectral reflectance values the driving force in recent deep learning models predicting canopy height?\nIt is hypothesized that spectral data does not contain information about canopy height, and that other factors, like coordinates, are more relevant for prediction."
-  },
-  {
-    "objectID": "pages/gchm.html#methods",
-    "href": "pages/gchm.html#methods",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "3 Methods",
-    "text": "3 Methods\nThis research builds on an existing model architecture promising global canopy height prediction, delivering high spatial resolution, easy data accessibility and reproducibility (Lang et al., 2023b). The authors claim that the model has learned connections to spectral values as well as texture and present a remarkably low overall Root-Mean-Square-Error (RMSE) of 6.0 m. It was therefore selected to be used as an experimental subject in this research.\n\nESA. (2020). Copernicus sentinel-2. European Space Agency (ESA). https://browser.dataspace.copernicus.eu\n\nZanaga, D., Van De Kerchove, R., De Keersmaecker, W., Souverijns, N., Brockmann, C., Quast, R., Wevers, J., Grosu, A., Paccini, A., Vergnaud, S., Cartus, O., Santoro, M., Fritz, S., Georgieva, I., Lesiv, M., Carter, S., Herold, M., Li, L., Tsendbazar, N.-E., … Arino, O. (2020). ESA WorldCover 10 m 2020 v100. Zenodo. https://doi.org/10.5281/zenodo.5571936\nAs we cannot retrace the reasoning of the model due to the nature of deep learning approaches and their size, the effect of spectral values has to be isolated. To address this limitation, we approach this question by deploying the selected model on systematically manipulated spectral input data to observe the resulting change in canopy height estimates. Assuming the model has learned connections to spectral values, such perturbations would be expected to change proportionally, resulting in an approximately linear explanatory relationship between the magnitude of the spectral manipulation and the corresponding change in the predicted canopy height. Consistent with the original paper, Sentinel-2 imagery (ESA, 2020) and ESA-WordCover data (Zanaga et al., 2020) from 2020 was used.\nTo systematically analyze the role of spectral data in deep learning models for estimating canopy height, an automated workflow was developed (See Figure 1). This workflow encompasses data preparation, variable creation, file management, model deployment, and the export of results. Figure 1 illustrates the key elements of the process and the sequence of operations. The spectral manipulation function is integrated into the model deployment scripts. The original code of the model remained unchanged.\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Conceptual illustration of the developed workflow created for the analysis. Components developed as part of this thesis are highlighted in pink, adapted infrastructure originating from Lang et al. (2023a) is shown in green. The automated workflow processes one Sentinel-2 Tile at a time and repeats the process for the next manipulation step and image, after saving the results."
-  },
-  {
-    "objectID": "pages/gchm.html#sample-tiles",
-    "href": "pages/gchm.html#sample-tiles",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "4 Sample Tiles",
-    "text": "4 Sample Tiles\nSample tiles at eleven different locations were selected to ensure broad geographic representation across all continents, covering a wide range of latitudes, elevations, and biomes. I used the three sample tiles presented in the paper as well as the tile provided as demo data (Lang et al., 2023b). This set was extended by three European forests under different management regimes, of which two are located outside the GEDI reference range of 51.6° N-S (Dubayah et al., 2020). Four additional tiles from various continents, considered to be representative of their respective regions, were included. Care was taken to ensure sufficient vegetation cover, within each individual tile.\n\n\nLang, N., Jetz, W., Schindler, K., & Wegner, J. D. (2023b). A high-resolution canopy height model of the Earth [Source Code]. https://github.com/langnico/global-canopy-height-model\n\nDubayah, R., Blair, J. B., Goetz, S., Fatoyinbo, L., Hansen, M., Healey, S., Hofton, M., Hurtt, G., Kellner, J., Luthcke, S., Armston, J., Tang, H., Duncanson, L., Hancock, S., Jantz, P., Marselis, S., Patterson, P. L., Qi, W., & Silva, C. (2020). The Global Ecosystem Dynamics Investigation: High-resolution laser ranging of the Earth’s forests and topography. Science of Remote Sensing, 1. https://doi.org/10.1016/j.srs.2020.100002"
-  },
-  {
-    "objectID": "pages/gchm.html#results",
-    "href": "pages/gchm.html#results",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "5 Results",
-    "text": "5 Results\n\n5.1 Influece of spectral properties on prediction\nThe results do not show any linear relationship, but rather a symmetric behavior around 0 along the x-axis. The direction of manipulation does not influence the direction and magnitude of differences. Figure 2 illustrates the average absolute difference by absolute manipulation degree for each band, across all tiles.\n\n\n\n\n\n\n\n\nFigure 2: Average relative difference [%] by absolute manipulation degree for each manipulated band.\n\n\n\n\n\n\n\n5.2 Differences in response between sample tiles\nThe impact of spectral manipulation on canopy height prediction was assessed across eleven globally distributed sample tiles. The selection of these tiles tried to cover a wide range of biomes, continents, management regimes and latitudes, both inside and outside the range of the reference data. They differ in landscape structure and species composition, resulting in different ranges of canopy heights. The distribution of unmanipulated canopy height estimations per tile is illustrated in Figure 3, sorted by mean canopy height from top to bottom. The tiles Finland and Mongolia consist of very low vegetation with an average lower than 5 m. Malaysia has the highest predicted average canopy height with 43.5 m. Switzerland and Cameroon show a very wide spectrum of canopy heights with a very strong distinction between high and low vegetation in Cameroon.\n\n\n\n\n\n\n\n\nFigure 3: Distribution of predicted canopy height per tile. Sorted by mean canopy height in meters, across the whole tile.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: Average signed differences between the sample tiles by manipulation degree, within a single band. Bands can be selected in the top left corner.\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 5: Difference to original prediction after manipulating single bands, shown by sample tile"
-  },
-  {
-    "objectID": "pages/gchm.html#discussion",
-    "href": "pages/gchm.html#discussion",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "6 Discussion",
-    "text": "6 Discussion"
-  },
-  {
-    "objectID": "pages/gchm.html#conclusion",
-    "href": "pages/gchm.html#conclusion",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "7 Conclusion",
-    "text": "7 Conclusion\nThis research demonstrates that spectral values are not a primary driver in the operating mechanism of optical data based deep learning models for canopy height prediction. While sensitivity to the spectral input was observed, no systematic pattern emerged linking spectral values directly to canopy height. Instead, my results indicate a substantial influence of tiles specific properties, including the canopy height it is deployed on, representation of biomes in the training data, local unique characteristics and geographical coordinates. Furthermore, substantial variability within the individual models of the ensemble prediction influences prediction accuracy.\nThese findings contribute to the development of deep learning models in ecological modeling by highlighting the importance of spatial context and model variability. Future research should explore the influence of spatial patterns and texture, to further refine our understanding of the driving mechanisms of these models.\nDeep learning, ensemble prediction and the use of publicly accessible remote sensing data have the potential to significantly expand our knowledge of ecosystems, improve modeling approaches and facilitate large scale analysis. However, understanding the spatial and ecological limits of model application is crucial. It needs to be our goal to understand the products we produce and communicate its limitations. Model metrics do not tell the full story, ignoring its applicability and prediction mechanisms. What a model can’t do and where it is applicable is even more important than its performance.\nAs creators of deep learning models, we need to clearly understand and communicate their operating principles, to avoid misunderstandings and build trust. This ensures a high quality of derivative products and information, as well as a strong explanatory value. Establishing common standards for evaluation, contextual calibration and unambiguous communication of application limits are the keystones for future development. Measures of applicability are vital for model assessment. This way we ensure high quality products using the full potential of deep learning in remote sensing."
-  },
-  {
-    "objectID": "pages/gchm.html#resources",
-    "href": "pages/gchm.html#resources",
-    "title": "Canopy height mapping from optical remote sensing data: reassessing deep learning methods",
-    "section": "8 Resources",
-    "text": "8 Resources\n\n\n Download data (CSV) \n\n Conference slides (PDF) \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSildes were created for the ILÖK Graduate Conference, at an intermediate state of the Project. Newer slides will be provided soon, in preperation for the GFÖ Conference."
-  },
-  {
-    "objectID": "pages/CV.html",
-    "href": "pages/CV.html",
-    "title": "CV",
-    "section": "",
-    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGerman\n\n\n\n\n\nEnglish\n\n\n\n\n\nSpanish\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\n\n\n\nR\n\n\n\n\n\nGit\n\n\n\n\n\nPython\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\n\n\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\n\n\nM.Sc. Landscape Ecology\nOct 2023-Present · University Münster\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods.\nB.Sc. Landscape Ecology\nOct 2019-Sep 2022 · University Münster\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\n\n\n\nField Inspector | Freelance\n2022–Present · Control of agricultural fields\n\n\n\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026 · Analysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023 · Botany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022 · Ecological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022 · Field Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021 · Machine learning and reproducible workflows.\n\n\n\n\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\nEurasian Dry Grassland Group (EDGG)\n\n\n\n\n\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\n\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
-  },
-  {
-    "objectID": "pages/CV.html#about",
-    "href": "pages/CV.html#about",
-    "title": "CV",
-    "section": "",
-    "text": "My Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\n\n\nM.Sc. Landscape Ecology\nOct 2023-Present · University Münster\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods.\nB.Sc. Landscape Ecology\nOct 2019-Sep 2022 · University Münster\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\n\n\n\nField Inspector | Freelance\n2022–Present · Control of agricultural fields\n\n\n\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026 · Analysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023 · Botany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022 · Ecological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022 · Field Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021 · Machine learning and reproducible workflows.\n\n\n\n\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\nEurasian Dry Grassland Group (EDGG)\n\n\n\n\n\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\n\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Emilio Sánchez",
-    "section": "",
-    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
-  },
-  {
-    "objectID": "index.html#emilio-sánchez",
-    "href": "index.html#emilio-sánchez",
-    "title": "Emilio Sánchez",
-    "section": "",
-    "text": "Hi, my name is Emilio Sánchez and I’m a Landscape Ecologist with a focus on remote sensing, restoration ecology, and soil ecology. My core interests lie in remote sensing, data science, and programming, alongside a deep passion for botany and plant ecology.\n\n\nExplore My Work"
-  },
-  {
-    "objectID": "archive/CV.html",
-    "href": "archive/CV.html",
-    "title": "CV",
-    "section": "",
-    "text": "Emilio Sánchez\nM.Sc. Landscape Ecology\n \n\n  \n\n\nLanguages\n\n\nGerman\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\nSwedish\n\n\n\n\n\n\n\nProgramming\n\n\nR\n\n\n\n\n\n\n\nGit\n\n\n\n\n\n\n\nPython\n\n\n\n\n\n\n\nCSS\n\n\n\n\n\n\n\nSkills\n\n\nEcological Mapping\n\n\n\n\n\n\n\nWoodworking\n\n\n\n\n\n\n\n\n\nAbout\nMy Name is Emilio Sánchez and I am a landscape ecologist from Germany with specialization in remote sensing, machine learning and botany.\n\nEducation\nM.Sc. Landscape Ecology – University Münster (Oct 2023 - present)\nFocus: Remote Sensing, Restoration Ecology, Soil Ecology\nThesis: Canopy height mapping from optical remote sensing data: reassessing deep learning methods\nB.Sc. Landscape Ecology – University Münster (Oct 2019 - Sept 2022)\nThesis: Spatio-temporal analysis of a central European bog.\n\n\n\nExperience\nField Inspector | Freelance\nAnnualy since 2022\nControl of agricultural fields.\nStudent Assistant | Institute of Landscape Ecology\nSep 2025 - Feb 2026\nAnalysis of deep learning models\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2023\nBotany tutor\nEcological Mapping | LAKI GBR\nMay - July 2022\nEcological mappings of vegetation.\nStudent Assistant | Institute of Landscape Ecology\nApr - Sep 2022\nField Equipment rental\nIntern | EFTAS Remote Sensing\nOct - Nov 2021\nMachine learning and reproducible workflows.\n\n\n\nMemberships\n\nFloristisch-soziologische Arbeitsgemeinschaft e.V. (FlorSoz)\n\n\n\n\nSkills\n\nProcessing of ecological- and spatial data\nData analysis and visualization\nScientific writing\nOrganisational talent\nProject Management (University training)\n\n\n\n\nActivities\n\nVolunteer at THW (Federal Agency for Technical Relief)\nSports\n\nBiking and trail running\n\nTeam sports at University\n\n\nWoodworking\nGardening\nDIY-Projects"
-  },
-  {
-    "objectID": "pages/about.html",
-    "href": "pages/about.html",
-    "title": "CV",
-    "section": "",
-    "text": "Master of Science in Landscape Ecology\nUniversity Münster GER, Oct 2023 - present\nFinal Grade: TBD (German grading scale)\nFocus: Restoration Ecology, Remote Sensing, Soil Ecology\nBachelor of Science in Landscape Ecology\nUniversity Münster GER, Oct 2019 - Sept 2022\nFinal Grade: 1.4 (German grading scale)"
-  },
-  {
-    "objectID": "pages/about.html#education",
-    "href": "pages/about.html#education",
-    "title": "CV",
-    "section": "",
-    "text": "Master of Science in Landscape Ecology\nUniversity Münster GER, Oct 2023 - present\nFinal Grade: TBD (German grading scale)\nFocus: Restoration Ecology, Remote Sensing, Soil Ecology\nBachelor of Science in Landscape Ecology\nUniversity Münster GER, Oct 2019 - Sept 2022\nFinal Grade: 1.4 (German grading scale)"
-  },
-  {
-    "objectID": "pages/about.html#experience",
-    "href": "pages/about.html#experience",
-    "title": "CV",
-    "section": "Experience",
-    "text": "Experience\nFreelance | Agricultural Field Control | Summer 2022/23/24/25\nLAKI | Ecological mapping | Intern & Job | May 2022 - July 2022\nEFTAS | Remote Sensing | Intern | Oct 2021 - Nov 2021"
-  },
-  {
-    "objectID": "pages/about.html#skills",
-    "href": "pages/about.html#skills",
-    "title": "CV",
-    "section": "Skills",
-    "text": "Skills\n\nOrganisational talent\nProject Management (University training)"
-  },
-  {
-    "objectID": "pages/about.html#personal-interests",
-    "href": "pages/about.html#personal-interests",
-    "title": "CV",
-    "section": "Personal Interests",
-    "text": "Personal Interests\n\nSports\n\nBiking and trail running\n\nTeam sports at University\n\nWoodworking\nGardening\nDIY-Projects"
-  },
-  {
-    "objectID": "pages/freelance.html",
-    "href": "pages/freelance.html",
-    "title": "LÖGI",
-    "section": "",
-    "text": "LÖGI LANDSCAPE ECOLOGY & GEOINFORMATICS\n\n\n\n\n\nWelcome!\nSince 2022 I am working as a Freelancer in Ecological Fieldwork, Environmental Modelling and Geo data processing.\n\n\n\n\nServices\nMy experiences cover Botanical mappings, agricultural controls, geodata processing (R & GIS) and environmental modelling. I am specialiced in ecological restoration, remote sensing and vegetation ecology. Feel free to contact me for custom requests."
-  },
-  {
-    "objectID": "pages/projects.html",
-    "href": "pages/projects.html",
-    "title": "Academic Projects",
-    "section": "",
-    "text": "2025\n\nMaster Thesis\nCanopy height mapping from optical remote sensing data: reassessing deep learning methods\nView project →\n\n\n\n\n2024\n\n\n\n\nR-Package Development\n\nCreation and development of the R package dandelion, focused on spatial ecological workflows in R.\nView documentation →\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStudent Project\nDetecting meadow orchards in Germany using convolutional neural networks and aerial imagery\n\n\n\n\n2022\n\nBachelor Thesis\n\nSpatio-temporal analysis of a Central European bog\nRecent trends in moisture conditions across European peatlands"
-  },
-  {
-    "objectID": "pages/resources/fieldnotes.html#iss-orbit",
-    "href": "pages/resources/fieldnotes.html#iss-orbit",
-    "title": "Field Notes",
-    "section": "ISS Orbit",
-    "text": "ISS Orbit"
-  },
-  {
-    "objectID": "pages/resources/fieldnotes.html#next-pass",
-    "href": "pages/resources/fieldnotes.html#next-pass",
-    "title": "Field Notes",
-    "section": "Next pass",
-    "text": "Next pass"
-  },
-  {
-    "objectID": "pages/resources/VirtualEnvs.html",
-    "href": "pages/resources/VirtualEnvs.html",
-    "title": "Virtual Environments",
-    "section": "",
-    "text": "A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:\n\nProjects do not interfere with each other.\nSpecific versions of packages can be maintained for reproducibility.\nExperiments and scripts run in a controlled, predictable setup.\n\nWhatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems."
-  },
-  {
-    "objectID": "pages/resources/VirtualEnvs.html#what-are-virtual-environments",
-    "href": "pages/resources/VirtualEnvs.html#what-are-virtual-environments",
-    "title": "Virtual Environments",
-    "section": "",
-    "text": "A virtual environment is an isolated workspace that contains its own installation (and desired version) of software (like Python or R) and a set of packages. This ensures that:\n\nProjects do not interfere with each other.\nSpecific versions of packages can be maintained for reproducibility.\nExperiments and scripts run in a controlled, predictable setup.\n\nWhatever you install inside the environment won’t affect the global system installation or other projects. It is like a “sandbox” for your project, that can be reproduced on other systems."
-  },
-  {
-    "objectID": "pages/resources/VirtualEnvs.html#how-to-set-them-up",
-    "href": "pages/resources/VirtualEnvs.html#how-to-set-them-up",
-    "title": "Virtual Environments",
-    "section": "How to set them up",
-    "text": "How to set them up\nMiniforge3 is a lightweight alternative to Anaconda that simplifies installation and avoids some licensing issues. Libmamba solver is much faster and more reliable than the classic Conda solver, especially for large environments with many dependencies. Using the old solver can take hours or even fail due to conflicts.\nminiforge3 is installed via Miniforge3-Linux-x86_64.sh Important: Solver has to be set to libmamba. Check via conda info and change like this if needed:\nconda info | grep solver\nconda config --set solver libmamba\n\nInstallation\nSet the desired software/packages and if needed versions in environment.yml. All undefined Versions will be fitted to work together. Create the Virtual Environment with the specified requirements.\nTip: Installing R inside the environment avoids mismatches between Python and R libraries and ensures your scripts are reproducible across machines.\nmamba env create -f environment.yml\n\nCheck after installation\nTo see all installed software and packages with their exact version use conda list or filter for a specific item\nconda list\n\nconda list | grep numpy"
-  },
-  {
-    "objectID": "pages/resources/VirtualEnvs.html#deployment",
-    "href": "pages/resources/VirtualEnvs.html#deployment",
-    "title": "Virtual Environments",
-    "section": "Deployment",
-    "text": "Deployment\nFirst, the desired Virtual Environment has to be activated and the desired project directory set. Then we can deploy scripts by specifying the type and then the file.\nconda activate gchm\ncd /home/emilio/canopy_height/\nRscript deploy.R\n\nUsefull bash code\nReal time GPU supervision:\nwatch -n 1 nvidia-smi"
-  },
-  {
-    "objectID": "pages/resources/VirtualEnvs.html#Example",
-    "href": "pages/resources/VirtualEnvs.html#Example",
-    "title": "Virtual Environments",
-    "section": "Example environment",
-    "text": "Example environment\nThe environment.yml file contains all info about what we want to install and tells conda our requirements. The solver then sorts out the correct versions for the virtual environment to work with each other. It works from top to bottom. gdal is included here; the version will fit to the required python and R. We included R here as well to have a fully encapsulated environment ensuring compatibility, instead of deploying scripts from outside the branch. -e. is added to install it as executable python “package”.\nname: gchm\n\nchannels:\n  - conda-forge\n  - pytorch\n  - nvidia\n\ndependencies:\n  - python&gt;=3.12.0\n  - r-base&gt;=4.4.0\n  - gdal\n  - sentinelhub\n  - pytables\n  - libgdal-jp2openjpeg\n  - ipython\n  - matplotlib\n  - numpy\n  - pathlib\n  - tqdm\n  - botocore\n  - urllib3\n  - wandb\n  - tensorboard\n  - scikit-image\n  - scikit-learn\n  - pytorch::pytorch\n  - pytorch::pytorch-cuda\n  - pytorch::torchvision\n  - pytorch::torchaudio\n  - conda-forge::cudatoolkit==11.8.0\n  - typing\n  - jupyter\n  - pip\n  - pip:\n    - -e ."
-  },
-  {
-    "objectID": "slides/CH-slides.html#research-context",
-    "href": "slides/CH-slides.html#research-context",
-    "title": "CH modelling",
-    "section": "Research Context",
-    "text": "Research Context\n\nRemote sensing data {.fragment}\nEcological modeling {.fragment}\nData {.fragment}\nModel {.fragment}\nPrediction {.fragment}"
-  },
-  {
-    "objectID": "slides/CH-slides.html#study-area",
-    "href": "slides/CH-slides.html#study-area",
-    "title": "CH modelling",
-    "section": "Study Area",
-    "text": "Study Area\n\n\n\n\n\nGEDI reference data\n\n\n\n\nLocation description\nKey variables\nData sources"
-  },
-  {
-    "objectID": "slides/CH-slides.html#methods",
-    "href": "slides/CH-slides.html#methods",
-    "title": "CH modelling",
-    "section": "Methods",
-    "text": "Methods\n\nCanopy Height distribution"
-  },
-  {
-    "objectID": "slides/CH-slides.html#results",
-    "href": "slides/CH-slides.html#results",
-    "title": "CH modelling",
-    "section": "Results",
-    "text": "Results\n Some key finding here (Lang et al. 2023).\n\n\n\n\nLang, Nico, Walter Jetz, Konrad Schindler, and Jan Dirk Wegner. 2023. “A High-Resolution Canopy Height Model of the Earth.” Nature Ecology & Evolution 7 (11): 1778–89. https://doi.org/10.1038/s41559-023-02206-6."
-  },
-  {
-    "objectID": "slides/CH-slides.html#references",
-    "href": "slides/CH-slides.html#references",
-    "title": "CH modelling",
-    "section": "References",
-    "text": "References\n\n\nAuthor et al. (2020)\nAuthor et al. (2021)"
-  },
-  {
-    "objectID": "slides/CH-slides.html#thank-you",
-    "href": "slides/CH-slides.html#thank-you",
-    "title": "CH modelling",
-    "section": "Thank You",
-    "text": "Thank You\nQuestions?"
-  },
-  {
-    "objectID": "slides/CH-slides.html#research-question",
-    "href": "slides/CH-slides.html#research-question",
-    "title": "CH modelling",
-    "section": "Research Question",
-    "text": "Research Question\nAre spectral reflectance values the driving force in recent deep learning models predicting canopy height?"
-  },
-  {
-    "objectID": "slides/CH-slides.html#sample-tiles",
-    "href": "slides/CH-slides.html#sample-tiles",
-    "title": "CH modelling",
-    "section": "Sample Tiles",
-    "text": "Sample Tiles"
-  },
-  {
-    "objectID": "slides/CH-slides.html#model-training",
-    "href": "slides/CH-slides.html#model-training",
-    "title": "CH modelling",
-    "section": "Model training",
-    "text": "Model training\n\n\n\n\n\nGEDI reference data\n\n\n\n\nLocation description\nKey variables\nData sources"
+    "text": "dandelion\n        R-Package documentation.\n      \n    \n  \n\n  \n    \n      \n        \n      \n      \n        Virtual environments\n        Setup and Application.\n      \n    \n  \n  \n  \n    \n      \n        \n      \n      \n        Field Notes\n        Experimental Collection.\n      \n    \n  \n\n  \n    \n      \n        \n      \n      \n        Cat Vitae\n        The live of a scientific cat."
   }
 ]

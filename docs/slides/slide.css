@@ -106,19 +106,3 @@
 
 
 
-
-/* =========================
-   TITLE SLIDE META ONLY
-   (subtitle, author, date)
-   ========================= */
-
-/* Subtitle + author + date on title slide */
-.reveal .slides section:first-of-type p {
-  color: rgba(255, 255, 255, 0.25) !important;
-  font-weight: 300;
-}
-
-/* EXTRA SAFETY: ensure title is NOT affected */
-.reveal .slides section:first-of-type h1 {
-  color: #1b5e20 !important; /* keeps your green title */
-}
