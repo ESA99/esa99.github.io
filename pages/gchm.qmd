@@ -30,6 +30,17 @@ csl: https://www.zotero.org/styles/apa
 
 This page documents the progress of the research on the operating mechanisms of the global canopy height model by @lang_gchm_2023. For the full data and scripts please visit the corresponding [GitHub repository](https://github.com/ESA99/canopy_height) and for other projects and more information about me visit my [Main Site](https://esa99.github.io).
 
+<!-- ← → ↗ ↖ ⟵ ⟶ ➜ ➝   -->
+::: {.project-nav}
+<a href="gchm_texture.qmd" class="project-nav-link">
+  <span class="project-nav-arrow">➜</span>
+  <span class="project-nav-text">
+    Continued Research: Influence of Texture Analysis
+  </span>
+</a>
+:::
+
+
 ## Abstract
 Accurate canopy height data is crucial for understanding ecosystem structure and function, assessing biodiversity or calculating carbon stocks. Traditional in-situ collection of canopy height data is complex, labor-intensive and spatially limited. While Airborne Laser Scanning enables analysis on a regional or country-wide scale, a global application is not feasible due to high costs.
 Fusing deep learning, space borne LIDAR samples and optical remote sensing data, recent developments of canopy height models have produced remarkable results. Although spectral data is widely used in ecological analysis, a link to canopy height is unknown. The driving mechanisms of canopy height estimation on a global scale were investigated, using the approach presented by @lang_gchm_2023. To isolate the relevance of optical properties in prediction, controlled spectral manipulation of the input data was performed, and the model reaction analyzed.

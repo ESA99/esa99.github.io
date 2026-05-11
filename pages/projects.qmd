@@ -2,13 +2,22 @@
 title: "Academic Projects"
 ---
 
+# 2026
+
+::: {.post}
+### Global canopy height model
+Further research on the operating mechanisms of predictive CNN, analysisng the influence of texture.  
+[View project →](gchm_texture.qmd)
+:::
+
+---
 
 # 2025
 
 ::: {.post}
 ### Master Thesis
 *Canopy height mapping from optical remote sensing data: reassessing deep learning methods*  
-[View project →](gchm.qmd)
+[View documentation →](gchm.qmd)
 :::
 
 ---
